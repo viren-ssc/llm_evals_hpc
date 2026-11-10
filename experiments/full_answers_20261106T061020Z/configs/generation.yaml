@@ -1,0 +1,8 @@
+max_new_tokens: null
+retry_max_new_tokens: null
+max_attempts: 3
+seed: 0
+temperature: 0.0
+max_model_len: checkpoint
+batch_size: dynamic
+prompt: question_only
