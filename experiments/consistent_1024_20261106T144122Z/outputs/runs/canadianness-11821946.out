@@ -1,0 +1,2039 @@
+INFO 11-06 14:42:42 [utils.py:238] non-default args: {'tokenizer': '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', 'dtype': 'bfloat16', 'max_model_len': 16384, 'tensor_parallel_size': 4, 'gpu_memory_utilization': 0.94, 'max_num_batched_tokens': 8192, 'max_num_seqs': 16, 'disable_log_stats': True, 'enforce_eager': True, 'model': '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585'}
+INFO 11-06 14:42:52 [model.py:531] Resolved architecture: ApertusForCausalLM
+INFO 11-06 14:42:52 [model.py:1554] Using max model len 16384
+INFO 11-06 14:42:52 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 11-06 14:42:52 [vllm.py:747] Asynchronous scheduling is enabled.
+WARNING 11-06 14:42:52 [vllm.py:781] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 11-06 14:42:52 [vllm.py:792] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 11-06 14:42:52 [vllm.py:957] Cudagraph is disabled under eager mode
+(EngineCore_DP0 pid=935) INFO 11-06 14:42:59 [core.py:101] Initializing a V1 LLM engine (v0.17.0) with config: model='/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', speculative_config=None, tokenizer='/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=4, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_split_points': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore_DP0 pid=935) INFO 11-06 14:42:59 [multiproc_executor.py:134] DP group leader: node_rank=0, node_rank_within_dp=0, master_addr=127.0.0.1, mq_connect_ip=10.142.0.55 (local), world_size=4, local_world_size=4
+(Worker pid=1053) INFO 11-06 14:43:09 [parallel_state.py:1393] world_size=4 rank=3 local_rank=3 distributed_init_method=tcp://127.0.0.1:45599 backend=nccl
+(Worker pid=1052) INFO 11-06 14:43:09 [parallel_state.py:1393] world_size=4 rank=2 local_rank=2 distributed_init_method=tcp://127.0.0.1:45599 backend=nccl
+(Worker pid=1050) INFO 11-06 14:43:09 [parallel_state.py:1393] world_size=4 rank=0 local_rank=0 distributed_init_method=tcp://127.0.0.1:45599 backend=nccl
+(Worker pid=1051) INFO 11-06 14:43:09 [parallel_state.py:1393] world_size=4 rank=1 local_rank=1 distributed_init_method=tcp://127.0.0.1:45599 backend=nccl
+(Worker pid=1050) INFO 11-06 14:43:11 [pynccl.py:111] vLLM is using nccl==2.27.5
+(Worker pid=1050) WARNING 11-06 14:43:12 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1051) WARNING 11-06 14:43:12 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1052) WARNING 11-06 14:43:12 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1053) WARNING 11-06 14:43:12 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1050) INFO 11-06 14:43:12 [parallel_state.py:1715] rank 0 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(Worker pid=1051) INFO 11-06 14:43:12 [parallel_state.py:1715] rank 1 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 1, EP rank N/A, EPLB rank N/A
+(Worker pid=1053) INFO 11-06 14:43:12 [parallel_state.py:1715] rank 3 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 3, EP rank N/A, EPLB rank N/A
+(Worker pid=1052) INFO 11-06 14:43:12 [parallel_state.py:1715] rank 2 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 2, EP rank N/A, EPLB rank N/A
+(Worker pid=1051) INFO 11-06 14:43:12 [base.py:106] Offloader set to NoopOffloader
+(Worker pid=1050) INFO 11-06 14:43:12 [base.py:106] Offloader set to NoopOffloader
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 14:43:12 [gpu_model_runner.py:4255] Starting to load model /gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585...
+(Worker pid=1052) INFO 11-06 14:43:12 [base.py:106] Offloader set to NoopOffloader
+(Worker pid=1053) INFO 11-06 14:43:12 [base.py:106] Offloader set to NoopOffloader
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 14:43:13 [cuda.py:405] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 14:43:13 [flash_attn.py:587] Using FlashAttention version 2
+(Worker pid=1051) (Worker_TP1 pid=1051) WARNING 11-06 14:43:13 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1051) (Worker_TP1 pid=1051) WARNING 11-06 14:43:13 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1050) (Worker_TP0 pid=1050) WARNING 11-06 14:43:13 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1050) (Worker_TP0 pid=1050) WARNING 11-06 14:43:13 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1052) (Worker_TP2 pid=1052) WARNING 11-06 14:43:13 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1052) (Worker_TP2 pid=1052) WARNING 11-06 14:43:13 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1053) (Worker_TP3 pid=1053) WARNING 11-06 14:43:13 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1053) (Worker_TP3 pid=1053) WARNING 11-06 14:43:13 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 14:43:40 [default_loader.py:293] Loading weights took 26.66 seconds
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 14:43:40 [gpu_model_runner.py:4338] Model loading took 32.89 GiB memory and 27.149899 seconds
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 14:43:48 [gpu_worker.py:424] Available KV cache memory: 2.45 GiB
+(EngineCore_DP0 pid=935) INFO 11-06 14:43:48 [kv_cache_utils.py:1314] GPU KV cache size: 32,176 tokens
+(EngineCore_DP0 pid=935) INFO 11-06 14:43:48 [kv_cache_utils.py:1319] Maximum concurrency for 16,384 tokens per request: 1.96x
+(EngineCore_DP0 pid=935) INFO 11-06 14:43:48 [core.py:282] init engine (profile, create kv cache, warmup model) took 6.97 seconds
+(EngineCore_DP0 pid=935) INFO 11-06 14:43:50 [vllm.py:747] Asynchronous scheduling is enabled.
+(EngineCore_DP0 pid=935) WARNING 11-06 14:43:50 [vllm.py:781] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(EngineCore_DP0 pid=935) WARNING 11-06 14:43:50 [vllm.py:792] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore_DP0 pid=935) INFO 11-06 14:43:50 [vllm.py:957] Cudagraph is disabled under eager mode
+INFO 11-06 14:43:50 [llm.py:388] Supported tasks: ['generate']
+BATCH_RUNTIME {"max_num_seqs": 16, "kv_cache_tokens": 32176, "reserved_token_budget": 30560, "block_size": 16, "admission_mode": "full_reservation", "model_context_window": 16384, "requested_max_new_tokens": 1024}
+WARNING 11-06 14:43:50 [input_processor.py:254] Passing raw prompts to InputProcessor is deprecated and will be removed in v0.18. You should instead pass the outputs of Renderer.render_cmpl() or Renderer.render_chat().
+BATCH_ADMISSION active=1 reserved_tokens=1072/30560 peak=1
+BATCH_ADMISSION active=2 reserved_tokens=2128/30560 peak=2
+BATCH_ADMISSION active=3 reserved_tokens=3184/30560 peak=3
+BATCH_ADMISSION active=4 reserved_tokens=4240/30560 peak=4
+BATCH_ADMISSION active=5 reserved_tokens=5296/30560 peak=5
+BATCH_ADMISSION active=6 reserved_tokens=6336/30560 peak=6
+BATCH_ADMISSION active=7 reserved_tokens=7392/30560 peak=7
+BATCH_ADMISSION active=8 reserved_tokens=8448/30560 peak=8
+BATCH_ADMISSION active=9 reserved_tokens=9504/30560 peak=9
+BATCH_ADMISSION active=10 reserved_tokens=10560/30560 peak=10
+BATCH_ADMISSION active=11 reserved_tokens=11616/30560 peak=11
+BATCH_ADMISSION active=12 reserved_tokens=12672/30560 peak=12
+BATCH_ADMISSION active=13 reserved_tokens=13712/30560 peak=13
+BATCH_ADMISSION active=14 reserved_tokens=14768/30560 peak=14
+BATCH_ADMISSION active=15 reserved_tokens=15824/30560 peak=15
+BATCH_ADMISSION active=16 reserved_tokens=16880/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0091", "status": "success", "output_tokens": 41, "concurrency": 5}
+BATCH_ADMISSION active=16 reserved_tokens=16864/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0191", "status": "success", "output_tokens": 44, "concurrency": 13}
+BATCH_ADMISSION active=16 reserved_tokens=16880/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0104", "status": "success", "output_tokens": 69, "concurrency": 6}
+BATCH_ADMISSION active=16 reserved_tokens=16880/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0184", "status": "success", "output_tokens": 89, "concurrency": 12}
+BATCH_ADMISSION active=16 reserved_tokens=16880/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0166", "status": "success", "output_tokens": 96, "concurrency": 10}
+BATCH_ADMISSION active=16 reserved_tokens=16896/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0176", "status": "success", "output_tokens": 157, "concurrency": 11}
+BATCH_ADMISSION active=16 reserved_tokens=16896/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0074", "status": "success", "output_tokens": 178, "concurrency": 3}
+BATCH_ADMISSION active=16 reserved_tokens=16896/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0007", "status": "success", "output_tokens": 142, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0039", "status": "success", "output_tokens": 34, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0037", "status": "success", "output_tokens": 53, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0111", "status": "success", "output_tokens": 242, "concurrency": 7}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0136", "status": "success", "output_tokens": 245, "concurrency": 8}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0016", "status": "success", "output_tokens": 205, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0041", "status": "success", "output_tokens": 151, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0056", "status": "success", "output_tokens": 53, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0064", "status": "success", "output_tokens": 463, "concurrency": 2}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0065", "status": "success", "output_tokens": 141, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0064", "status": "success", "output_tokens": 295, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0033", "status": "success", "output_tokens": 593, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0049", "status": "success", "output_tokens": 524, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0078", "status": "success", "output_tokens": 254, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0084", "status": "success", "output_tokens": 135, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0027", "status": "truncated", "output_tokens": 1024, "concurrency": 1}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-HQ-0080", "status": "truncated", "output_tokens": 1024, "concurrency": 4}
+{"model": "gc_llm", "question_id": "GC-HQ-0157", "status": "truncated", "output_tokens": 1024, "concurrency": 9}
+{"model": "gc_llm", "question_id": "GC-HQ-0195", "status": "truncated", "output_tokens": 1024, "concurrency": 14}
+{"model": "gc_llm", "question_id": "GC-ADD-0001", "status": "truncated", "output_tokens": 1024, "concurrency": 15}
+{"model": "gc_llm", "question_id": "GC-ADD-0003", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=12 reserved_tokens=12720/30560 peak=16
+BATCH_ADMISSION active=13 reserved_tokens=13776/30560 peak=16
+BATCH_ADMISSION active=14 reserved_tokens=14848/30560 peak=16
+BATCH_ADMISSION active=15 reserved_tokens=15936/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0089", "status": "success", "output_tokens": 186, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0101", "status": "success", "output_tokens": 43, "concurrency": 13}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0012", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0092", "status": "success", "output_tokens": 204, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0024", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0031", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-008", "status": "success", "output_tokens": 53, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-004", "status": "success", "output_tokens": 120, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-002", "status": "success", "output_tokens": 151, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0095", "status": "success", "output_tokens": 163, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-IND-005", "status": "success", "output_tokens": 116, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=15984/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0098", "status": "success", "output_tokens": 178, "concurrency": 12}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-012", "status": "success", "output_tokens": 66, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0040", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-007", "status": "success", "output_tokens": 153, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-022", "status": "success", "output_tokens": 12, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-015", "status": "success", "output_tokens": 75, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0045", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-014", "status": "success", "output_tokens": 100, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-003", "status": "success", "output_tokens": 254, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-017", "status": "success", "output_tokens": 97, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-018", "status": "success", "output_tokens": 82, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-009", "status": "success", "output_tokens": 169, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-001", "status": "success", "output_tokens": 275, "concurrency": 14}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0051", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-031", "status": "success", "output_tokens": 53, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-034", "status": "success", "output_tokens": 58, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-019", "status": "success", "output_tokens": 117, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-IND-028", "status": "success", "output_tokens": 94, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=15968/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-041", "status": "success", "output_tokens": 48, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-032", "status": "success", "output_tokens": 95, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-037", "status": "success", "output_tokens": 110, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-045", "status": "success", "output_tokens": 35, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-024", "status": "success", "output_tokens": 161, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-042", "status": "success", "output_tokens": 93, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-038", "status": "success", "output_tokens": 156, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-046", "status": "success", "output_tokens": 89, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-044", "status": "success", "output_tokens": 136, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-049", "status": "success", "output_tokens": 119, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-051", "status": "success", "output_tokens": 99, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-060", "status": "success", "output_tokens": 54, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-036", "status": "success", "output_tokens": 319, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-057", "status": "success", "output_tokens": 155, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-030", "status": "success", "output_tokens": 424, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0083", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "GC-ADD-0088", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-003", "status": "success", "output_tokens": 187, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-006", "status": "success", "output_tokens": 95, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-052", "status": "success", "output_tokens": 422, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-010", "status": "success", "output_tokens": 96, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-006", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-013", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-035", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-039", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-043", "status": "truncated", "output_tokens": 1024, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-047", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-050", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-018", "status": "success", "output_tokens": 102, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-IND-054", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-019", "status": "success", "output_tokens": 84, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-001", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-002", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-027", "status": "success", "output_tokens": 57, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-004", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-029", "status": "success", "output_tokens": 93, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-005", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-025", "status": "success", "output_tokens": 245, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-023", "status": "success", "output_tokens": 381, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-007", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-008", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-036", "status": "success", "output_tokens": 132, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-037", "status": "success", "output_tokens": 142, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-043", "status": "success", "output_tokens": 48, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-009", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-040", "status": "success", "output_tokens": 172, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-012", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-050", "status": "success", "output_tokens": 74, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-046", "status": "success", "output_tokens": 229, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-042", "status": "success", "output_tokens": 268, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-013", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-048", "status": "success", "output_tokens": 258, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-059", "status": "success", "output_tokens": 62, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-060", "status": "success", "output_tokens": 55, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-049", "status": "success", "output_tokens": 318, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-014", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-065", "status": "success", "output_tokens": 137, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-016", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-017", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-082", "status": "success", "output_tokens": 61, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-079", "status": "success", "output_tokens": 113, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-088", "status": "success", "output_tokens": 20, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-087", "status": "success", "output_tokens": 75, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-024", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-EXP-093", "status": "success", "output_tokens": 17, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=16080/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-026", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-090", "status": "success", "output_tokens": 85, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-099", "status": "success", "output_tokens": 23, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-094", "status": "success", "output_tokens": 92, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-030", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-101", "status": "success", "output_tokens": 87, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-102", "status": "success", "output_tokens": 84, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-033", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-100", "status": "success", "output_tokens": 164, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-106", "status": "success", "output_tokens": 87, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-038", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-118", "status": "success", "output_tokens": 204, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-047", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-001", "status": "success", "output_tokens": 219, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-007", "status": "success", "output_tokens": 134, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-055", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-003", "status": "success", "output_tokens": 353, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-012", "status": "success", "output_tokens": 94, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-056", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-061", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-063", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-067", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-011", "status": "success", "output_tokens": 291, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-069", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-020", "status": "success", "output_tokens": 71, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-070", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-078", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-023", "status": "success", "output_tokens": 111, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-018", "status": "success", "output_tokens": 237, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-025", "status": "success", "output_tokens": 108, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-028", "status": "success", "output_tokens": 50, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-030", "status": "success", "output_tokens": 65, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-021", "status": "success", "output_tokens": 290, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP-097", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-031", "status": "success", "output_tokens": 158, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-033", "status": "success", "output_tokens": 104, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-002", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-037", "status": "success", "output_tokens": 27, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-004", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-036", "status": "success", "output_tokens": 182, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-005", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-035", "status": "success", "output_tokens": 195, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-034", "status": "success", "output_tokens": 267, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-038", "status": "success", "output_tokens": 87, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-039", "status": "success", "output_tokens": 143, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-010", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-040", "status": "success", "output_tokens": 142, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-047", "status": "success", "output_tokens": 123, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-013", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-014", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-015", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-016", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-051", "status": "success", "output_tokens": 49, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-050", "status": "success", "output_tokens": 102, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-049", "status": "success", "output_tokens": 133, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-019", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-056", "status": "success", "output_tokens": 68, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-022", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-024", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-057", "status": "success", "output_tokens": 181, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-026", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-063", "status": "success", "output_tokens": 36, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-060", "status": "success", "output_tokens": 169, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-061", "status": "success", "output_tokens": 153, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-032", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-066", "status": "success", "output_tokens": 105, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-052", "status": "success", "output_tokens": 430, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-067", "status": "success", "output_tokens": 64, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-068", "status": "success", "output_tokens": 38, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-062", "status": "success", "output_tokens": 284, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-069", "status": "success", "output_tokens": 122, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-064", "status": "success", "output_tokens": 259, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-041", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-042", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-043", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-073", "status": "success", "output_tokens": 208, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-045", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-046", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-080", "status": "success", "output_tokens": 98, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-048", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-078", "status": "success", "output_tokens": 180, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-082", "status": "success", "output_tokens": 153, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-087", "status": "success", "output_tokens": 88, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-089", "status": "success", "output_tokens": 77, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-090", "status": "success", "output_tokens": 95, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-086", "status": "success", "output_tokens": 210, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-053", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-079", "status": "success", "output_tokens": 349, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-054", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-094", "status": "success", "output_tokens": 56, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-058", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-097", "status": "success", "output_tokens": 37, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-092", "status": "success", "output_tokens": 143, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-095", "status": "success", "output_tokens": 97, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-059", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-088", "status": "success", "output_tokens": 303, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-109", "status": "success", "output_tokens": 23, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-106", "status": "success", "output_tokens": 62, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-108", "status": "success", "output_tokens": 56, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-111", "status": "success", "output_tokens": 50, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-104", "status": "success", "output_tokens": 177, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-107", "status": "success", "output_tokens": 166, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-091", "status": "success", "output_tokens": 390, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-112", "status": "success", "output_tokens": 127, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-114", "status": "success", "output_tokens": 101, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-110", "status": "success", "output_tokens": 158, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-065", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-116", "status": "success", "output_tokens": 46, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-115", "status": "success", "output_tokens": 137, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-122", "status": "success", "output_tokens": 71, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-070", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-072", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-124", "status": "success", "output_tokens": 83, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-121", "status": "success", "output_tokens": 167, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-120", "status": "success", "output_tokens": 208, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-119", "status": "success", "output_tokens": 248, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-074", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-075", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-133", "status": "success", "output_tokens": 99, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-136", "status": "success", "output_tokens": 75, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-077", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-139", "status": "success", "output_tokens": 77, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-138", "status": "success", "output_tokens": 146, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-093", "status": "success", "output_tokens": 760, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-143", "status": "success", "output_tokens": 34, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-140", "status": "success", "output_tokens": 254, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-144", "status": "success", "output_tokens": 194, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-146", "status": "success", "output_tokens": 38, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-145", "status": "success", "output_tokens": 60, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-096", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-148", "status": "success", "output_tokens": 54, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-102", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-105", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-150", "status": "success", "output_tokens": 57, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-149", "status": "success", "output_tokens": 67, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-151", "status": "success", "output_tokens": 64, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-156", "status": "success", "output_tokens": 17, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-152", "status": "success", "output_tokens": 64, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-147", "status": "success", "output_tokens": 176, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-153", "status": "success", "output_tokens": 103, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-117", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-155", "status": "success", "output_tokens": 180, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-118", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-125", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-126", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-127", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-129", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-134", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-163", "status": "success", "output_tokens": 225, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-159", "status": "success", "output_tokens": 375, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-135", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-137", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-158", "status": "success", "output_tokens": 424, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-175", "status": "success", "output_tokens": 45, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-173", "status": "success", "output_tokens": 115, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-171", "status": "success", "output_tokens": 172, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-141", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-142", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-170", "status": "success", "output_tokens": 231, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17216/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-169", "status": "success", "output_tokens": 292, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-179", "status": "success", "output_tokens": 162, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-183", "status": "success", "output_tokens": 111, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-182", "status": "success", "output_tokens": 214, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-184", "status": "success", "output_tokens": 268, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-186", "status": "success", "output_tokens": 271, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-160", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-162", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-185", "status": "success", "output_tokens": 457, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-187", "status": "success", "output_tokens": 344, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-191", "status": "success", "output_tokens": 118, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-188", "status": "success", "output_tokens": 278, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-164", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-165", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-192", "status": "success", "output_tokens": 95, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-201", "status": "success", "output_tokens": 38, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-189", "status": "success", "output_tokens": 281, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-166", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-196", "status": "success", "output_tokens": 121, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-167", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-168", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-195", "status": "success", "output_tokens": 199, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-207", "status": "success", "output_tokens": 49, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-194", "status": "success", "output_tokens": 253, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-193", "status": "success", "output_tokens": 312, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-174", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-199", "status": "success", "output_tokens": 250, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-208", "status": "success", "output_tokens": 67, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-176", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-178", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-214", "status": "success", "output_tokens": 86, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-218", "status": "success", "output_tokens": 88, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-180", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-209", "status": "success", "output_tokens": 182, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-225", "status": "success", "output_tokens": 39, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-181", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-227", "status": "success", "output_tokens": 31, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-221", "status": "success", "output_tokens": 131, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-226", "status": "success", "output_tokens": 88, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-232", "status": "success", "output_tokens": 139, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-222", "status": "success", "output_tokens": 249, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-233", "status": "success", "output_tokens": 167, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-216", "status": "success", "output_tokens": 441, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-237", "status": "success", "output_tokens": 163, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-236", "status": "success", "output_tokens": 276, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-239", "status": "success", "output_tokens": 251, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-198", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-202", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-242", "status": "success", "output_tokens": 236, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-203", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-204", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-205", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-249", "status": "success", "output_tokens": 26, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-251", "status": "success", "output_tokens": 48, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-206", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-243", "status": "success", "output_tokens": 244, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-254", "status": "success", "output_tokens": 51, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-259", "status": "success", "output_tokens": 40, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-213", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-260", "status": "success", "output_tokens": 11, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-215", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-261", "status": "success", "output_tokens": 31, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-217", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-245", "status": "success", "output_tokens": 229, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-266", "status": "success", "output_tokens": 52, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-263", "status": "success", "output_tokens": 74, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-230", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-257", "status": "success", "output_tokens": 249, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-262", "status": "success", "output_tokens": 180, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-256", "status": "success", "output_tokens": 267, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-231", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-265", "status": "success", "output_tokens": 176, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-234", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-269", "status": "success", "output_tokens": 159, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-271", "status": "success", "output_tokens": 132, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-273", "status": "success", "output_tokens": 135, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-275", "status": "success", "output_tokens": 145, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-235", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-268", "status": "success", "output_tokens": 293, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-281", "status": "success", "output_tokens": 109, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-274", "status": "success", "output_tokens": 241, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-278", "status": "success", "output_tokens": 181, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-284", "status": "success", "output_tokens": 108, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-288", "status": "success", "output_tokens": 77, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-291", "status": "success", "output_tokens": 55, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-279", "status": "success", "output_tokens": 229, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-298", "status": "success", "output_tokens": 35, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-294", "status": "success", "output_tokens": 79, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-270", "status": "success", "output_tokens": 354, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-240", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-304", "status": "success", "output_tokens": 49, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-299", "status": "success", "output_tokens": 102, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-303", "status": "success", "output_tokens": 98, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-277", "status": "success", "output_tokens": 414, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-305", "status": "success", "output_tokens": 91, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-307", "status": "success", "output_tokens": 68, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-308", "status": "success", "output_tokens": 52, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-309", "status": "success", "output_tokens": 44, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-312", "status": "success", "output_tokens": 14, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-311", "status": "success", "output_tokens": 31, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-306", "status": "success", "output_tokens": 149, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-297", "status": "success", "output_tokens": 309, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-316", "status": "success", "output_tokens": 109, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-244", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-319", "status": "success", "output_tokens": 78, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-314", "status": "success", "output_tokens": 219, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-247", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-322", "status": "success", "output_tokens": 46, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-252", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-321", "status": "success", "output_tokens": 149, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-328", "status": "success", "output_tokens": 39, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-258", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-331", "status": "success", "output_tokens": 43, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-333", "status": "success", "output_tokens": 29, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-325", "status": "success", "output_tokens": 150, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-267", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-329", "status": "success", "output_tokens": 138, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-324", "status": "success", "output_tokens": 311, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-318", "status": "success", "output_tokens": 497, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-330", "status": "success", "output_tokens": 326, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-283", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-286", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-346", "status": "success", "output_tokens": 57, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-338", "status": "success", "output_tokens": 323, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-347", "status": "success", "output_tokens": 66, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-350", "status": "success", "output_tokens": 45, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-296", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-301", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-358", "status": "success", "output_tokens": 61, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-344", "status": "success", "output_tokens": 261, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-EXP2-353", "status": "success", "output_tokens": 90, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=16080/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-002", "status": "success", "output_tokens": 43, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-360", "status": "success", "output_tokens": 119, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-310", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-359", "status": "success", "output_tokens": 133, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17120/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-313", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-315", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-317", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-006", "status": "success", "output_tokens": 92, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-004", "status": "success", "output_tokens": 121, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-323", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-011", "status": "success", "output_tokens": 168, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-010", "status": "success", "output_tokens": 228, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-013", "status": "success", "output_tokens": 127, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-015", "status": "success", "output_tokens": 92, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-334", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-336", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-014", "status": "success", "output_tokens": 176, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-337", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-016", "status": "success", "output_tokens": 85, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=15984/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-019", "status": "success", "output_tokens": 66, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-022", "status": "success", "output_tokens": 58, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-021", "status": "success", "output_tokens": 74, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-343", "status": "success", "output_tokens": 953, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-340", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-020", "status": "success", "output_tokens": 135, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-024", "status": "success", "output_tokens": 97, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-030", "status": "success", "output_tokens": 28, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-001", "status": "success", "output_tokens": 119, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-003", "status": "success", "output_tokens": 53, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-351", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-014", "status": "success", "output_tokens": 11, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-EXP2-352", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-020", "status": "success", "output_tokens": 56, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-017", "status": "success", "output_tokens": 490, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-001", "status": "truncated", "output_tokens": 1024, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-015", "status": "success", "output_tokens": 157, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-003", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-007", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-029", "status": "success", "output_tokens": 113, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-008", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-009", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-025", "status": "success", "output_tokens": 162, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-023", "status": "success", "output_tokens": 203, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-060", "status": "success", "output_tokens": 88, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-012", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-063", "status": "success", "output_tokens": 98, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-066", "status": "success", "output_tokens": 44, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-064", "status": "success", "output_tokens": 139, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-050", "status": "success", "output_tokens": 270, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-071", "status": "success", "output_tokens": 53, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-081", "status": "success", "output_tokens": 124, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-083", "status": "success", "output_tokens": 100, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-018", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-069", "status": "success", "output_tokens": 285, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-092", "status": "success", "output_tokens": 65, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-026", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-027", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-091", "status": "success", "output_tokens": 142, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-028", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-029", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-NEW-20261103-031", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-094", "status": "success", "output_tokens": 104, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-009", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-101", "status": "success", "output_tokens": 218, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-100", "status": "success", "output_tokens": 246, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-103", "status": "success", "output_tokens": 45, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-030", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-105", "status": "success", "output_tokens": 93, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-046", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-047", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-051", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-061", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-110", "status": "success", "output_tokens": 137, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-070", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-112", "status": "success", "output_tokens": 118, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-111", "status": "success", "output_tokens": 325, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-086", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-093", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-115", "status": "success", "output_tokens": 95, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-114", "status": "success", "output_tokens": 240, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-095", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-116", "status": "success", "output_tokens": 122, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-096", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-097", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-098", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-118", "status": "success", "output_tokens": 100, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-099", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-123", "status": "success", "output_tokens": 196, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-102", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-120", "status": "success", "output_tokens": 267, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-121", "status": "success", "output_tokens": 263, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-126", "status": "success", "output_tokens": 242, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-104", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-132", "status": "success", "output_tokens": 105, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-106", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-107", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-108", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-109", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-138", "status": "success", "output_tokens": 74, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-135", "status": "success", "output_tokens": 210, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-134", "status": "success", "output_tokens": 257, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-113", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-142", "status": "success", "output_tokens": 135, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-117", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-119", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-122", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-124", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-127", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-XP-20261103-144", "status": "success", "output_tokens": 131, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=15872/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-149", "status": "success", "output_tokens": 76, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-151", "status": "success", "output_tokens": 69, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-148", "status": "success", "output_tokens": 168, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-128", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-129", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-130", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-131", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-133", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-157", "status": "success", "output_tokens": 78, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-158", "status": "success", "output_tokens": 38, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-136", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-137", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-159", "status": "success", "output_tokens": 166, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-162", "status": "success", "output_tokens": 79, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-139", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-160", "status": "success", "output_tokens": 247, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-163", "status": "success", "output_tokens": 105, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-140", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-141", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-XP-20261103-166", "status": "success", "output_tokens": 47, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=15872/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-164", "status": "success", "output_tokens": 140, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-143", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-171", "status": "success", "output_tokens": 232, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-146", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-147", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-150", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-175", "status": "success", "output_tokens": 168, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-152", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-153", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-154", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-176", "status": "success", "output_tokens": 206, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-155", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-156", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-180", "status": "success", "output_tokens": 59, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-172", "status": "success", "output_tokens": 541, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-182", "status": "success", "output_tokens": 115, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-186", "status": "success", "output_tokens": 51, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-161", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-183", "status": "success", "output_tokens": 306, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-165", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-167", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-168", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-169", "status": "truncated", "output_tokens": 1024, "concurrency": 15}
+{"model": "gc_llm", "question_id": "CA-XP-20261103-170", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=15872/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-173", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-174", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-195", "status": "success", "output_tokens": 238, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-177", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-178", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-179", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-192", "status": "success", "output_tokens": 593, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-198", "status": "success", "output_tokens": 69, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-181", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-184", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-185", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-205", "status": "success", "output_tokens": 65, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-187", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-188", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-189", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-190", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-206", "status": "success", "output_tokens": 208, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-191", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-193", "status": "truncated", "output_tokens": 1024, "concurrency": 15}
+{"model": "gc_llm", "question_id": "CA-XP-20261103-194", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=15 reserved_tokens=15888/30560 peak=16
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-207", "status": "success", "output_tokens": 230, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-212", "status": "success", "output_tokens": 34, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-209", "status": "success", "output_tokens": 99, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-214", "status": "success", "output_tokens": 45, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-213", "status": "success", "output_tokens": 80, "concurrency": 15}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-219", "status": "success", "output_tokens": 38, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-210", "status": "success", "output_tokens": 242, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-216", "status": "success", "output_tokens": 181, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-222", "status": "success", "output_tokens": 86, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-220", "status": "success", "output_tokens": 176, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-196", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-211", "status": "success", "output_tokens": 425, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-218", "status": "success", "output_tokens": 327, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-223", "status": "success", "output_tokens": 153, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-197", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-199", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-228", "status": "success", "output_tokens": 140, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-200", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-201", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-202", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-203", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-204", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-227", "status": "success", "output_tokens": 345, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-208", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16912/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-215", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16928/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-217", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-221", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-224", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-225", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-226", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-244", "status": "success", "output_tokens": 80, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-229", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-247", "status": "success", "output_tokens": 37, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-230", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-232", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-233", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-234", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-249", "status": "success", "output_tokens": 35, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-241", "status": "success", "output_tokens": 587, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-243", "status": "success", "output_tokens": 307, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-235", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-236", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-253", "status": "success", "output_tokens": 51, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-237", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-238", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-239", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-261", "status": "success", "output_tokens": 48, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-259", "status": "success", "output_tokens": 188, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-240", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-257", "status": "success", "output_tokens": 449, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-242", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-262", "status": "success", "output_tokens": 417, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-265", "status": "success", "output_tokens": 208, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-267", "status": "success", "output_tokens": 25, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-269", "status": "success", "output_tokens": 69, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-268", "status": "success", "output_tokens": 91, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-245", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-246", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-248", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-250", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-251", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-252", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-274", "status": "success", "output_tokens": 66, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-254", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-255", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-256", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-258", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-279", "status": "success", "output_tokens": 53, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-260", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-282", "status": "success", "output_tokens": 100, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-277", "status": "success", "output_tokens": 258, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-263", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-285", "status": "success", "output_tokens": 143, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-286", "status": "success", "output_tokens": 136, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-264", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-284", "status": "success", "output_tokens": 374, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-290", "status": "success", "output_tokens": 106, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-288", "status": "success", "output_tokens": 271, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-266", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16944/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-291", "status": "success", "output_tokens": 191, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-293", "status": "success", "output_tokens": 167, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-270", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-271", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-272", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-273", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-299", "status": "success", "output_tokens": 97, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-275", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-276", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-278", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-280", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-281", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16960/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-298", "status": "success", "output_tokens": 278, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-306", "status": "success", "output_tokens": 31, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-283", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-302", "status": "success", "output_tokens": 90, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16976/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-305", "status": "success", "output_tokens": 125, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-309", "status": "success", "output_tokens": 117, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-303", "status": "success", "output_tokens": 210, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-301", "status": "success", "output_tokens": 324, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-287", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-289", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-315", "status": "success", "output_tokens": 159, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-312", "status": "success", "output_tokens": 248, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-292", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-294", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-319", "status": "success", "output_tokens": 117, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-295", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=16992/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-296", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-297", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17008/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-002", "status": "success", "output_tokens": 85, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-001", "status": "success", "output_tokens": 151, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-004", "status": "success", "output_tokens": 23, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17024/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-300", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17040/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-006", "status": "success", "output_tokens": 23, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17056/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-321", "status": "success", "output_tokens": 232, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-008", "status": "success", "output_tokens": 54, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17088/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-010", "status": "success", "output_tokens": 72, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17072/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-304", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-307", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17104/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-308", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17136/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-310", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-013", "status": "success", "output_tokens": 65, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-311", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17152/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-313", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17168/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-314", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-019", "status": "success", "output_tokens": 29, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-015", "status": "success", "output_tokens": 166, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17184/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-021", "status": "success", "output_tokens": 39, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-020", "status": "success", "output_tokens": 101, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17200/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-316", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-317", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-318", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-XP-20261103-320", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-024", "status": "success", "output_tokens": 277, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-027", "status": "success", "output_tokens": 169, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-003", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-029", "status": "success", "output_tokens": 15, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-028", "status": "success", "output_tokens": 149, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-005", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-031", "status": "success", "output_tokens": 62, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-007", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-009", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-035", "status": "success", "output_tokens": 22, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-032", "status": "success", "output_tokens": 141, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-039", "status": "success", "output_tokens": 37, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-011", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-012", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-014", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-042", "status": "success", "output_tokens": 67, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-041", "status": "success", "output_tokens": 85, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-036", "status": "success", "output_tokens": 211, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17232/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-016", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-044", "status": "success", "output_tokens": 40, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17248/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-040", "status": "success", "output_tokens": 150, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17264/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-048", "status": "success", "output_tokens": 26, "concurrency": 16}
+BATCH_ADMISSION active=16 reserved_tokens=17280/30560 peak=16
+{"model": "gc_llm", "question_id": "CA-M1-20261104-017", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-050", "status": "success", "output_tokens": 49, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-018", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-046", "status": "success", "output_tokens": 141, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-045", "status": "success", "output_tokens": 157, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-043", "status": "success", "output_tokens": 190, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-022", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-023", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-025", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-026", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-049", "status": "success", "output_tokens": 344, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-030", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-033", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-034", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-038", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+{"model": "gc_llm", "question_id": "CA-M1-20261104-047", "status": "truncated", "output_tokens": 1024, "concurrency": 16}
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 15:10:44 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1052) (Worker_TP2 pid=1052) INFO 11-06 15:10:44 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1051) (Worker_TP1 pid=1051) INFO 11-06 15:10:44 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1053) (Worker_TP3 pid=1053) INFO 11-06 15:10:44 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 15:10:44 [multiproc_executor.py:802] WorkerProc shutting down.
+(Worker pid=1051) (Worker_TP1 pid=1051) INFO 11-06 15:10:44 [multiproc_executor.py:802] WorkerProc shutting down.
+(Worker pid=1053) (Worker_TP3 pid=1053) INFO 11-06 15:10:44 [multiproc_executor.py:802] WorkerProc shutting down.
+(Worker pid=1052) (Worker_TP2 pid=1052) INFO 11-06 15:10:44 [multiproc_executor.py:802] WorkerProc shutting down.
+{
+  "gc_llm": {
+    "model": {
+      "identifier": "ssc-dsai/gc-llm-apertus-70b-instruct-2509",
+      "path": "/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585",
+      "tokenizer_path": "/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585",
+      "revision": "58277e94d16ccf486c1702c0aac8115c69448585",
+      "metadata_sha256": {
+        "config.json": "281beae71debd1284f4f1b3bfd3263502285bf4af49353f0eaaab020507287a5",
+        "tokenizer_config.json": "6089333b0279986b08fa6f16b6f50cf0e398a122dcf9caf18b45feef2024afa8",
+        "chat_template.jinja": "56f72c27fa2e565312a830b7315a455c79fb452fdbe7a5b7595d8a094f282b07",
+        "tokenizer.json": "010095abf1dc6f52d4867584e7b3f0d4eece854593ae310220ec7782dd1b0a66",
+        "model.safetensors.index.json": "0528811de8dcb09de62bce22cd5132bd7aeaf3c39906e914af0a564c71fa8626"
+      },
+      "shard_manifest": [
+        {
+          "name": "model-00001-of-00030.safetensors",
+          "bytes": 4865428944,
+          "header_sha256": "744e006fbe75910c52ebc5957bc07ccb0ea74bbd7a3254e825eb8c4a118975a3"
+        },
+        {
+          "name": "model-00002-of-00030.safetensors",
+          "bytes": 4429289408,
+          "header_sha256": "b1bb32d10d850f1b34e03b054a4bda9b4d07cfeaf0186104d3f940b48fcfcebf"
+        },
+        {
+          "name": "model-00003-of-00030.safetensors",
+          "bytes": 4999714024,
+          "header_sha256": "a89303985e152fae7e75177fe417b82fb6db880462ca775d1cad1868f0bd6f69"
+        },
+        {
+          "name": "model-00004-of-00030.safetensors",
+          "bytes": 4966160096,
+          "header_sha256": "93583d9fb20297f0026b00737e25ee605e50c93b230615dcbaad137d215315d7"
+        },
+        {
+          "name": "model-00005-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "510da52d960fecc00f4f85659b0d98e2fdee08d36d5d2e3461e7ebdd1d425fba"
+        },
+        {
+          "name": "model-00006-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "0b88eb3a5c1ac4a252e9105b58de50fbaca4aa7fb8f27edde902e77f54828abf"
+        },
+        {
+          "name": "model-00007-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "a683f8ff45d8079b00b30f5eaa6df84bcfb4ce1595008ea0b61e1f7c1d9e56de"
+        },
+        {
+          "name": "model-00008-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "db79ab6d86195a02f726e6c5930824a75a63bff06d91388e68388bc0fcabb614"
+        },
+        {
+          "name": "model-00009-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "ad2a9ed339034eadaaa8f984980a334be2e614b0151f1c718de55d29f2a5c41b"
+        },
+        {
+          "name": "model-00010-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "5287551749784d8daa7ed0ecff5e934ceae31744b2ee5d5328e57af91c1a4deb"
+        },
+        {
+          "name": "model-00011-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "013be7d52fc2ab52db54bf35a100000090983581b6f14d7d4b4d879c40cecf80"
+        },
+        {
+          "name": "model-00012-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "d2a4b3f47dcec0594781c887673ed0870974cbaaab44151ad32e3e3d1d7d4a8b"
+        },
+        {
+          "name": "model-00013-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "127d5d2975e7a4e2a56cc043dfd426567e92ce6bd8d8ec2e9bef18c6c923ea4a"
+        },
+        {
+          "name": "model-00014-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "5a74492bfff2a6e514425e2152266ee3e5628cd3a67c1f8d7dfb1c012ebdb6aa"
+        },
+        {
+          "name": "model-00015-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "6e4642680a73cb992da10726ed70b6b034c229cef6de93ae9db15de5745b25a2"
+        },
+        {
+          "name": "model-00016-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "1f2c7481c9495963539044501b6e8351f0e5c30e0e138625e42890c6b69450d4"
+        },
+        {
+          "name": "model-00017-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "08d57ce5d0fb8926c348181994263b05fa70ac76aadbfeb1be25d4e2a8673e40"
+        },
+        {
+          "name": "model-00018-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "0af491986141259519149c3a71fece897c335e0b032f451a5a1c385a113541eb"
+        },
+        {
+          "name": "model-00019-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "147300f77b4fa32b9a5704eaf988ab155dd20d30ee948df0f29b46d75a312766"
+        },
+        {
+          "name": "model-00020-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "88a6cded14b64218a1fde97373b2206fea4ede3dc90a6804cfea82ff1d21e2d3"
+        },
+        {
+          "name": "model-00021-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "0812d0036fab71c299f4256a8cf239b5be772022494fdd975cbf83851bdfc8f3"
+        },
+        {
+          "name": "model-00022-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "d8e132f42e85793511c52ac37f69e22df4ccaf4244cd5a1b7c3232edb84a7ef9"
+        },
+        {
+          "name": "model-00023-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "8ba7a1bf6349e32475e94f5b58367cdebf95b5a33df06b4ef153dcd95e18831b"
+        },
+        {
+          "name": "model-00024-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "41fb85b11405ac1da2d34574c11f2e29580e36bec718fa825a733e040064b04a"
+        },
+        {
+          "name": "model-00025-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "e338e05268ece6bcd4d270eb3a8b2cf2c2d3a26881e91fec8afada39aaa8ba69"
+        },
+        {
+          "name": "model-00026-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "2ffdd2717325e2d71dff73a33af6ab88aae987e69fff6316ef4333f7732d1cd9"
+        },
+        {
+          "name": "model-00027-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "36f6d41879880972b15567b928fd46abaa5ff339603083ee43fb79270d1377d0"
+        },
+        {
+          "name": "model-00028-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "78cb6bae67f1eab7415b92f1df63ecfd5b17b12b82f7c73e6b46f6b579ce8df6"
+        },
+        {
+          "name": "model-00029-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "9a0dfe329ba3dc0bad4a8c430c0709f62099a65435306dfbfd8343bb05bbfe3f"
+        },
+        {
+          "name": "model-00030-of-00030.safetensors",
+          "bytes": 4563487752,
+          "header_sha256": "1ebead9699cbc1a1bf8b86fa2396e1e971f6708a3af3779ccf881de011007594"
+        }
+      ],
+      "ready": true,
+      "backend": "vllm",
+      "prompt_template": "{{ bos_token }}<|user_start|>{{ messages[0][\"content\"] }}<|user_end|><|assistant_start|>",
+      "tensor_parallel_size": 4,
+      "dtype": "bfloat16",
+      "gpu_memory_utilization": 0.94,
+      "adapter": null,
+      "identity_note": "Published GC model card identifies swiss-ai/Apertus-70B-Instruct-2509 as its parent; complete full checkpoints found",
+      "problems": [],
+      "base_model_path": "/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--swiss-ai--Apertus-70B-Instruct-2509/snapshots/0f2767662a013c0fb631079cea883155252bc3b6",
+      "provenance_url": "https://huggingface.co/ssc-dsai/gc-llm-apertus-70b-instruct-2509/blob/main/README.md",
+      "checkpoint_format": "full_weights_after_LoRA_finetuning",
+      "context_window": 65536,
+      "cpu_offload_gb": 0
+    },
+    "generation": {
+      "max_new_tokens": 1024,
+      "retry_max_new_tokens": 1024,
+      "max_attempts": 3,
+      "seed": 0,
+      "temperature": 0.0,
+      "max_model_len": 16384,
+      "batch_size": "dynamic",
+      "prompt": "question_only"
+    },
+    "benchmark_sha256": "ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2",
+    "run_id": "20261106T144233Z-f941260c",
+    "fingerprint": "640fe65ed8741d767ba1477e0931e8c34fdf7536cfa0adbef131edc75ed7d94f",
+    "model_id": "gc_llm",
+    "started": "2026-11-06T14:42:33.874627+00:00",
+    "status": "completed_with_context_limits",
+    "smoke": false,
+    "execution_policy": {
+      "run_smoke_tests": false,
+      "retain_generated_outputs": false,
+      "batching": {
+        "enabled": true,
+        "max_num_seqs": 16,
+        "max_num_batched_tokens": 8192,
+        "kv_cache_reserve_fraction": 0.95,
+        "admission_mode": "full_reservation",
+        "initial_output_reservation_tokens": 2048
+      },
+      "preserve_captured_on_resume": true
+    },
+    "checkpoint_manifest": {
+      "path": "/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585",
+      "problems": [],
+      "metadata_sha256": {
+        "config.json": "281beae71debd1284f4f1b3bfd3263502285bf4af49353f0eaaab020507287a5",
+        "tokenizer_config.json": "6089333b0279986b08fa6f16b6f50cf0e398a122dcf9caf18b45feef2024afa8",
+        "chat_template.jinja": "56f72c27fa2e565312a830b7315a455c79fb452fdbe7a5b7595d8a094f282b07",
+        "tokenizer.json": "010095abf1dc6f52d4867584e7b3f0d4eece854593ae310220ec7782dd1b0a66",
+        "model.safetensors.index.json": "0528811de8dcb09de62bce22cd5132bd7aeaf3c39906e914af0a564c71fa8626"
+      },
+      "architecture": [
+        "ApertusForCausalLM"
+      ],
+      "model_type": "apertus",
+      "precision": "bfloat16",
+      "config": {
+        "architectures": [
+          "ApertusForCausalLM"
+        ],
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "bos_token_id": 1,
+        "dtype": "bfloat16",
+        "eos_token_id": 68,
+        "hidden_act": "xielu",
+        "hidden_dropout": 0.0,
+        "hidden_size": 8192,
+        "initializer_range": 0.02,
+        "intermediate_size": 43008,
+        "max_position_embeddings": 65536,
+        "mlp_bias": false,
+        "model_type": "apertus",
+        "num_attention_heads": 64,
+        "num_hidden_layers": 80,
+        "num_key_value_heads": 8,
+        "pad_token_id": 3,
+        "post_norm": false,
+        "qk_norm": true,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": {
+          "factor": 8.0,
+          "high_freq_factor": 4.0,
+          "low_freq_factor": 1.0,
+          "original_max_position_embeddings": 8192,
+          "rope_type": "llama3",
+          "type": "llama3"
+        },
+        "rope_theta": 12000000,
+        "tie_word_embeddings": false,
+        "transformers_version": "4.57.5",
+        "use_cache": false,
+        "vocab_size": 131072
+      },
+      "adapter": false,
+      "chat_template": "{%- macro render_typescript_type(param_spec, required_params, is_nullable=false) -%}\n    {%- if param_spec.type == \"array\" -%}\n        {%- if param_spec['items'] -%}\n            {%- if param_spec['items']['type'] == \"string\" -%}\n                {{- \"string[]\" }}\n            {%- elif param_spec['items']['type'] == \"number\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"integer\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"boolean\" -%}\n                {{- \"boolean[]\" }}\n            {%- else -%}\n                {%- set inner_type = render_typescript_type(param_spec['items'], required_params) -%}\n                {%- if inner_type == \"object | object\" or inner_type|length > 50 -%}\n                    {{- \"any[]\" }}\n                {%- else -%}\n                    {{- inner_type + \"[]\" }}\n                {%- endif -%}\n            {%- endif -%}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- else -%}\n            {{- \"any[]\" }}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type is defined and param_spec.type is iterable and param_spec.type is not string and param_spec.type is not mapping and param_spec.type[0] is defined -%}\n        {#- Handle array of types like [\"object\", \"object\"] from Union[dict, list] #}\n        {%- if param_spec.type | length > 1 -%}\n            {{- param_spec.type | join(\" | \") }}\n        {%- else -%}\n            {{- param_spec.type[0] }}\n        {%- endif -%}\n    {%- elif param_spec.oneOf -%}\n        {#- Handle oneOf schemas - check for complex unions and fallback to any #}\n        {%- set has_object_variants = false -%}\n        {%- for variant in param_spec.oneOf -%}\n            {%- if variant.type == \"object\" -%}\n                {%- set has_object_variants = true -%}\n            {%- endif -%}\n        {%- endfor -%}\n        {%- if has_object_variants and param_spec.oneOf|length > 1 -%}\n            {{- \"any\" }}\n        {%- else -%}\n            {%- for variant in param_spec.oneOf -%}\n                {{- render_typescript_type(variant, required_params) -}}\n                {%- if variant.description %}\n                    {{- \"// \" + variant.description }}\n                {%- endif -%}\n                {%- if variant.default is defined %}\n                    {{ \"// default: \" + variant.default|tojson }}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \" | \" }}\n                {% endif -%}\n            {%- endfor -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"string\" -%}\n        {%- if param_spec.enum -%}\n            {{- '\"' + param_spec.enum|join('\" | \"') + '\"' -}}\n        {%- else -%}\n            {{- \"string\" }}\n            {%- if param_spec.nullable %}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"number\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"integer\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"boolean\" -%}\n        {{- \"boolean\" }}\n    {%- elif param_spec.type == \"object\" -%}\n        {%- if param_spec.properties -%}\n            {{- \"{\\n\" }}\n            {%- for prop_name, prop_spec in param_spec.properties.items() -%}\n                {{- prop_name -}}\n                {%- if prop_name not in (param_spec.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{ render_typescript_type(prop_spec, param_spec.required or []) }}\n                {%- if not loop.last -%}\n                    {{-\", \" }}\n                {%- endif -%}\n            {%- endfor -%}\n            {{- \"}\" }}\n        {%- else -%}\n            {{- \"object\" }}\n        {%- endif -%}\n    {%- else -%}\n        {{- \"any\" }}\n    {%- endif -%}\n{%- endmacro -%}\n\n{%- macro render_tools(tools) -%}\n    {%- for tool in tools %}\n        {{- \"// \" + tool.description + \"\\n\" }}\n        {{- \"type \"+ tool.name + \" = \" }}\n        {%- if tool.parameters and tool.parameters.properties %}\n            {{- \"(_: {\\n\" }}\n            {%- for param_name, param_spec in tool.parameters.properties.items() %}\n                {%- if param_spec.description %}\n                    {{- \"// \" + param_spec.description + \"\\n\" }}\n                {%- endif %}\n                {{- param_name }}\n                {%- if param_name not in (tool.parameters.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{- render_typescript_type(param_spec, tool.parameters.required or []) }}\n                {%- if param_spec.default is defined -%}\n                    {%- if param_spec.enum %}\n                        {{- \", // default: \" + param_spec.default }}\n                    {%- elif param_spec.oneOf %}\n                        {{- \"// default: \" + param_spec.default }}\n                    {%- else %}\n                        {{- \", // default: \" + param_spec.default|tojson }}\n                    {%- endif -%}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \",\\n\" }}\n                {%- else %}\n                    {{- \"\\n\" }}\n                {%- endif -%}\n            {%- endfor %}\n            {{- \"}) => any;\" }}\n        {%- else -%}\n            {{- \"() => any;\" }}\n        {%- endif -%}\n        {%- if not loop.last -%}\n            {{- \"\\n\" }}\n        {%- endif -%}\n    {%- endfor %}\n{%- endmacro -%}\n\n{{ bos_token }}\n\n{%- set system_token = '<|system_start|>' -%}\n{%- set end_system_token = '<|system_end|>' -%}\n{%- set developer_token = '<|developer_start|>' -%}\n{%- set end_developer_token = '<|developer_end|>' -%}\n{%- set user_token = '<|user_start|>' -%}\n{%- set end_user_token = '<|user_end|>' -%}\n{%- set assistant_token = '<|assistant_start|>' -%}\n{%- set end_assistant_token = '<|assistant_end|>' -%}\n{%- set inner_token = '<|inner_prefix|>' -%}\n{%- set outer_token = '<|inner_suffix|>' -%}\n{%- set tool_calls_token = '<|tools_prefix|>' -%}\n{%- set end_tool_calls_token = '<|tools_suffix|>' -%}\n{%- set image_token = '<|image|>' -%}\n\n{%- set ns = namespace(in_assistant=false, in_tool=false, in_inner=false, waiting_for_tool_outputs=false, assistant_format=none) -%}\n\n{%- if messages and messages[0].role == 'system' -%}\n    {%- if \"content\" in messages[0] -%}\n        {%- if messages[0].content is string -%}\n            {{ system_token + messages[0].content + end_system_token }}\n        {%- elif messages[0].content is mapping and \"text\" in messages[0].content -%}\n            {{ system_token + messages[0].content.text + end_system_token }}\n        {%- else -%}\n            {{- raise_exception(\"Invalid system message\") -}}\n        {%- endif -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid system message\") -}}\n    {%- endif -%}\n    {%- set loop_messages = messages[1:] -%}\n{%- else -%}\n    {{ system_token + 'You are Apertus, a helpful assistant created by the SwissAI initiative.\\nKnowledge cutoff: 2024-04\\nCurrent date: ' + strftime_now('%Y-%m-%d') + end_system_token }}\n    {%- set loop_messages = messages -%}\n{%- endif -%}\n\n{{ developer_token + 'Deliberation: ' }}\n{%- if enable_thinking is defined and enable_thinking -%}\n    {{ 'enabled\\n' }}\n{%- else -%}\n    {{ 'disabled\\n' }}\n{%- endif -%}\n{%- if tools is defined and tools -%}\n    {{ 'Tool Capabilities:\\n' + render_tools(tools) }}\n{%- else -%}\n    {{ 'Tool Capabilities: disabled' }}\n{%- endif -%}\n{{ end_developer_token }}\n\n{%- for message in loop_messages -%}\n    {%- if message.role == 'user' -%}\n        {%- set ns.in_inner = false -%}\n        {%- if ns.in_tool -%}\n            {{ ']' }}\n            {%- set ns.in_tool = false -%}\n        {%- endif -%}\n        {%- if ns.in_assistant -%}\n            {{ end_assistant_token }}\n            {%- set ns.in_assistant = false -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {{ user_token }}\n            {%- if message.content is string -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"parts\" in message.content -%}\n                {%- set parts = message.content.parts -%}\n                {%- for part in parts -%}\n                    {%- if part.type == \"text\" -%}\n                        {{ part.text }}\n                    {%- elif part.type == \"image\" -%}\n                        {{ image_token }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid user part: \" + part.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid user message: \" + message.role) -}}\n            {%- endif -%}\n            {{ end_user_token }}\n        {%- endif -%}\n    {%- elif message.role == 'assistant' -%}\n        {%- if not ns.in_assistant -%}\n            {{ assistant_token }}\n            {%- set ns.in_assistant = true -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {%- if message.content is string and (ns.assistant_format is none or ns.assistant_format == \"string\") -%}\n                {%- if ns.in_tool -%}\n                    {{ ']' }}\n                    {%- set ns.in_tool = false -%}\n                {%- endif -%}\n                {%- set ns.assistant_format = \"string\" -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"blocks\" in message.content and (ns.assistant_format is none or ns.assistant_format == \"mapping\") -%}\n                {%- set ns.assistant_format = \"mapping\" -%}\n                {%- set blocks = message.content.blocks -%}\n                {%- for block in blocks -%}\n                    {%- if block.type == 'thoughts' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if not ns.in_inner -%}\n                            {%- set ns.in_inner = true -%}\n                            {{ inner_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- elif block.type == 'tool_calls' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if ns.in_inner and not loop.first and block.calls|length == 1 and block.calls[0].name == 'display_answers' -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ tool_calls_token + '[' }}\n                        {%- for tool_call in block.calls -%}\n                            {{- '{\"' + tool_call.name + '\": ' + tool_call.arguments + '}' }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{ ']' + end_tool_calls_token }}\n                        {%- set ns.waiting_for_tool_outputs = true -%}\n                    {%- elif block.type == 'tool_outputs' -%}\n                        {%- if ns.in_tool -%}\n                            {{- raise_exception(\"Cannot have both tool outputs as separate messages and tool outputs as blocks\") -}}\n                        {%- endif -%}\n                        {{ '[' }}\n                        {%- for tool_output in block.outputs -%}\n                            {{- tool_output.output }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{- ']' }}\n                        {%- set ns.waiting_for_tool_outputs = false -%}\n                    {%- elif block.type == 'response' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if (not loop.first and ns.in_inner) or (ns.in_assistant and ns.in_inner) -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid assistant block type: \" + block.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid assistant content\") -}}\n            {%- endif -%}\n        {%- else -%}\n            {{- raise_exception(\"Invalid assistant message\") -}}\n        {%- endif -%}\n        {%- if \"tool_calls\" in message and message.tool_calls -%}\n            {{ tool_calls_token + '[' }}\n            {%- for tool_call in message.tool_calls -%}\n                {%- if tool_call.type == 'function' -%}\n                    {%- set function = tool_call.function -%}\n                    {{- '{\"' + function.name + '\": ' + function.arguments + '}' }}\n                    {%- if not loop.last -%}\n                        {{- \", \" }}\n                    {%- endif -%}\n                {%- else -%}\n                    {{- raise_exception(\"Invalid tool call type: \" + tool_call.type) -}}\n                {%- endif -%}\n            {%- endfor -%}\n            {{ ']' + end_tool_calls_token }}\n            {%- set ns.waiting_for_tool_outputs = true -%}\n        {%- endif -%}\n    {%- elif message.role == 'tool' -%}\n        {%- if not ns.in_assistant -%}\n            {{- raise_exception(\"Tool message outside of assistant\") -}}\n        {%- endif -%}\n        {%- if not ns.in_tool -%}\n            {{ '[' }}\n            {%- set ns.in_tool = true -%}\n        {%- else -%}\n            {{ \", \"}}\n        {%- endif -%}\n        {{ message.content }}\n        {%- set ns.waiting_for_tool_outputs = false -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid message role\") -}}\n    {%- endif -%}\n{%- endfor -%}\n{%- if ns.in_tool -%}\n    {{ ']' }}\n{%- endif -%}\n{%- if ns.in_assistant and not (continue_assistant_message is defined and continue_assistant_message) and not ns.waiting_for_tool_outputs -%}\n    {{ end_assistant_token }}\n{%- endif -%}\n{%- if add_generation_prompt -%}\n    {{ assistant_token }}\n{%- endif -%}\n",
+      "shards": [
+        {
+          "name": "model-00001-of-00030.safetensors",
+          "bytes": 4865428944,
+          "header_sha256": "744e006fbe75910c52ebc5957bc07ccb0ea74bbd7a3254e825eb8c4a118975a3"
+        },
+        {
+          "name": "model-00002-of-00030.safetensors",
+          "bytes": 4429289408,
+          "header_sha256": "b1bb32d10d850f1b34e03b054a4bda9b4d07cfeaf0186104d3f940b48fcfcebf"
+        },
+        {
+          "name": "model-00003-of-00030.safetensors",
+          "bytes": 4999714024,
+          "header_sha256": "a89303985e152fae7e75177fe417b82fb6db880462ca775d1cad1868f0bd6f69"
+        },
+        {
+          "name": "model-00004-of-00030.safetensors",
+          "bytes": 4966160096,
+          "header_sha256": "93583d9fb20297f0026b00737e25ee605e50c93b230615dcbaad137d215315d7"
+        },
+        {
+          "name": "model-00005-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "510da52d960fecc00f4f85659b0d98e2fdee08d36d5d2e3461e7ebdd1d425fba"
+        },
+        {
+          "name": "model-00006-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "0b88eb3a5c1ac4a252e9105b58de50fbaca4aa7fb8f27edde902e77f54828abf"
+        },
+        {
+          "name": "model-00007-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "a683f8ff45d8079b00b30f5eaa6df84bcfb4ce1595008ea0b61e1f7c1d9e56de"
+        },
+        {
+          "name": "model-00008-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "db79ab6d86195a02f726e6c5930824a75a63bff06d91388e68388bc0fcabb614"
+        },
+        {
+          "name": "model-00009-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "ad2a9ed339034eadaaa8f984980a334be2e614b0151f1c718de55d29f2a5c41b"
+        },
+        {
+          "name": "model-00010-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "5287551749784d8daa7ed0ecff5e934ceae31744b2ee5d5328e57af91c1a4deb"
+        },
+        {
+          "name": "model-00011-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "013be7d52fc2ab52db54bf35a100000090983581b6f14d7d4b4d879c40cecf80"
+        },
+        {
+          "name": "model-00012-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "d2a4b3f47dcec0594781c887673ed0870974cbaaab44151ad32e3e3d1d7d4a8b"
+        },
+        {
+          "name": "model-00013-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "127d5d2975e7a4e2a56cc043dfd426567e92ce6bd8d8ec2e9bef18c6c923ea4a"
+        },
+        {
+          "name": "model-00014-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "5a74492bfff2a6e514425e2152266ee3e5628cd3a67c1f8d7dfb1c012ebdb6aa"
+        },
+        {
+          "name": "model-00015-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "6e4642680a73cb992da10726ed70b6b034c229cef6de93ae9db15de5745b25a2"
+        },
+        {
+          "name": "model-00016-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "1f2c7481c9495963539044501b6e8351f0e5c30e0e138625e42890c6b69450d4"
+        },
+        {
+          "name": "model-00017-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "08d57ce5d0fb8926c348181994263b05fa70ac76aadbfeb1be25d4e2a8673e40"
+        },
+        {
+          "name": "model-00018-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "0af491986141259519149c3a71fece897c335e0b032f451a5a1c385a113541eb"
+        },
+        {
+          "name": "model-00019-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "147300f77b4fa32b9a5704eaf988ab155dd20d30ee948df0f29b46d75a312766"
+        },
+        {
+          "name": "model-00020-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "88a6cded14b64218a1fde97373b2206fea4ede3dc90a6804cfea82ff1d21e2d3"
+        },
+        {
+          "name": "model-00021-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "0812d0036fab71c299f4256a8cf239b5be772022494fdd975cbf83851bdfc8f3"
+        },
+        {
+          "name": "model-00022-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "d8e132f42e85793511c52ac37f69e22df4ccaf4244cd5a1b7c3232edb84a7ef9"
+        },
+        {
+          "name": "model-00023-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "8ba7a1bf6349e32475e94f5b58367cdebf95b5a33df06b4ef153dcd95e18831b"
+        },
+        {
+          "name": "model-00024-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "41fb85b11405ac1da2d34574c11f2e29580e36bec718fa825a733e040064b04a"
+        },
+        {
+          "name": "model-00025-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "e338e05268ece6bcd4d270eb3a8b2cf2c2d3a26881e91fec8afada39aaa8ba69"
+        },
+        {
+          "name": "model-00026-of-00030.safetensors",
+          "bytes": 4429289448,
+          "header_sha256": "2ffdd2717325e2d71dff73a33af6ab88aae987e69fff6316ef4333f7732d1cd9"
+        },
+        {
+          "name": "model-00027-of-00030.safetensors",
+          "bytes": 4999714064,
+          "header_sha256": "36f6d41879880972b15567b928fd46abaa5ff339603083ee43fb79270d1377d0"
+        },
+        {
+          "name": "model-00028-of-00030.safetensors",
+          "bytes": 4966160128,
+          "header_sha256": "78cb6bae67f1eab7415b92f1df63ecfd5b17b12b82f7c73e6b46f6b579ce8df6"
+        },
+        {
+          "name": "model-00029-of-00030.safetensors",
+          "bytes": 4429256040,
+          "header_sha256": "9a0dfe329ba3dc0bad4a8c430c0709f62099a65435306dfbfd8343bb05bbfe3f"
+        },
+        {
+          "name": "model-00030-of-00030.safetensors",
+          "bytes": 4563487752,
+          "header_sha256": "1ebead9699cbc1a1bf8b86fa2396e1e971f6708a3af3779ccf881de011007594"
+        }
+      ],
+      "weight_bytes": 141199854344,
+      "parameter_count": 70599864640,
+      "ready": true,
+      "status": "instruct"
+    },
+    "hostname": "ib14gpu-004",
+    "job_id": "11821946",
+    "packages": {
+      "vllm": "0.17.0",
+      "torch": "2.10.0",
+      "transformers": "4.57.6"
+    },
+    "source_sha256": {
+      "__init__.py": "c35c89e8b6553fe3d1018d80023ebb5b3dcbb2f01a477515d5a589559aca6738",
+      "dataset.py": "470a53754ba14f447c01ad475dfeef695c5617fe3b8891f073abf74bbe3dfac9",
+      "checkpointing.py": "cec55d23787ac54a62fa357342b2de74fb029ecf4b07495a4d43a58cf12be78b",
+      "discovery.py": "0797242bb0f5f6a375762c1892fc8d4bbd8d9d92d7672e02f75d4620e872a01f",
+      "inference.py": "fde1392494d5c82b6a97cf6539455fa4f4a34a14e79108f6e3f5e7f355062a06",
+      "generation.py": "adb4129418a99bd5e1d340189a9016cdb83d0a92e17663e3564aa55e92503ac6",
+      "export.py": "f186fd1f2ca8f7d3ad0b7f0704806bdbb41bda20bc25f4a83ae78b4dbb91ded2",
+      "__main__.py": "285b01c6fb9dec1be560382ddb7adb443125a8f6d62ddbd4f4cee6bd913fb66f",
+      "batching.py": "42cca73508de6707247bd8dc8042983ab8607d0dc569221760e0fd3b3b792782"
+    },
+    "effective_chat_template": "{{ bos_token }}<|user_start|>{{ messages[0][\"content\"] }}<|user_end|><|assistant_start|>",
+    "native_chat_template": "{%- macro render_typescript_type(param_spec, required_params, is_nullable=false) -%}\n    {%- if param_spec.type == \"array\" -%}\n        {%- if param_spec['items'] -%}\n            {%- if param_spec['items']['type'] == \"string\" -%}\n                {{- \"string[]\" }}\n            {%- elif param_spec['items']['type'] == \"number\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"integer\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"boolean\" -%}\n                {{- \"boolean[]\" }}\n            {%- else -%}\n                {%- set inner_type = render_typescript_type(param_spec['items'], required_params) -%}\n                {%- if inner_type == \"object | object\" or inner_type|length > 50 -%}\n                    {{- \"any[]\" }}\n                {%- else -%}\n                    {{- inner_type + \"[]\" }}\n                {%- endif -%}\n            {%- endif -%}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- else -%}\n            {{- \"any[]\" }}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type is defined and param_spec.type is iterable and param_spec.type is not string and param_spec.type is not mapping and param_spec.type[0] is defined -%}\n        {#- Handle array of types like [\"object\", \"object\"] from Union[dict, list] #}\n        {%- if param_spec.type | length > 1 -%}\n            {{- param_spec.type | join(\" | \") }}\n        {%- else -%}\n            {{- param_spec.type[0] }}\n        {%- endif -%}\n    {%- elif param_spec.oneOf -%}\n        {#- Handle oneOf schemas - check for complex unions and fallback to any #}\n        {%- set has_object_variants = false -%}\n        {%- for variant in param_spec.oneOf -%}\n            {%- if variant.type == \"object\" -%}\n                {%- set has_object_variants = true -%}\n            {%- endif -%}\n        {%- endfor -%}\n        {%- if has_object_variants and param_spec.oneOf|length > 1 -%}\n            {{- \"any\" }}\n        {%- else -%}\n            {%- for variant in param_spec.oneOf -%}\n                {{- render_typescript_type(variant, required_params) -}}\n                {%- if variant.description %}\n                    {{- \"// \" + variant.description }}\n                {%- endif -%}\n                {%- if variant.default is defined %}\n                    {{ \"// default: \" + variant.default|tojson }}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \" | \" }}\n                {% endif -%}\n            {%- endfor -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"string\" -%}\n        {%- if param_spec.enum -%}\n            {{- '\"' + param_spec.enum|join('\" | \"') + '\"' -}}\n        {%- else -%}\n            {{- \"string\" }}\n            {%- if param_spec.nullable %}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"number\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"integer\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"boolean\" -%}\n        {{- \"boolean\" }}\n    {%- elif param_spec.type == \"object\" -%}\n        {%- if param_spec.properties -%}\n            {{- \"{\\n\" }}\n            {%- for prop_name, prop_spec in param_spec.properties.items() -%}\n                {{- prop_name -}}\n                {%- if prop_name not in (param_spec.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{ render_typescript_type(prop_spec, param_spec.required or []) }}\n                {%- if not loop.last -%}\n                    {{-\", \" }}\n                {%- endif -%}\n            {%- endfor -%}\n            {{- \"}\" }}\n        {%- else -%}\n            {{- \"object\" }}\n        {%- endif -%}\n    {%- else -%}\n        {{- \"any\" }}\n    {%- endif -%}\n{%- endmacro -%}\n\n{%- macro render_tools(tools) -%}\n    {%- for tool in tools %}\n        {{- \"// \" + tool.description + \"\\n\" }}\n        {{- \"type \"+ tool.name + \" = \" }}\n        {%- if tool.parameters and tool.parameters.properties %}\n            {{- \"(_: {\\n\" }}\n            {%- for param_name, param_spec in tool.parameters.properties.items() %}\n                {%- if param_spec.description %}\n                    {{- \"// \" + param_spec.description + \"\\n\" }}\n                {%- endif %}\n                {{- param_name }}\n                {%- if param_name not in (tool.parameters.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{- render_typescript_type(param_spec, tool.parameters.required or []) }}\n                {%- if param_spec.default is defined -%}\n                    {%- if param_spec.enum %}\n                        {{- \", // default: \" + param_spec.default }}\n                    {%- elif param_spec.oneOf %}\n                        {{- \"// default: \" + param_spec.default }}\n                    {%- else %}\n                        {{- \", // default: \" + param_spec.default|tojson }}\n                    {%- endif -%}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \",\\n\" }}\n                {%- else %}\n                    {{- \"\\n\" }}\n                {%- endif -%}\n            {%- endfor %}\n            {{- \"}) => any;\" }}\n        {%- else -%}\n            {{- \"() => any;\" }}\n        {%- endif -%}\n        {%- if not loop.last -%}\n            {{- \"\\n\" }}\n        {%- endif -%}\n    {%- endfor %}\n{%- endmacro -%}\n\n{{ bos_token }}\n\n{%- set system_token = '<|system_start|>' -%}\n{%- set end_system_token = '<|system_end|>' -%}\n{%- set developer_token = '<|developer_start|>' -%}\n{%- set end_developer_token = '<|developer_end|>' -%}\n{%- set user_token = '<|user_start|>' -%}\n{%- set end_user_token = '<|user_end|>' -%}\n{%- set assistant_token = '<|assistant_start|>' -%}\n{%- set end_assistant_token = '<|assistant_end|>' -%}\n{%- set inner_token = '<|inner_prefix|>' -%}\n{%- set outer_token = '<|inner_suffix|>' -%}\n{%- set tool_calls_token = '<|tools_prefix|>' -%}\n{%- set end_tool_calls_token = '<|tools_suffix|>' -%}\n{%- set image_token = '<|image|>' -%}\n\n{%- set ns = namespace(in_assistant=false, in_tool=false, in_inner=false, waiting_for_tool_outputs=false, assistant_format=none) -%}\n\n{%- if messages and messages[0].role == 'system' -%}\n    {%- if \"content\" in messages[0] -%}\n        {%- if messages[0].content is string -%}\n            {{ system_token + messages[0].content + end_system_token }}\n        {%- elif messages[0].content is mapping and \"text\" in messages[0].content -%}\n            {{ system_token + messages[0].content.text + end_system_token }}\n        {%- else -%}\n            {{- raise_exception(\"Invalid system message\") -}}\n        {%- endif -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid system message\") -}}\n    {%- endif -%}\n    {%- set loop_messages = messages[1:] -%}\n{%- else -%}\n    {{ system_token + 'You are Apertus, a helpful assistant created by the SwissAI initiative.\\nKnowledge cutoff: 2024-04\\nCurrent date: ' + strftime_now('%Y-%m-%d') + end_system_token }}\n    {%- set loop_messages = messages -%}\n{%- endif -%}\n\n{{ developer_token + 'Deliberation: ' }}\n{%- if enable_thinking is defined and enable_thinking -%}\n    {{ 'enabled\\n' }}\n{%- else -%}\n    {{ 'disabled\\n' }}\n{%- endif -%}\n{%- if tools is defined and tools -%}\n    {{ 'Tool Capabilities:\\n' + render_tools(tools) }}\n{%- else -%}\n    {{ 'Tool Capabilities: disabled' }}\n{%- endif -%}\n{{ end_developer_token }}\n\n{%- for message in loop_messages -%}\n    {%- if message.role == 'user' -%}\n        {%- set ns.in_inner = false -%}\n        {%- if ns.in_tool -%}\n            {{ ']' }}\n            {%- set ns.in_tool = false -%}\n        {%- endif -%}\n        {%- if ns.in_assistant -%}\n            {{ end_assistant_token }}\n            {%- set ns.in_assistant = false -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {{ user_token }}\n            {%- if message.content is string -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"parts\" in message.content -%}\n                {%- set parts = message.content.parts -%}\n                {%- for part in parts -%}\n                    {%- if part.type == \"text\" -%}\n                        {{ part.text }}\n                    {%- elif part.type == \"image\" -%}\n                        {{ image_token }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid user part: \" + part.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid user message: \" + message.role) -}}\n            {%- endif -%}\n            {{ end_user_token }}\n        {%- endif -%}\n    {%- elif message.role == 'assistant' -%}\n        {%- if not ns.in_assistant -%}\n            {{ assistant_token }}\n            {%- set ns.in_assistant = true -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {%- if message.content is string and (ns.assistant_format is none or ns.assistant_format == \"string\") -%}\n                {%- if ns.in_tool -%}\n                    {{ ']' }}\n                    {%- set ns.in_tool = false -%}\n                {%- endif -%}\n                {%- set ns.assistant_format = \"string\" -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"blocks\" in message.content and (ns.assistant_format is none or ns.assistant_format == \"mapping\") -%}\n                {%- set ns.assistant_format = \"mapping\" -%}\n                {%- set blocks = message.content.blocks -%}\n                {%- for block in blocks -%}\n                    {%- if block.type == 'thoughts' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if not ns.in_inner -%}\n                            {%- set ns.in_inner = true -%}\n                            {{ inner_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- elif block.type == 'tool_calls' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if ns.in_inner and not loop.first and block.calls|length == 1 and block.calls[0].name == 'display_answers' -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ tool_calls_token + '[' }}\n                        {%- for tool_call in block.calls -%}\n                            {{- '{\"' + tool_call.name + '\": ' + tool_call.arguments + '}' }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{ ']' + end_tool_calls_token }}\n                        {%- set ns.waiting_for_tool_outputs = true -%}\n                    {%- elif block.type == 'tool_outputs' -%}\n                        {%- if ns.in_tool -%}\n                            {{- raise_exception(\"Cannot have both tool outputs as separate messages and tool outputs as blocks\") -}}\n                        {%- endif -%}\n                        {{ '[' }}\n                        {%- for tool_output in block.outputs -%}\n                            {{- tool_output.output }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{- ']' }}\n                        {%- set ns.waiting_for_tool_outputs = false -%}\n                    {%- elif block.type == 'response' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if (not loop.first and ns.in_inner) or (ns.in_assistant and ns.in_inner) -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid assistant block type: \" + block.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid assistant content\") -}}\n            {%- endif -%}\n        {%- else -%}\n            {{- raise_exception(\"Invalid assistant message\") -}}\n        {%- endif -%}\n        {%- if \"tool_calls\" in message and message.tool_calls -%}\n            {{ tool_calls_token + '[' }}\n            {%- for tool_call in message.tool_calls -%}\n                {%- if tool_call.type == 'function' -%}\n                    {%- set function = tool_call.function -%}\n                    {{- '{\"' + function.name + '\": ' + function.arguments + '}' }}\n                    {%- if not loop.last -%}\n                        {{- \", \" }}\n                    {%- endif -%}\n                {%- else -%}\n                    {{- raise_exception(\"Invalid tool call type: \" + tool_call.type) -}}\n                {%- endif -%}\n            {%- endfor -%}\n            {{ ']' + end_tool_calls_token }}\n            {%- set ns.waiting_for_tool_outputs = true -%}\n        {%- endif -%}\n    {%- elif message.role == 'tool' -%}\n        {%- if not ns.in_assistant -%}\n            {{- raise_exception(\"Tool message outside of assistant\") -}}\n        {%- endif -%}\n        {%- if not ns.in_tool -%}\n            {{ '[' }}\n            {%- set ns.in_tool = true -%}\n        {%- else -%}\n            {{ \", \"}}\n        {%- endif -%}\n        {{ message.content }}\n        {%- set ns.waiting_for_tool_outputs = false -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid message role\") -}}\n    {%- endif -%}\n{%- endfor -%}\n{%- if ns.in_tool -%}\n    {{ ']' }}\n{%- endif -%}\n{%- if ns.in_assistant and not (continue_assistant_message is defined and continue_assistant_message) and not ns.waiting_for_tool_outputs -%}\n    {{ end_assistant_token }}\n{%- endif -%}\n{%- if add_generation_prompt -%}\n    {{ assistant_token }}\n{%- endif -%}\n",
+    "batch_runtime": {
+      "max_num_seqs": 16,
+      "kv_cache_tokens": 32176,
+      "reserved_token_budget": 30560,
+      "block_size": 16,
+      "admission_mode": "full_reservation",
+      "model_context_window": 16384,
+      "requested_max_new_tokens": 1024
+    },
+    "successful": 451,
+    "context_limited": 305,
+    "captured": 756,
+    "full_answers_complete": false,
+    "expected": 756,
+    "ended": "2026-11-06T15:10:43.978627+00:00"
+  }
+}
+{
+  "workbook": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/consistent_1024_20261106T144122Z/outputs/exports/canadianness_756_three_model_answers_PARTIAL.xlsx",
+  "successful": {
+    "gc_llm": 451,
+    "apertus": 0
+  },
+  "rows": 756
+}
