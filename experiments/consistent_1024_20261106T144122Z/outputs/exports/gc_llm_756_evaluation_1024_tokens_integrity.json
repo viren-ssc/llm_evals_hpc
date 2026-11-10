@@ -1,0 +1,18 @@
+{
+  "rows": 756,
+  "model": "gc_llm",
+  "max_new_tokens": 1024,
+  "counts": {
+    "truncated": 305,
+    "success": 451
+  },
+  "benchmark_sha256": "ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2",
+  "fingerprint": "640fe65ed8741d767ba1477e0931e8c34fdf7536cfa0adbef131edc75ed7d94f",
+  "question_only_generation": true,
+  "evaluation_scores_included": false,
+  "files": {
+    "gc_llm_756_evaluation_1024_tokens.xlsx": "4f8fe714d026d0e2ed4d018cb2120c49cf2ed125cd8471ff899f92a89e3c1238",
+    "gc_llm_756_evaluation_1024_tokens.jsonl": "70fa28ca9f47a54f67483fe1934f3ce0c4c0b95dd6f1ee57dbf6dca283464f87",
+    "gc_llm_756_evaluation_1024_tokens_raw.jsonl": "f4dcd81ade9652d9bcadffb47aef41d04d7cde0a1cf58c98bdc905940caa7a4c"
+  }
+}
