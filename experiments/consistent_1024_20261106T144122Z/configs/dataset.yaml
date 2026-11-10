@@ -1,0 +1,4 @@
+path: ../../data/benchmarks/Canadian-ness Benchmark - 756 CORE with Context.xlsx
+sheet: CORE Questions
+expected_rows: 756
+sha256: ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2
