@@ -1,0 +1,10 @@
+{
+  "successful": {
+    "gc_llm": 117,
+    "apertus": 73,
+    "llama": 756
+  },
+  "expected_per_model": 756,
+  "benchmark_sha256": "ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2",
+  "complete": false
+}
