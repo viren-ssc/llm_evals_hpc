@@ -1,0 +1,10 @@
+max_new_tokens: 1024
+retry_max_new_tokens: 2048
+max_attempts: 3
+seed: 0
+temperature: 0.0
+max_model_len: 8192
+batch_size: 1  # Legacy manifest field; actual dynamic batching is configured in execution.yaml.
+prompt: question_only
+# Checkpoint-compatible role template; a single user message with the unmodified question.
+# No system message or additional instruction is used for any model.
