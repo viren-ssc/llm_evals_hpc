@@ -1,0 +1,25 @@
+{
+  "original_regular_files": 7648,
+  "protected_data_files_verified": 7339,
+  "removed_obsolete_scripts": [
+    "scripts/promote_loading_worker.py",
+    "scripts/apply_loading_update.py",
+    "scripts/retain_live_outputs.py",
+    "scripts/apply_live_retention.py",
+    "scripts/restart_for_batching.py",
+    "scripts/apply_batch_restart.py",
+    "scripts/patch_batch_capacity.py",
+    "scripts/apply_capacity_fix.py",
+    "experiments/full_answers_20261106T061020Z/scripts/live_cap.py",
+    "experiments/full_answers_20261106T061020Z/scripts/apply_cap.py"
+  ],
+  "removed_duplicate_workbook": "Canadian-ness%20Benchmark%20-%20756%20CORE%20with%20Context.xlsx",
+  "historical_data_bytes_unchanged": true,
+  "note": "Historical absolute paths inside result records are preserved as provenance, not rewritten.",
+  "final_data_checksum_audit": "All 7339 original data/result files preserved byte-for-byte",
+  "broken_symlinks": 0,
+  "broken_primary_guide_links": 0,
+  "active_tests": "28 passed",
+  "baseline_final_export": "756 questions, 756 saved answers per model; XLSX read-back verified",
+  "historical_test_adjustment": "Copied Llama-template test skips in GC/Apertus-only experiments; historical generation source unchanged except relocation of benchmark path in the replacement exporter."
+}
