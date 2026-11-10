@@ -1,0 +1,5 @@
+{
+  "applied": true,
+  "model_reloaded": false,
+  "method": "Use engine-reported coordinator KV capacity; no serialized callable RPC"
+}

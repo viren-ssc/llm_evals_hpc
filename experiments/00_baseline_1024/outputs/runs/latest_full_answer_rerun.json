@@ -1,0 +1,19 @@
+{
+  "root": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/full_answers_20261106T061020Z",
+  "created": "2026-11-06T06:10:21.342836+00:00",
+  "generation_mode": "max_tokens=None; native EOS or checkpoint context boundary",
+  "updated": "2026-11-06T06:18:26.941350+00:00",
+  "jobs": {
+    "gc_llm": "11817703;gpsc7",
+    "apertus": "11817704;gpsc7",
+    "llama": "11817705;gpsc7"
+  },
+  "tests": "29 passed",
+  "requested_max_new_tokens": null,
+  "native_contexts": {
+    "gc_llm": 65536,
+    "apertus": 65536,
+    "llama": 131072
+  },
+  "previous_answers_reused": false
+}

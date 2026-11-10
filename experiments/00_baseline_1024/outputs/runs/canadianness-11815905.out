@@ -1,0 +1,14 @@
+INFO 11-06 04:10:26 [utils.py:238] non-default args: {'tokenizer': '/gpfs/fs7/ssc/ssc_dsai/.cache/Meta-Llama-3.3-70B-Instruct', 'dtype': 'bfloat16', 'max_model_len': 8192, 'tensor_parallel_size': 4, 'gpu_memory_utilization': 0.94, 'max_num_seqs': 1, 'disable_log_stats': True, 'enforce_eager': True, 'model': '/gpfs/fs7/ssc/ssc_dsai/.cache/Meta-Llama-3.3-70B-Instruct'}
+INFO 11-06 04:11:41 [model.py:531] Resolved architecture: LlamaForCausalLM
+INFO 11-06 04:11:41 [model.py:1554] Using max model len 8192
+INFO 11-06 04:11:45 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 11-06 04:11:45 [vllm.py:747] Asynchronous scheduling is enabled.
+WARNING 11-06 04:11:45 [vllm.py:781] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 11-06 04:11:45 [vllm.py:792] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 11-06 04:11:45 [vllm.py:957] Cudagraph is disabled under eager mode
+{
+  "results": {},
+  "errors": {
+    "llama": "ipc path \"/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/outputs/runs/tmp-11815905/e7a26713-8bb1-4db9-bc71-7726954c0812\" is longer than 107 characters (sizeof(sockaddr_un.sun_path)). zmq.IPC_PATH_MAX_LEN constant can be used to check addr length (if it is defined). (addr='ipc:///fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/outputs/runs/tmp-11815905/e7a26713-8bb1-4db9-bc71-7726954c0812')"
+  }
+}

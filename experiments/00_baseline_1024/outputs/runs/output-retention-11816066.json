@@ -1,0 +1,11 @@
+{
+  "job_id": "11816066",
+  "model_id": "apertus",
+  "timestamp": "2026-11-06T04:58:30.334704+00:00",
+  "policy": "Retain all emitted text; keep truncation flag; do not retry token-limit outputs",
+  "retained_existing_question_ids": [
+    "GC-HQ-0064"
+  ],
+  "model_reloaded": false,
+  "source_sha256": "a2ef7eabc72b10bfe80880ab277a4c26cec6cb621cff2769f96afde2b9431d3c"
+}

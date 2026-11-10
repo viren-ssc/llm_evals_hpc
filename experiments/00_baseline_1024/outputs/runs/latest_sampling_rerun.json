@@ -1,0 +1,14 @@
+{
+  "root": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/sampling_t07_p095_1024_20261107T013517Z",
+  "models": [
+    "gc_llm",
+    "apertus",
+    "llama"
+  ],
+  "questions_per_model": 756,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_new_tokens": 1024,
+  "seed": 0,
+  "prior_answers_reused": false
+}

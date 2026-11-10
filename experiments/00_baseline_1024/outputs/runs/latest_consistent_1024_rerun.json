@@ -1,0 +1,16 @@
+{
+  "root": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/consistent_1024_20261106T144122Z",
+  "models": [
+    "gc_llm",
+    "apertus"
+  ],
+  "questions_per_model": 756,
+  "max_new_tokens": 1024,
+  "retry_max_new_tokens": 1024,
+  "prior_answers_reused": false,
+  "replaced_jobs": [
+    "11821891",
+    "11821892"
+  ],
+  "llama_unchanged": true
+}

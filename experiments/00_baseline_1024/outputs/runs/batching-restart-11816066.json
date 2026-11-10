@@ -1,0 +1,12 @@
+{
+  "job_id": "11816066",
+  "model_id": "apertus",
+  "pid": 233,
+  "requested": "2026-11-06T05:20:26.892522+00:00",
+  "reason": "User requested memory-bounded continuous batching for all models",
+  "preserve_allocation": true,
+  "preserve_saved_answers": true,
+  "source_sha256": "4bbcbfc97088fea15879e3da0a79a9be2358137630e92e388055383b3a30da9e",
+  "state": "exec_new_batched_worker",
+  "handoff": "2026-11-06T05:21:31.824539+00:00"
+}

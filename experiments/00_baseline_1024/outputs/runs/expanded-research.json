@@ -1,0 +1,81 @@
+{
+  "researched_at": "2026-11-06T04:25:13.958479+00:00",
+  "provenance_source": "https://huggingface.co/ssc-dsai/gc-llm-apertus-70b-instruct-2509/blob/main/README.md",
+  "source_findings": {
+    "base_model": "swiss-ai/Apertus-70B-Instruct-2509",
+    "training": "LoRA fine-tuning; distributed files include full 70B weight shards"
+  },
+  "local_storage_evidence": "/fs/vnas_Hssc/dsai/abm002/projects/ssc-dsai-data-curation/scripts/launch_canbench_responses.slurm",
+  "models": {
+    "models--ssc-dsai--gc-llm-apertus-70b-instruct-2509": {
+      "snapshot": "58277e94d16ccf486c1702c0aac8115c69448585",
+      "shard_blob_targets": {
+        "model-00001-of-00030.safetensors": "../../blobs/90817285edec24bbda433d9c10fa57a9cfe4b96a5660f8c5a7bca9709ffc704c",
+        "model-00002-of-00030.safetensors": "../../blobs/6a4164c485ef65c2ada1a4a72d5ceeac6db84061a92ab8055a5c3c0722c63860",
+        "model-00003-of-00030.safetensors": "../../blobs/a40106ee3eb1ef450a2638f8e3387fb93e6a0cc1cf99a7cf7cc488fc8e989315",
+        "model-00004-of-00030.safetensors": "../../blobs/f385cb184a7bdf446518796abd1698701bfd63c2c6ba7b257861f1710a0c318e",
+        "model-00005-of-00030.safetensors": "../../blobs/d19a2ea1b3480dcb901a04a58c0ab981848b7c713aa819fcb1a5ba106fe5ad91",
+        "model-00006-of-00030.safetensors": "../../blobs/d7437982fa521aaaea1f8a0942bbddf0d0e199ad050f143ba65d37cc1d0ccbb8",
+        "model-00007-of-00030.safetensors": "../../blobs/0d964c7e87ac85a2977f8f3c8104c1d7865958bd1d6d10c5e9a1430829c4377e",
+        "model-00008-of-00030.safetensors": "../../blobs/c92171c0f1505ccddfacdc75e28cdcb20d9863676a45e60386d65414cbd4cec9",
+        "model-00009-of-00030.safetensors": "../../blobs/1f4b0ad9b9743c0bd5ce573d8f1a9dd7512b26ad8a6f058a2b08e230daa281df",
+        "model-00010-of-00030.safetensors": "../../blobs/ca3c766d06d5460bb82f3c9ad3f3cb2fe6e18ccb3561896e25eb40ead2daef98",
+        "model-00011-of-00030.safetensors": "../../blobs/219b5781ce64622a8e018912470c0018fb6a4df19515dc1b6d5bb42587aa9fde",
+        "model-00012-of-00030.safetensors": "../../blobs/e06919b45b08cad45e4a6e70937af79c67f791e8dd547130b3b9ff502d777b6d",
+        "model-00013-of-00030.safetensors": "../../blobs/a46a1b32f7192e4447bed13699923b46bc38d66ad157741f8e8f5fd458c26e01",
+        "model-00014-of-00030.safetensors": "../../blobs/914ce887f3dcd606dcda90b89f770796f53396e0e2b78e082738990dcda0837c",
+        "model-00015-of-00030.safetensors": "../../blobs/4be0e06897f31fc1464a34763819a48db62466cf8002f778aad09510481e30ce",
+        "model-00016-of-00030.safetensors": "../../blobs/bd1c62ccb66e4e654e74e71cede67972fc21cb0523eb22b8efb1f38c86a801cb",
+        "model-00017-of-00030.safetensors": "../../blobs/1c1dd784b096d6067ef0ecb9f239959cb70721ec3a286a8b558afc438fef4f13",
+        "model-00018-of-00030.safetensors": "../../blobs/85bd0e1e87bea483335f18d4bf955e03672108b463ff559eea387b0125c24714",
+        "model-00019-of-00030.safetensors": "../../blobs/482fdba54f7c5c11a9bd25960c9fa35f6fc6f8c63d6e1eacfec37ba89ea7cb19",
+        "model-00020-of-00030.safetensors": "../../blobs/8aa95dc42f6b7ec3a1623814a2339a005c2e0e7d503ff14360795fd53aeff7db",
+        "model-00021-of-00030.safetensors": "../../blobs/3ede0a86151147eee86b321d771c6b320a7016ee912160b17d0e7eea7fd68c31",
+        "model-00022-of-00030.safetensors": "../../blobs/dbb379410811d05854a0e2e05c029390f9d35f0c8c415b6a883c3a700fab954d",
+        "model-00023-of-00030.safetensors": "../../blobs/192a121893fba1f6ca10193a85abc52fbf0b1ce4033023739f72dfa681ee6577",
+        "model-00024-of-00030.safetensors": "../../blobs/9f70c1d51a265e196d02ff70e63f4aa64765ac68e4b93580f4bae2690f79d9c9",
+        "model-00025-of-00030.safetensors": "../../blobs/07422b762e11f00d1889e399e0b5b235b64faf514beace00bda3b7497a9f6bd4",
+        "model-00026-of-00030.safetensors": "../../blobs/90dbfa8528e0a9f213f90509be9c02936e0f3132663a8837fb5d8ebc4a639786",
+        "model-00027-of-00030.safetensors": "../../blobs/c197ceff3831470779561ea4608cda1ff1ec150aad43ef44fff50680b959f351",
+        "model-00028-of-00030.safetensors": "../../blobs/6c59777320325c905c80fec700f5ed072c476a6bb0f3cdf63a09ebb70201f6a3",
+        "model-00029-of-00030.safetensors": "../../blobs/9a2057fc058869deccbe53f74ce334ccfc3540ef5bbceb88735310ee323041e1",
+        "model-00030-of-00030.safetensors": "../../blobs/b9e2946d50aa9281e19395b99e1641afc67296e441d214eeaa36833463901734"
+      }
+    },
+    "models--swiss-ai--Apertus-70B-Instruct-2509": {
+      "snapshot": "0f2767662a013c0fb631079cea883155252bc3b6",
+      "shard_blob_targets": {
+        "model-00001-of-00030.safetensors": "../../blobs/3999deac891c7e0433ef0926e0edb571e690263e38f20a074c75ff0a872a3913",
+        "model-00002-of-00030.safetensors": "../../blobs/e0c74e369f63d05898d3ced3b198dfb7b3143d60568dbb44bd5dd8f7377daf1a",
+        "model-00003-of-00030.safetensors": "../../blobs/c112bfb38d0ca43e26f5b16fc66f7a93433cd2e8fe2fc78ad5c866b237547df8",
+        "model-00004-of-00030.safetensors": "../../blobs/29bc53591567cd8d253c3f9f383563eae112a030826c24f339de13cb83b72325",
+        "model-00005-of-00030.safetensors": "../../blobs/35898c32dd944fedc3654f11d2025df8a2788d54fbaf11ce21818344327e59d3",
+        "model-00006-of-00030.safetensors": "../../blobs/21b545587d2671908d3f8ecff6d1f6f1a2fd8a3c2359c67c9db76c21392a2cc7",
+        "model-00007-of-00030.safetensors": "../../blobs/7fed0396ef8fd429a80473896c9825beeaefe20cbc4bae2202d7f3217b7278f6",
+        "model-00008-of-00030.safetensors": "../../blobs/595123b53b8ea613cc82d0d28fa2db137be8d591c66eaf54477c8099b4261de1",
+        "model-00009-of-00030.safetensors": "../../blobs/c9f3bf46255975e24e3fba585cfbc04eb61d85f6af2cc9c8330ab45028c6378a",
+        "model-00010-of-00030.safetensors": "../../blobs/714075c2f817e6de15f4759514e5692f876573fce78fcfdc3bd3eef8755fb8d2",
+        "model-00011-of-00030.safetensors": "../../blobs/b51c03a8b78a3ec57784cfa3dbec88194277ba6c1dae73bc98bc1127068bd197",
+        "model-00012-of-00030.safetensors": "../../blobs/e50e2a30de4d974b96f3bd16e683d4e728bba5b771c4b831703d5ccfdd87e9ab",
+        "model-00013-of-00030.safetensors": "../../blobs/c57e6c9b4c2755b7e5ed091bbcbdd9d3bd36269b38f2d6844e1edc48af873bdc",
+        "model-00014-of-00030.safetensors": "../../blobs/f59f99fb14ddf814c00e81dfed73c3d736ec5ebedf615f857e94766d193f1cca",
+        "model-00015-of-00030.safetensors": "../../blobs/049d9bce51bea070841431b6ae8705ee9d8bb08b4809ba055a24b222cad04556",
+        "model-00016-of-00030.safetensors": "../../blobs/21715cf5c643c53c29bc10217479c3e5d9881aaa40b09c5cc31caf3a6956ad2f",
+        "model-00017-of-00030.safetensors": "../../blobs/44a80f3d138d9606babf081ba0d3e9db2f7b195a75f33ee7a4c8e7a8ea28e589",
+        "model-00018-of-00030.safetensors": "../../blobs/468e7c6805274688b3f8055565941274d2affbcea7c1c36000b3bfd911cf409c",
+        "model-00019-of-00030.safetensors": "../../blobs/2b986344fc30cecf27026d845b366e278af8c40fba14acff8c991c968c3bde28",
+        "model-00020-of-00030.safetensors": "../../blobs/95d22a3d8ef35ad5290a2f151e5037ef56a319e171b9a1bd638e3409b9cb05e7",
+        "model-00021-of-00030.safetensors": "../../blobs/0ee5da2a81f784cb989fc82bf0f41c92b090ddfa022266541ec98ccc67edbf57",
+        "model-00022-of-00030.safetensors": "../../blobs/5dace41cd4a39bbd3406f8433fa9c9b8bc8020eeb0657b7bd91f75108082ac5c",
+        "model-00023-of-00030.safetensors": "../../blobs/db25f05dcbcc3f9a0c95aeb153cb5109e6813d3cd4555947b258f148de51bc13",
+        "model-00024-of-00030.safetensors": "../../blobs/c478a31476be5824b19299d56e1a984255a0f2eede8d595a2ef3a53242eac8ed",
+        "model-00025-of-00030.safetensors": "../../blobs/ed8bd39c6281a5e1633f40d33f40cd3f6f42901bf0be1814d19a84b4f7540e95",
+        "model-00026-of-00030.safetensors": "../../blobs/8c48724ee4cd128cf2b9ac10bb112b8ac83527388b9b75d6bf772d3a195cce1e",
+        "model-00027-of-00030.safetensors": "../../blobs/55b6ef1aa117ff5c23d15ff1d81fe8527b3280fc4bafb9657a3a78768373a907",
+        "model-00028-of-00030.safetensors": "../../blobs/979f64ef3a4819a8b9a55da5daa320b1177fa0b91550a014d526279f0e5a273c",
+        "model-00029-of-00030.safetensors": "../../blobs/482c98320498f7aea95462c78f13b412408bff4f28af3d099f3c5e9a52411988",
+        "model-00030-of-00030.safetensors": "../../blobs/bb70787eadbb3832e8ce486449c2433d47de80f541c6c5f7cf395a8046bb37cd"
+      }
+    }
+  }
+}

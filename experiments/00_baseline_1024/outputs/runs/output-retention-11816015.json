@@ -1,0 +1,9 @@
+{
+  "job_id": "11816015",
+  "model_id": "llama",
+  "timestamp": "2026-11-06T04:58:45.872875+00:00",
+  "policy": "Retain all emitted text; keep truncation flag; do not retry token-limit outputs",
+  "retained_existing_question_ids": [],
+  "model_reloaded": false,
+  "source_sha256": "a2ef7eabc72b10bfe80880ab277a4c26cec6cb621cff2769f96afde2b9431d3c"
+}

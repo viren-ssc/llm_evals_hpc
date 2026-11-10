@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "run_id": "20261106T041510Z-9da134ab",
+  "question_ids": [
+    "GC-HQ-0064",
+    "GC-HQ-0027"
+  ],
+  "review": "Automated structural checks only; bilingual text is retained for inspection"
+}

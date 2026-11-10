@@ -1,0 +1,129 @@
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1052) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1054) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1055) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1052) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1055) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1054) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:   0% Completed | 0/30 [00:00<?, ?it/s]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:   3% Completed | 1/30 [00:00<00:24,  1.18it/s]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:   7% Completed | 2/30 [00:20<05:25, 11.64s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  10% Completed | 3/30 [00:40<07:08, 15.87s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  13% Completed | 4/30 [01:00<07:28, 17.23s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  17% Completed | 5/30 [01:19<07:32, 18.08s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  20% Completed | 6/30 [01:47<08:34, 21.45s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  23% Completed | 7/30 [02:22<09:50, 25.65s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  27% Completed | 8/30 [03:30<14:24, 39.31s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  30% Completed | 9/30 [04:10<13:49, 39.50s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  33% Completed | 10/30 [04:40<12:08, 36.40s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  37% Completed | 11/30 [05:04<10:24, 32.88s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  40% Completed | 12/30 [05:26<08:48, 29.34s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  43% Completed | 13/30 [05:54<08:14, 29.07s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  47% Completed | 14/30 [06:23<07:42, 28.93s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  50% Completed | 15/30 [06:45<06:44, 26.93s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  53% Completed | 16/30 [07:08<06:00, 25.74s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  57% Completed | 17/30 [07:31<05:22, 24.82s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  60% Completed | 18/30 [07:53<04:47, 23.94s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  63% Completed | 19/30 [08:16<04:23, 23.91s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  67% Completed | 20/30 [08:35<03:42, 22.25s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  70% Completed | 21/30 [08:59<03:24, 22.76s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  73% Completed | 22/30 [09:22<03:02, 22.81s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  77% Completed | 23/30 [09:49<02:49, 24.26s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  80% Completed | 24/30 [10:10<02:19, 23.20s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  83% Completed | 25/30 [10:28<01:47, 21.49s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  87% Completed | 26/30 [10:47<01:23, 20.79s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  90% Completed | 27/30 [11:07<01:01, 20.48s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  93% Completed | 28/30 [11:43<00:50, 25.38s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards:  97% Completed | 29/30 [12:00<00:22, 22.89s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:08<00:00, 18.37s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:08<00:00, 24.29s/it]
+(Worker pid=1052) (Worker_TP0 pid=1052) 
+/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+(Worker pid=2136) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=2135) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=2137) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=2134) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=2134) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2135) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2136) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2137) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:   0% Completed | 0/30 [00:00<?, ?it/s]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:   3% Completed | 1/30 [00:20<09:44, 20.15s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:   7% Completed | 2/30 [00:42<10:00, 21.43s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  10% Completed | 3/30 [01:06<10:12, 22.70s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  13% Completed | 4/30 [01:56<14:31, 33.51s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  17% Completed | 5/30 [02:20<12:25, 29.83s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  20% Completed | 6/30 [02:48<11:47, 29.48s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  23% Completed | 7/30 [03:18<11:22, 29.65s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  27% Completed | 8/30 [03:42<10:07, 27.62s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  30% Completed | 9/30 [04:11<09:53, 28.26s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  33% Completed | 10/30 [04:41<09:34, 28.70s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  37% Completed | 11/30 [05:20<10:02, 31.71s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  40% Completed | 12/30 [05:41<08:33, 28.51s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  43% Completed | 13/30 [06:03<07:30, 26.53s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  47% Completed | 14/30 [06:26<06:46, 25.42s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  50% Completed | 15/30 [06:44<05:51, 23.43s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  53% Completed | 16/30 [07:06<05:21, 22.98s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  57% Completed | 17/30 [07:28<04:52, 22.50s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  60% Completed | 18/30 [07:47<04:18, 21.57s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  63% Completed | 19/30 [08:06<03:48, 20.76s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  67% Completed | 20/30 [08:25<03:21, 20.18s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  70% Completed | 21/30 [08:46<03:05, 20.59s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  73% Completed | 22/30 [09:08<02:46, 20.78s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  77% Completed | 23/30 [09:39<02:46, 23.85s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  80% Completed | 24/30 [10:12<02:39, 26.65s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  83% Completed | 25/30 [10:29<01:59, 23.95s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  87% Completed | 26/30 [10:50<01:31, 22.87s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  90% Completed | 27/30 [11:11<01:06, 22.30s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  93% Completed | 28/30 [11:33<00:44, 22.27s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards:  97% Completed | 29/30 [11:56<00:22, 22.61s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:06<00:00, 18.82s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:06<00:00, 24.23s/it]
+(Worker pid=2134) (Worker_TP0 pid=2134) 
+/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+(Worker pid=3221) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=3222) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=3219) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=3220) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=3222) (Worker pid=3219) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=3221) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+<frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=3220) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:   0% Completed | 0/30 [00:00<?, ?it/s]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:   3% Completed | 1/30 [00:23<11:27, 23.72s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:   7% Completed | 2/30 [00:55<13:17, 28.49s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  10% Completed | 3/30 [01:37<15:34, 34.62s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  13% Completed | 4/30 [01:56<12:23, 28.60s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  17% Completed | 5/30 [02:17<10:39, 25.56s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  20% Completed | 6/30 [02:39<09:48, 24.53s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  23% Completed | 7/30 [02:59<08:46, 22.89s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  27% Completed | 8/30 [03:18<07:57, 21.71s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  30% Completed | 9/30 [03:42<07:49, 22.37s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  33% Completed | 10/30 [04:03<07:23, 22.17s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  37% Completed | 11/30 [04:33<07:43, 24.42s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  40% Completed | 12/30 [05:04<07:55, 26.42s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  43% Completed | 13/30 [05:27<07:14, 25.57s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  47% Completed | 14/30 [05:48<06:25, 24.11s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  50% Completed | 15/30 [06:07<05:39, 22.66s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  53% Completed | 16/30 [06:27<05:05, 21.83s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  57% Completed | 17/30 [06:49<04:44, 21.85s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  60% Completed | 18/30 [07:15<04:37, 23.09s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  63% Completed | 19/30 [07:55<05:09, 28.12s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  67% Completed | 20/30 [08:16<04:19, 25.92s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  70% Completed | 21/30 [08:43<03:56, 26.24s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  73% Completed | 22/30 [09:35<04:32, 34.06s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  77% Completed | 23/30 [10:41<05:05, 43.71s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  80% Completed | 24/30 [11:27<04:26, 44.37s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  83% Completed | 25/30 [12:13<03:44, 44.86s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  87% Completed | 26/30 [13:05<03:07, 46.89s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  90% Completed | 27/30 [14:03<02:31, 50.37s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  93% Completed | 28/30 [14:49<01:38, 49.10s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards:  97% Completed | 29/30 [15:45<00:51, 51.09s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards: 100% Completed | 30/30 [16:05<00:00, 41.77s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) Loading safetensors checkpoint shards: 100% Completed | 30/30 [16:05<00:00, 32.19s/it]
+(Worker pid=3219) (Worker_TP0 pid=3219) 
+/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

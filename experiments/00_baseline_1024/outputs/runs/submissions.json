@@ -1,0 +1,40 @@
+{
+  "llama": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11816015;gpsc7",
+    "previous": [
+      {
+        "job_id": "11815905",
+        "state": "FAILED",
+        "reason": "Linux IPC socket path exceeded 107 characters; fixed TMPDIR to /tmp/caneval-JOBID"
+      },
+      {
+        "job_id": "11816009",
+        "state": "CANCELLED",
+        "reason": "Stopped before generation to remove native date/cutoff boilerplate following strict question-only clarification"
+      }
+    ]
+  },
+  "gc_llm": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11817121;gpsc7",
+    "previous": [
+      {
+        "job_id": "11816065",
+        "state": "FAILED",
+        "reason": "Initial adaptive cache query used a callable rejected by vLLM serializer; replaced with measured coordinator log profile"
+      }
+    ]
+  },
+  "apertus": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11817122;gpsc7",
+    "previous": [
+      {
+        "job_id": "11816066",
+        "state": "FAILED",
+        "reason": "Initial adaptive cache query used a callable rejected by vLLM serializer; replaced with measured coordinator log profile"
+      }
+    ]
+  }
+}

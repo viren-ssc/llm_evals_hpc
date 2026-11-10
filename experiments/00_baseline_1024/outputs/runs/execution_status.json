@@ -1,0 +1,60 @@
+{
+  "benchmark_sha256": "ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2",
+  "expected_per_model": 756,
+  "models": {
+    "gc_llm": {
+      "success": 69,
+      "missing": 687,
+      "error": 0,
+      "truncated": 15,
+      "ready": true,
+      "problems": [],
+      "batching": {
+        "enabled": true,
+        "max_num_seqs": 64,
+        "max_num_batched_tokens": 8192,
+        "kv_cache_reserve_fraction": 0.95
+      },
+      "phase": "loading_or_initializing"
+    },
+    "apertus": {
+      "success": 42,
+      "missing": 714,
+      "error": 0,
+      "truncated": 15,
+      "ready": true,
+      "problems": [],
+      "batching": {
+        "enabled": true,
+        "max_num_seqs": 64,
+        "max_num_batched_tokens": 8192,
+        "kv_cache_reserve_fraction": 0.95
+      },
+      "phase": "loading_or_initializing"
+    },
+    "llama": {
+      "success": 161,
+      "missing": 595,
+      "error": 0,
+      "truncated": 0,
+      "ready": true,
+      "problems": [],
+      "batching": {
+        "enabled": true,
+        "max_num_seqs": 64,
+        "max_num_batched_tokens": 8192,
+        "kv_cache_reserve_fraction": 0.95
+      },
+      "phase": "loading_or_initializing"
+    }
+  },
+  "timestamp": "2026-11-06T05:33:09.006934+00:00",
+  "tests": "24 passed",
+  "jobs": {
+    "gc_llm": "11817121;gpsc7",
+    "apertus": "11817122;gpsc7",
+    "llama": "11816015;gpsc7"
+  },
+  "batching_configuration": "64 sequence ceiling, adaptive admission within 95% of measured KV tokens, 8192 scheduled tokens/step",
+  "phase": "All three batch-enabled engines loading; actual admitted concurrency available after profiling"
+}

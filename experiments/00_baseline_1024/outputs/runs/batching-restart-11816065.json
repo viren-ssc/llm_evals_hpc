@@ -1,0 +1,12 @@
+{
+  "job_id": "11816065",
+  "model_id": "gc_llm",
+  "pid": 202,
+  "requested": "2026-11-06T05:20:31.081099+00:00",
+  "reason": "User requested memory-bounded continuous batching for all models",
+  "preserve_allocation": true,
+  "preserve_saved_answers": true,
+  "source_sha256": "4bbcbfc97088fea15879e3da0a79a9be2358137630e92e388055383b3a30da9e",
+  "state": "exec_new_batched_worker",
+  "handoff": "2026-11-06T05:20:45.265962+00:00"
+}

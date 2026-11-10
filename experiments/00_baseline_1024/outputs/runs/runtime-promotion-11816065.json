@@ -1,0 +1,10 @@
+{
+  "job_id": "11816065",
+  "model_id": "gc_llm",
+  "selected_questions": 756,
+  "pending_questions": 756,
+  "model_reloaded": false,
+  "timestamp": "2026-11-06T04:44:07.275371+00:00",
+  "reason": "User cancelled smoke testing; expand existing first-load worker to full dataset",
+  "update_source_sha256": "bfe68ea65d307209279680f8fa27158d245da1b1c6240efecf74b43f23db5e62"
+}

@@ -1,0 +1,158 @@
+gc_llm:
+  identifier: ssc-dsai/gc-llm-apertus-70b-instruct-2509
+  path: /gpfs/fs7/ssc/ssc_dsai/.cache/huggingface/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585
+  tokenizer_path: /gpfs/fs7/ssc/ssc_dsai/.cache/huggingface/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585
+  revision: 58277e94d16ccf486c1702c0aac8115c69448585
+  metadata_sha256:
+    config.json: 281beae71debd1284f4f1b3bfd3263502285bf4af49353f0eaaab020507287a5
+  shard_manifest: []
+  ready: false
+  backend: vllm
+  prompt_template: null
+  tensor_parallel_size: 4
+  dtype: bfloat16
+  gpu_memory_utilization: 0.94
+  adapter: null
+  identity_note: Candidate repo identity only; exact GC base lineage unverified
+  problems:
+  - Missing tokenizer_config.json
+  - Missing native chat template; completion format requires explicit configuration
+  - Missing tokenizer.json
+  - Missing model.safetensors.index.json
+  - No indexed weight shards
+apertus:
+  identifier: swiss-ai/Apertus-70B-Instruct-2509
+  path: /gpfs/fs7/ssc/ssc_dsai/.cache/huggingface/models--swiss-ai--Apertus-70B-Instruct-2509/snapshots/0f2767662a013c0fb631079cea883155252bc3b6
+  tokenizer_path: /gpfs/fs7/ssc/ssc_dsai/.cache/huggingface/models--swiss-ai--Apertus-70B-Instruct-2509/snapshots/0f2767662a013c0fb631079cea883155252bc3b6
+  revision: 0f2767662a013c0fb631079cea883155252bc3b6
+  metadata_sha256:
+    config.json: 38d8511c8ef326097ce8c1bb6875556011191caa223d6ff3a924271ae915ab6f
+  shard_manifest: []
+  ready: false
+  backend: vllm
+  prompt_template: null
+  tensor_parallel_size: 4
+  dtype: bfloat16
+  gpu_memory_utilization: 0.94
+  adapter: null
+  identity_note: Candidate repo identity only; exact GC base lineage unverified
+  problems:
+  - Missing tokenizer_config.json
+  - Missing native chat template; completion format requires explicit configuration
+  - Missing tokenizer.json
+  - Missing model.safetensors.index.json
+  - No indexed weight shards
+llama:
+  identifier: meta-llama/Llama-3.3-70B-Instruct
+  path: /gpfs/fs7/ssc/ssc_dsai/.cache/Meta-Llama-3.3-70B-Instruct
+  tokenizer_path: /gpfs/fs7/ssc/ssc_dsai/.cache/Meta-Llama-3.3-70B-Instruct
+  revision: Meta-Llama-3.3-70B-Instruct
+  metadata_sha256:
+    config.json: 95ef9768e4741543dbfaf0c274f101855883ff338b235c99eca2b6a4f4abee12
+    tokenizer_config.json: 5c756ad6048c884974a331963ae3c3e1624b548a11174dadda02a69041c87352
+    tokenizer.json: 6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b
+    model.safetensors.index.json: 2abe0910e23770a30ccf9b1b91804c64831c47f9c98defaa5293aa999433fc2b
+  shard_manifest:
+  - name: model-00001-of-00030.safetensors
+    bytes: 4584408808
+    header_sha256: 56deddc21f2018a76c2a439b575c34947d0c7e6d2a3c7aea546949fdf06ef37d
+  - name: model-00002-of-00030.safetensors
+    bytes: 4664167376
+    header_sha256: d20669e424e8c5b06685d4cc08e4b358286a3997390e91cc46dbb8807b4aceb5
+  - name: model-00003-of-00030.safetensors
+    bytes: 4999711704
+    header_sha256: cf3bc51a847757b8e87085a63df0f7edf6041700a1e16cac742dacb047de99b8
+  - name: model-00004-of-00030.safetensors
+    bytes: 4966157032
+    header_sha256: 1551a338a019ba03d14dca0cd441eb54b57d6f69a240939d33666fd8b9b3a46d
+  - name: model-00005-of-00030.safetensors
+    bytes: 4664134408
+    header_sha256: 26f5418604db2144b5197eae0dfa34711984b50ce0b0320855053758d76805af
+  - name: model-00006-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: d7d7deff52250f6cce6e68b641fe2e9fc2790affdc09d5796cac8b1ce04f416b
+  - name: model-00007-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: b883cfbc77ae0b644766bb03ec6c39c511f9e958c167c7268954e41d4a633845
+  - name: model-00008-of-00030.safetensors
+    bytes: 4999711728
+    header_sha256: 6560df608d8e2d0e69c778ce4072f745ad09ce546715683620d56bfebaa48903
+  - name: model-00009-of-00030.safetensors
+    bytes: 4966157056
+    header_sha256: bb247a25ef7992d8cf741fe34ef6451de0e9e202faf99f5373a71420519e5c02
+  - name: model-00010-of-00030.safetensors
+    bytes: 4664134408
+    header_sha256: 15d0c14a0d30a54a646a3b275ffa219793182630ab8824526818a27c0fd5ed20
+  - name: model-00011-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: cdb044570f9d715f43b2385208900ccf15d69435f74c3d8e5a3e8494fd68e5a8
+  - name: model-00012-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: aff6944350162144183e493a55d8ceb61b601cdcf89b8bb5116aab237f8e94a0
+  - name: model-00013-of-00030.safetensors
+    bytes: 4999711728
+    header_sha256: 95b814e49c2f859c55ee981808f13f7c07d90742134e0e3be9cfedb31b6f1819
+  - name: model-00014-of-00030.safetensors
+    bytes: 4966157056
+    header_sha256: 23d4557760adac5114b51cfba5332ae1ac794a138152c9656c2e6820ee92c4a4
+  - name: model-00015-of-00030.safetensors
+    bytes: 4664134408
+    header_sha256: ef33804d6ee4b6f92926cdcd45be7bc4da26cfcd6a482e0c37a44192755c9cc8
+  - name: model-00016-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: 04287d01993dada799ec793ebe974ffdfd6d04034df90d701f4cfc1ffd2a5456
+  - name: model-00017-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: b173d0b729b8c946cb3bce6cb3870b203183ac99f23d2f8ea8909f5c053318c1
+  - name: model-00018-of-00030.safetensors
+    bytes: 4999711728
+    header_sha256: 0224b81c9fda55f32ba674956fd8255d19a3d17185d2b6f3c6b76f1a061593e9
+  - name: model-00019-of-00030.safetensors
+    bytes: 4966157056
+    header_sha256: 322f9735fe00ce8c237efce5442f0ea52c6235283d2956213a0cd240616df410
+  - name: model-00020-of-00030.safetensors
+    bytes: 4664134408
+    header_sha256: 158bb3959a737949f1fa5a3fcb8b1a279ca13667bb102953dbd0ee05738053ce
+  - name: model-00021-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: a4b706a62c75540b171e5dd901f69480ead5d72ad87ef289f907e29c48c5a23e
+  - name: model-00022-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: f08ce0697bf72190ccdbd7e2d1893b2bc4a86cf432303628bfc68dc8ca6d79f5
+  - name: model-00023-of-00030.safetensors
+    bytes: 4999711728
+    header_sha256: 2034cc4bd892ea5ea7e1a746c73cdb30cb89e1a3ab4deb3af101782708478643
+  - name: model-00024-of-00030.safetensors
+    bytes: 4966157056
+    header_sha256: 8bb31e221bb19838fcac8548785f8000cb597af535bdec022e598e47468c808e
+  - name: model-00025-of-00030.safetensors
+    bytes: 4664134408
+    header_sha256: 0b4d7561cd7074d1f64ec3a57987c39e84dc09f7e9647e312c62bf9c9dc04c10
+  - name: model-00026-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: 831721adbe10f2a6c0075f1f185d6648d44de66badc7346ba21649ef61383e06
+  - name: model-00027-of-00030.safetensors
+    bytes: 4664167408
+    header_sha256: 62dcbcffd90070734704c3d75650be92572f1f53bc2a9371d597f3d65683ad48
+  - name: model-00028-of-00030.safetensors
+    bytes: 4999711728
+    header_sha256: cc6bc9a7405cb4dc68ddf18b3ab4db30f23e3053e19fcac8daf6bb304d598532
+  - name: model-00029-of-00030.safetensors
+    bytes: 4966173536
+    header_sha256: 766794ed263a55a97faa853c734382f5fdc03fe12257ac05c1e691f38f0884ce
+  - name: model-00030-of-00030.safetensors
+    bytes: 2101346432
+    header_sha256: 986a19c9bbe26f84c212f4bea485523e8e824040588b7e2bc91a506839cca5a8
+  ready: true
+  backend: vllm
+  prompt_template: '{{ bos_token }}<|start_header_id|>user<|end_header_id|>
+
+
+    {{ messages[0]["content"] }}<|eot_id|><|start_header_id|>assistant<|end_header_id|>{{
+    "\n\n" }}'
+  tensor_parallel_size: 4
+  dtype: bfloat16
+  gpu_memory_utilization: 0.94
+  adapter: null
+  identity_note: Local model card and config identify Llama 3.3 70B Instruct
+  problems: []

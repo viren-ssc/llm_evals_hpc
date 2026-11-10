@@ -1,0 +1,112 @@
+The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+(Worker pid=1051) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1054) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1052) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1051) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1052) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1054) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:   0% Completed | 0/30 [00:00<?, ?it/s]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:   3% Completed | 1/30 [00:25<12:26, 25.74s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:   7% Completed | 2/30 [00:59<14:12, 30.46s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  10% Completed | 3/30 [01:35<14:53, 33.11s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  13% Completed | 4/30 [02:05<13:44, 31.72s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  17% Completed | 5/30 [02:24<11:23, 27.35s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  20% Completed | 6/30 [02:50<10:40, 26.70s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  23% Completed | 7/30 [03:11<09:31, 24.87s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  27% Completed | 8/30 [03:34<08:52, 24.22s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  30% Completed | 9/30 [03:52<07:49, 22.34s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  33% Completed | 10/30 [04:10<07:02, 21.13s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  37% Completed | 11/30 [04:29<06:28, 20.47s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  40% Completed | 12/30 [04:49<06:01, 20.06s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  43% Completed | 13/30 [05:10<05:47, 20.42s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  47% Completed | 14/30 [05:30<05:26, 20.42s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  50% Completed | 15/30 [06:02<05:59, 23.98s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  53% Completed | 16/30 [06:37<06:19, 27.09s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  57% Completed | 17/30 [06:54<05:15, 24.24s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  60% Completed | 18/30 [07:15<04:37, 23.12s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  63% Completed | 19/30 [07:37<04:12, 22.94s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  67% Completed | 20/30 [07:59<03:43, 22.40s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  70% Completed | 21/30 [08:19<03:15, 21.76s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  73% Completed | 22/30 [08:40<02:52, 21.58s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  77% Completed | 23/30 [09:05<02:39, 22.76s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  80% Completed | 24/30 [09:31<02:21, 23.54s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  83% Completed | 25/30 [09:51<01:52, 22.41s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  87% Completed | 26/30 [10:16<01:33, 23.45s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  90% Completed | 27/30 [10:52<01:21, 27.10s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  93% Completed | 28/30 [11:31<01:01, 30.76s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards:  97% Completed | 29/30 [11:51<00:27, 27.31s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:10<00:00, 24.83s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:10<00:00, 24.34s/it]
+(Worker pid=1051) (Worker_TP0 pid=1051) 
+(EngineCore_DP0 pid=936) The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+(Worker pid=2172) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=2173) (Worker pid=2175) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=2174) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+<frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=2172) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2174) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2173) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2175) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:   0% Completed | 0/30 [00:00<?, ?it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:   3% Completed | 1/30 [00:00<00:26,  1.10it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:   7% Completed | 2/30 [00:01<00:24,  1.13it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  10% Completed | 3/30 [00:02<00:25,  1.07it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  13% Completed | 4/30 [00:03<00:24,  1.06it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  17% Completed | 5/30 [00:04<00:23,  1.08it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  20% Completed | 6/30 [00:05<00:21,  1.11it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  23% Completed | 7/30 [00:06<00:21,  1.08it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  27% Completed | 8/30 [00:07<00:20,  1.08it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  30% Completed | 9/30 [00:08<00:19,  1.10it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  33% Completed | 10/30 [00:09<00:17,  1.12it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  37% Completed | 11/30 [00:10<00:17,  1.10it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  40% Completed | 12/30 [00:11<00:16,  1.08it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  43% Completed | 13/30 [00:11<00:15,  1.10it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  47% Completed | 14/30 [00:12<00:14,  1.13it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  50% Completed | 15/30 [00:13<00:13,  1.11it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  53% Completed | 16/30 [00:14<00:12,  1.09it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  57% Completed | 17/30 [00:15<00:11,  1.11it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  60% Completed | 18/30 [00:16<00:10,  1.14it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  63% Completed | 19/30 [00:17<00:09,  1.11it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  67% Completed | 20/30 [00:18<00:09,  1.10it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  70% Completed | 21/30 [00:19<00:08,  1.12it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  73% Completed | 22/30 [00:19<00:07,  1.14it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  77% Completed | 23/30 [00:20<00:06,  1.12it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  80% Completed | 24/30 [00:21<00:05,  1.10it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  83% Completed | 25/30 [00:22<00:04,  1.12it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  87% Completed | 26/30 [00:23<00:03,  1.14it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  90% Completed | 27/30 [00:24<00:02,  1.11it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  93% Completed | 28/30 [00:25<00:01,  1.09it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards:  97% Completed | 29/30 [00:26<00:00,  1.11it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards: 100% Completed | 30/30 [00:27<00:00,  1.13it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) Loading safetensors checkpoint shards: 100% Completed | 30/30 [00:27<00:00,  1.11it/s]
+(Worker pid=2172) (Worker_TP0 pid=2172) 
+(EngineCore_DP0 pid=2057) The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+[rank3]:[W1106 05:22:20.065376945 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:41196, remote=[localhost]:49235): Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+Exception raised from recvBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:682 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x78bddb8ddfdd in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x6a3325d (0x78bd00dda25d in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x273 (0x78bd00dd81f3 in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::ProcessGroupNCCL::HeartbeatMonitor::runLoop() + 0x44c (0x78bcbdeb9eec in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xecdb4 (0x78bd9bc6edb4 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x9cb84 (0x78bddc686b84 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x129ecc (0x78bddc713ecc in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank2]:[W1106 05:22:20.065394649 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:41218, remote=[localhost]:49235): Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+Exception raised from recvBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:682 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7a23bcd72fdd in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x6a3325d (0x7a23219da25d in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x273 (0x7a23219d81f3 in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::ProcessGroupNCCL::HeartbeatMonitor::runLoop() + 0x44c (0x7a22deab9eec in /gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xecdb4 (0x7a23bc86edb4 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x9cb84 (0x7a23fd1e4b84 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x129ecc (0x7a23fd271ecc in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W1106 05:22:20.155636918 ProcessGroupNCCL.cpp:1802] [PG ID 0 PG GUID 0 Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+[rank2]:[W1106 05:22:20.155646236 ProcessGroupNCCL.cpp:1802] [PG ID 0 PG GUID 0 Rank 2] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
