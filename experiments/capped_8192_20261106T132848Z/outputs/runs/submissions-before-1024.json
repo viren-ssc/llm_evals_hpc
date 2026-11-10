@@ -1,0 +1,10 @@
+{
+  "apertus": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11821008;gpsc7"
+  },
+  "gc_llm": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11821014;gpsc7"
+  }
+}

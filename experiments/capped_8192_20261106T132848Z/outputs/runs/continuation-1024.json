@@ -1,0 +1,12 @@
+{
+  "time": "2026-11-06T14:30:17.871701+00:00",
+  "user_instruction": "Set token limit to 1024 for both models now",
+  "max_new_tokens": 1024,
+  "max_num_seqs": 16,
+  "admission_mode": "full_reservation",
+  "preserve_existing_capped_and_natural_answers": true,
+  "replaces_jobs": [
+    "11821014",
+    "11821008"
+  ]
+}

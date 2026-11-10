@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-06T13:33:14.870871+00:00",
+  "max_num_seqs": 16,
+  "max_new_tokens": 8192,
+  "admission_mode": "full_reservation",
+  "reason": "User required memory-safe concurrency; no speculative KV overcommit"
+}

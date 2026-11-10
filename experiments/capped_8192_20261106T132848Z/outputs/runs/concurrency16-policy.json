@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-11-06T13:32:48.270698+00:00",
+  "max_num_seqs": 16,
+  "max_new_tokens": 8192,
+  "admission_mode": "scheduler_managed",
+  "initial_output_reservation_tokens": 2048,
+  "replaced_loading_job": "11821007",
+  "apertus_pending_job": "11821008",
+  "reason": "User requested higher batched concurrency"
+}

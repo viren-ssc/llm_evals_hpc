@@ -1,0 +1,14 @@
+{
+  "root": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/capped_8192_20261106T132848Z",
+  "models": [
+    "gc_llm",
+    "apertus"
+  ],
+  "questions_per_model": 756,
+  "max_new_tokens": 8192,
+  "prior_answers_reused": false,
+  "replaces_jobs": [
+    "11820995",
+    "11820996"
+  ]
+}
