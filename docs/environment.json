@@ -1,0 +1,16 @@
+{
+  "hostname": "inter-ssc-ubuntu2404.science.gc.ca",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "cache_environment": {
+    "HF_HOME": "/gpfs/fs7/ssc/ssc_dsai/.cache/huggingface",
+    "HF_HUB_CACHE": "/gpfs/fs7/ssc/ssc_dsai/.cache/huggingface/hub",
+    "TRANSFORMERS_CACHE": null
+  },
+  "login_node_inference": false,
+  "quota_observation": "quota -s: no limited resources used",
+  "loaded_modules": "No Modulefiles Currently Loaded",
+  "sandbox": "bwrap loopback startup fails; authorized commands executed via reviewed escalation",
+  "os": "Linux inter-ssc-ubuntu2404.science.gc.ca 6.8.0-146-generic #146-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep  3 16:12:30 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n",
+  "scheduler_partitions": "CLUSTER: gpsc7\nPARTITION AVAIL TIMELIMIT NODES GRES\ngpu_a100 up infinite 6 gpu:a100-sxm4-40gb:8(S:1,3,5,7)\n",
+  "job": "JobId=11815905 JobName=canadianness\n   UserId=vib000(82043) GroupId=ssc_dsai(66468) MCS_label=N/A\n   Priority=2232 Nice=0 Account=ssc_dsai__gpu_a100 QOS=low\n   JobState=RUNNING Reason=None Dependency=(null)\n   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0\n   RunTime=00:05:03 TimeLimit=1-00:00:00 TimeMin=N/A\n   SubmitTime=2026-11-06T04:06:20 EligibleTime=2026-11-06T04:06:20\n   AccrueTime=2026-11-06T04:06:20\n   StartTime=2026-11-06T04:06:22 EndTime=2026-11-07T04:06:22 Deadline=N/A\n   PreemptEligibleTime=2026-11-06T04:06:22 PreemptTime=None\n   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-06T04:06:22 Scheduler=Main\n   Partition=gpu_a100 AllocNode:Sid=inter-05:908386\n   ReqNodeList=(null) ExcNodeList=(null)\n   NodeList=ib14gpu-006\n   BatchHost=ib14gpu-006\n   NumNodes=1 NumCPUs=54 NumTasks=1 CPUs/Task=53 ReqB:S:C:T=0:0:*:*\n   ReqTRES=cpu=16,mem=192G,node=1,billing=56,gres/gpu=4\n   AllocTRES=cpu=54,mem=192G,node=1,billing=134,gres/gpu=4,gres/gpu:a100-sxm4-40gb=4\n   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*\n   MinCPUsNode=53 MinMemoryNode=192G MinTmpDiskNode=0\n   Features=(null) DelayBoot=00:00:00\n   OverSubscribe=NO Exclusive=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)\n   Command=/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/scripts/slurm/worker.sh\n   SubmitLine=sbatch --parsable --output=/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/outputs/runs/%x-%j.out --error=/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/outputs/runs/%x-%j.err /fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/scripts/slurm/worker.sh\n   WorkDir=/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals\n   Comment=image=registry.maze.science.gc.ca/ssc-hpcs/generic-job:ubuntu24.04\n   StdErr=/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/outputs/runs/canadianness-11815905.err\n   StdIn=/dev/null\n   StdOut=/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/outputs/runs/canadianness-11815905.out\n   TresPerNode=gres/gpu:4\n   TresPerTask=cpu=16\n\n"
+}
