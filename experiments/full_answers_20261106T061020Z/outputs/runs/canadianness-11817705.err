@@ -1,0 +1,43 @@
+(Worker pid=1055) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1054) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1055) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1054) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1056) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1056) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:   0% Completed | 0/30 [00:00<?, ?it/s]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:   3% Completed | 1/30 [00:30<14:55, 30.88s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:   7% Completed | 2/30 [01:11<17:11, 36.85s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  10% Completed | 3/30 [02:06<20:17, 45.10s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  13% Completed | 4/30 [02:58<20:39, 47.67s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  17% Completed | 5/30 [03:41<19:14, 46.17s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  20% Completed | 6/30 [04:22<17:39, 44.13s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  23% Completed | 7/30 [05:18<18:26, 48.10s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  27% Completed | 8/30 [06:04<17:21, 47.32s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  30% Completed | 9/30 [06:49<16:19, 46.65s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  33% Completed | 10/30 [07:32<15:12, 45.60s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  37% Completed | 11/30 [08:14<14:03, 44.41s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  40% Completed | 12/30 [08:54<12:57, 43.19s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  43% Completed | 13/30 [09:50<13:18, 46.99s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  47% Completed | 14/30 [10:38<12:37, 47.31s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  50% Completed | 15/30 [11:22<11:36, 46.41s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  53% Completed | 16/30 [12:08<10:45, 46.14s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  57% Completed | 17/30 [12:58<10:15, 47.33s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  60% Completed | 18/30 [13:29<08:31, 42.62s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  63% Completed | 19/30 [14:09<07:39, 41.80s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  67% Completed | 20/30 [14:38<06:17, 37.78s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  70% Completed | 21/30 [15:05<05:11, 34.65s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  73% Completed | 22/30 [15:24<04:00, 30.06s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  77% Completed | 23/30 [15:54<03:29, 29.97s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  80% Completed | 24/30 [16:22<02:56, 29.39s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  83% Completed | 25/30 [16:51<02:26, 29.22s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  87% Completed | 26/30 [17:16<01:52, 28.07s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  90% Completed | 27/30 [17:47<01:26, 28.94s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  93% Completed | 28/30 [18:15<00:57, 28.61s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards:  97% Completed | 29/30 [18:42<00:28, 28.12s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards: 100% Completed | 30/30 [18:50<00:00, 22.15s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) Loading safetensors checkpoint shards: 100% Completed | 30/30 [18:50<00:00, 37.70s/it]
+(Worker pid=1053) (Worker_TP0 pid=1053) 
+/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

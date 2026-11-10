@@ -1,0 +1,448 @@
+{
+  "model": {
+    "identifier": "swiss-ai/Apertus-70B-Instruct-2509",
+    "path": "/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--swiss-ai--Apertus-70B-Instruct-2509/snapshots/0f2767662a013c0fb631079cea883155252bc3b6",
+    "tokenizer_path": "/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--swiss-ai--Apertus-70B-Instruct-2509/snapshots/0f2767662a013c0fb631079cea883155252bc3b6",
+    "revision": "0f2767662a013c0fb631079cea883155252bc3b6",
+    "metadata_sha256": {
+      "config.json": "38d8511c8ef326097ce8c1bb6875556011191caa223d6ff3a924271ae915ab6f",
+      "tokenizer_config.json": "b89e07508603d6e1f2c8642f366c2469063c3eddae0585f1e67934ee98498ab1",
+      "chat_template.jinja": "56f72c27fa2e565312a830b7315a455c79fb452fdbe7a5b7595d8a094f282b07",
+      "tokenizer.json": "bb201fb226cde11f66c3cf51c5344fb37b1611f00c21e75c324546d854eff2e1",
+      "model.safetensors.index.json": "0528811de8dcb09de62bce22cd5132bd7aeaf3c39906e914af0a564c71fa8626"
+    },
+    "shard_manifest": [
+      {
+        "name": "model-00001-of-00030.safetensors",
+        "bytes": 4865428944,
+        "header_sha256": "744e006fbe75910c52ebc5957bc07ccb0ea74bbd7a3254e825eb8c4a118975a3"
+      },
+      {
+        "name": "model-00002-of-00030.safetensors",
+        "bytes": 4429289408,
+        "header_sha256": "b1bb32d10d850f1b34e03b054a4bda9b4d07cfeaf0186104d3f940b48fcfcebf"
+      },
+      {
+        "name": "model-00003-of-00030.safetensors",
+        "bytes": 4999714024,
+        "header_sha256": "a89303985e152fae7e75177fe417b82fb6db880462ca775d1cad1868f0bd6f69"
+      },
+      {
+        "name": "model-00004-of-00030.safetensors",
+        "bytes": 4966160096,
+        "header_sha256": "93583d9fb20297f0026b00737e25ee605e50c93b230615dcbaad137d215315d7"
+      },
+      {
+        "name": "model-00005-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "510da52d960fecc00f4f85659b0d98e2fdee08d36d5d2e3461e7ebdd1d425fba"
+      },
+      {
+        "name": "model-00006-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "0b88eb3a5c1ac4a252e9105b58de50fbaca4aa7fb8f27edde902e77f54828abf"
+      },
+      {
+        "name": "model-00007-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "a683f8ff45d8079b00b30f5eaa6df84bcfb4ce1595008ea0b61e1f7c1d9e56de"
+      },
+      {
+        "name": "model-00008-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "db79ab6d86195a02f726e6c5930824a75a63bff06d91388e68388bc0fcabb614"
+      },
+      {
+        "name": "model-00009-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "ad2a9ed339034eadaaa8f984980a334be2e614b0151f1c718de55d29f2a5c41b"
+      },
+      {
+        "name": "model-00010-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "5287551749784d8daa7ed0ecff5e934ceae31744b2ee5d5328e57af91c1a4deb"
+      },
+      {
+        "name": "model-00011-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "013be7d52fc2ab52db54bf35a100000090983581b6f14d7d4b4d879c40cecf80"
+      },
+      {
+        "name": "model-00012-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "d2a4b3f47dcec0594781c887673ed0870974cbaaab44151ad32e3e3d1d7d4a8b"
+      },
+      {
+        "name": "model-00013-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "127d5d2975e7a4e2a56cc043dfd426567e92ce6bd8d8ec2e9bef18c6c923ea4a"
+      },
+      {
+        "name": "model-00014-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "5a74492bfff2a6e514425e2152266ee3e5628cd3a67c1f8d7dfb1c012ebdb6aa"
+      },
+      {
+        "name": "model-00015-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "6e4642680a73cb992da10726ed70b6b034c229cef6de93ae9db15de5745b25a2"
+      },
+      {
+        "name": "model-00016-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "1f2c7481c9495963539044501b6e8351f0e5c30e0e138625e42890c6b69450d4"
+      },
+      {
+        "name": "model-00017-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "08d57ce5d0fb8926c348181994263b05fa70ac76aadbfeb1be25d4e2a8673e40"
+      },
+      {
+        "name": "model-00018-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "0af491986141259519149c3a71fece897c335e0b032f451a5a1c385a113541eb"
+      },
+      {
+        "name": "model-00019-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "147300f77b4fa32b9a5704eaf988ab155dd20d30ee948df0f29b46d75a312766"
+      },
+      {
+        "name": "model-00020-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "88a6cded14b64218a1fde97373b2206fea4ede3dc90a6804cfea82ff1d21e2d3"
+      },
+      {
+        "name": "model-00021-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "0812d0036fab71c299f4256a8cf239b5be772022494fdd975cbf83851bdfc8f3"
+      },
+      {
+        "name": "model-00022-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "d8e132f42e85793511c52ac37f69e22df4ccaf4244cd5a1b7c3232edb84a7ef9"
+      },
+      {
+        "name": "model-00023-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "8ba7a1bf6349e32475e94f5b58367cdebf95b5a33df06b4ef153dcd95e18831b"
+      },
+      {
+        "name": "model-00024-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "41fb85b11405ac1da2d34574c11f2e29580e36bec718fa825a733e040064b04a"
+      },
+      {
+        "name": "model-00025-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "e338e05268ece6bcd4d270eb3a8b2cf2c2d3a26881e91fec8afada39aaa8ba69"
+      },
+      {
+        "name": "model-00026-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "2ffdd2717325e2d71dff73a33af6ab88aae987e69fff6316ef4333f7732d1cd9"
+      },
+      {
+        "name": "model-00027-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "36f6d41879880972b15567b928fd46abaa5ff339603083ee43fb79270d1377d0"
+      },
+      {
+        "name": "model-00028-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "78cb6bae67f1eab7415b92f1df63ecfd5b17b12b82f7c73e6b46f6b579ce8df6"
+      },
+      {
+        "name": "model-00029-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "9a0dfe329ba3dc0bad4a8c430c0709f62099a65435306dfbfd8343bb05bbfe3f"
+      },
+      {
+        "name": "model-00030-of-00030.safetensors",
+        "bytes": 4563487752,
+        "header_sha256": "1ebead9699cbc1a1bf8b86fa2396e1e971f6708a3af3779ccf881de011007594"
+      }
+    ],
+    "ready": true,
+    "backend": "vllm",
+    "prompt_template": "{{ bos_token }}<|user_start|>{{ messages[0][\"content\"] }}<|user_end|><|assistant_start|>",
+    "tensor_parallel_size": 4,
+    "dtype": "bfloat16",
+    "gpu_memory_utilization": 0.94,
+    "adapter": null,
+    "identity_note": "Published GC model card identifies swiss-ai/Apertus-70B-Instruct-2509 as its parent; complete full checkpoints found",
+    "problems": [],
+    "context_window": 65536,
+    "cpu_offload_gb": 8
+  },
+  "generation": {
+    "max_new_tokens": null,
+    "retry_max_new_tokens": null,
+    "max_attempts": 3,
+    "seed": 0,
+    "temperature": 0.0,
+    "max_model_len": 65536,
+    "batch_size": "dynamic",
+    "prompt": "question_only"
+  },
+  "benchmark_sha256": "ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2",
+  "run_id": "20261106T061811Z-8278e15d",
+  "fingerprint": "53b3cfa960e7228fb88457022941b8cb5970f59b2c8cb715ebda8f3584e9ac3c",
+  "model_id": "apertus",
+  "started": "2026-11-06T06:18:12.279835+00:00",
+  "status": "failed",
+  "smoke": false,
+  "execution_policy": {
+    "run_smoke_tests": false,
+    "retain_generated_outputs": false,
+    "batching": {
+      "enabled": true,
+      "max_num_seqs": 64,
+      "max_num_batched_tokens": 8192,
+      "kv_cache_reserve_fraction": 0.95,
+      "admission_mode": "scheduler_managed",
+      "initial_output_reservation_tokens": 2048
+    }
+  },
+  "checkpoint_manifest": {
+    "path": "/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--swiss-ai--Apertus-70B-Instruct-2509/snapshots/0f2767662a013c0fb631079cea883155252bc3b6",
+    "problems": [],
+    "metadata_sha256": {
+      "config.json": "38d8511c8ef326097ce8c1bb6875556011191caa223d6ff3a924271ae915ab6f",
+      "tokenizer_config.json": "b89e07508603d6e1f2c8642f366c2469063c3eddae0585f1e67934ee98498ab1",
+      "chat_template.jinja": "56f72c27fa2e565312a830b7315a455c79fb452fdbe7a5b7595d8a094f282b07",
+      "tokenizer.json": "bb201fb226cde11f66c3cf51c5344fb37b1611f00c21e75c324546d854eff2e1",
+      "model.safetensors.index.json": "0528811de8dcb09de62bce22cd5132bd7aeaf3c39906e914af0a564c71fa8626"
+    },
+    "architecture": [
+      "ApertusForCausalLM"
+    ],
+    "model_type": "apertus",
+    "precision": "bfloat16",
+    "config": {
+      "architectures": [
+        "ApertusForCausalLM"
+      ],
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "bos_token_id": 1,
+      "dtype": "bfloat16",
+      "eos_token_id": 68,
+      "hidden_act": "xielu",
+      "hidden_dropout": 0.0,
+      "hidden_size": 8192,
+      "initializer_range": 0.02,
+      "intermediate_size": 43008,
+      "max_position_embeddings": 65536,
+      "mlp_bias": false,
+      "model_type": "apertus",
+      "num_attention_heads": 64,
+      "num_hidden_layers": 80,
+      "num_key_value_heads": 8,
+      "pad_token_id": 3,
+      "post_norm": false,
+      "qk_norm": true,
+      "rms_norm_eps": 1e-05,
+      "rope_scaling": {
+        "factor": 8.0,
+        "high_freq_factor": 4.0,
+        "low_freq_factor": 1.0,
+        "original_max_position_embeddings": 8192,
+        "rope_type": "llama3",
+        "type": "llama3"
+      },
+      "rope_theta": 12000000,
+      "tie_word_embeddings": false,
+      "transformers_version": "4.56.0.dev0",
+      "use_cache": false,
+      "vocab_size": 131072
+    },
+    "adapter": false,
+    "chat_template": "{%- macro render_typescript_type(param_spec, required_params, is_nullable=false) -%}\n    {%- if param_spec.type == \"array\" -%}\n        {%- if param_spec['items'] -%}\n            {%- if param_spec['items']['type'] == \"string\" -%}\n                {{- \"string[]\" }}\n            {%- elif param_spec['items']['type'] == \"number\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"integer\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"boolean\" -%}\n                {{- \"boolean[]\" }}\n            {%- else -%}\n                {%- set inner_type = render_typescript_type(param_spec['items'], required_params) -%}\n                {%- if inner_type == \"object | object\" or inner_type|length > 50 -%}\n                    {{- \"any[]\" }}\n                {%- else -%}\n                    {{- inner_type + \"[]\" }}\n                {%- endif -%}\n            {%- endif -%}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- else -%}\n            {{- \"any[]\" }}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type is defined and param_spec.type is iterable and param_spec.type is not string and param_spec.type is not mapping and param_spec.type[0] is defined -%}\n        {#- Handle array of types like [\"object\", \"object\"] from Union[dict, list] #}\n        {%- if param_spec.type | length > 1 -%}\n            {{- param_spec.type | join(\" | \") }}\n        {%- else -%}\n            {{- param_spec.type[0] }}\n        {%- endif -%}\n    {%- elif param_spec.oneOf -%}\n        {#- Handle oneOf schemas - check for complex unions and fallback to any #}\n        {%- set has_object_variants = false -%}\n        {%- for variant in param_spec.oneOf -%}\n            {%- if variant.type == \"object\" -%}\n                {%- set has_object_variants = true -%}\n            {%- endif -%}\n        {%- endfor -%}\n        {%- if has_object_variants and param_spec.oneOf|length > 1 -%}\n            {{- \"any\" }}\n        {%- else -%}\n            {%- for variant in param_spec.oneOf -%}\n                {{- render_typescript_type(variant, required_params) -}}\n                {%- if variant.description %}\n                    {{- \"// \" + variant.description }}\n                {%- endif -%}\n                {%- if variant.default is defined %}\n                    {{ \"// default: \" + variant.default|tojson }}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \" | \" }}\n                {% endif -%}\n            {%- endfor -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"string\" -%}\n        {%- if param_spec.enum -%}\n            {{- '\"' + param_spec.enum|join('\" | \"') + '\"' -}}\n        {%- else -%}\n            {{- \"string\" }}\n            {%- if param_spec.nullable %}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"number\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"integer\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"boolean\" -%}\n        {{- \"boolean\" }}\n    {%- elif param_spec.type == \"object\" -%}\n        {%- if param_spec.properties -%}\n            {{- \"{\\n\" }}\n            {%- for prop_name, prop_spec in param_spec.properties.items() -%}\n                {{- prop_name -}}\n                {%- if prop_name not in (param_spec.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{ render_typescript_type(prop_spec, param_spec.required or []) }}\n                {%- if not loop.last -%}\n                    {{-\", \" }}\n                {%- endif -%}\n            {%- endfor -%}\n            {{- \"}\" }}\n        {%- else -%}\n            {{- \"object\" }}\n        {%- endif -%}\n    {%- else -%}\n        {{- \"any\" }}\n    {%- endif -%}\n{%- endmacro -%}\n\n{%- macro render_tools(tools) -%}\n    {%- for tool in tools %}\n        {{- \"// \" + tool.description + \"\\n\" }}\n        {{- \"type \"+ tool.name + \" = \" }}\n        {%- if tool.parameters and tool.parameters.properties %}\n            {{- \"(_: {\\n\" }}\n            {%- for param_name, param_spec in tool.parameters.properties.items() %}\n                {%- if param_spec.description %}\n                    {{- \"// \" + param_spec.description + \"\\n\" }}\n                {%- endif %}\n                {{- param_name }}\n                {%- if param_name not in (tool.parameters.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{- render_typescript_type(param_spec, tool.parameters.required or []) }}\n                {%- if param_spec.default is defined -%}\n                    {%- if param_spec.enum %}\n                        {{- \", // default: \" + param_spec.default }}\n                    {%- elif param_spec.oneOf %}\n                        {{- \"// default: \" + param_spec.default }}\n                    {%- else %}\n                        {{- \", // default: \" + param_spec.default|tojson }}\n                    {%- endif -%}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \",\\n\" }}\n                {%- else %}\n                    {{- \"\\n\" }}\n                {%- endif -%}\n            {%- endfor %}\n            {{- \"}) => any;\" }}\n        {%- else -%}\n            {{- \"() => any;\" }}\n        {%- endif -%}\n        {%- if not loop.last -%}\n            {{- \"\\n\" }}\n        {%- endif -%}\n    {%- endfor %}\n{%- endmacro -%}\n\n{{ bos_token }}\n\n{%- set system_token = '<|system_start|>' -%}\n{%- set end_system_token = '<|system_end|>' -%}\n{%- set developer_token = '<|developer_start|>' -%}\n{%- set end_developer_token = '<|developer_end|>' -%}\n{%- set user_token = '<|user_start|>' -%}\n{%- set end_user_token = '<|user_end|>' -%}\n{%- set assistant_token = '<|assistant_start|>' -%}\n{%- set end_assistant_token = '<|assistant_end|>' -%}\n{%- set inner_token = '<|inner_prefix|>' -%}\n{%- set outer_token = '<|inner_suffix|>' -%}\n{%- set tool_calls_token = '<|tools_prefix|>' -%}\n{%- set end_tool_calls_token = '<|tools_suffix|>' -%}\n{%- set image_token = '<|image|>' -%}\n\n{%- set ns = namespace(in_assistant=false, in_tool=false, in_inner=false, waiting_for_tool_outputs=false, assistant_format=none) -%}\n\n{%- if messages and messages[0].role == 'system' -%}\n    {%- if \"content\" in messages[0] -%}\n        {%- if messages[0].content is string -%}\n            {{ system_token + messages[0].content + end_system_token }}\n        {%- elif messages[0].content is mapping and \"text\" in messages[0].content -%}\n            {{ system_token + messages[0].content.text + end_system_token }}\n        {%- else -%}\n            {{- raise_exception(\"Invalid system message\") -}}\n        {%- endif -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid system message\") -}}\n    {%- endif -%}\n    {%- set loop_messages = messages[1:] -%}\n{%- else -%}\n    {{ system_token + 'You are Apertus, a helpful assistant created by the SwissAI initiative.\\nKnowledge cutoff: 2024-04\\nCurrent date: ' + strftime_now('%Y-%m-%d') + end_system_token }}\n    {%- set loop_messages = messages -%}\n{%- endif -%}\n\n{{ developer_token + 'Deliberation: ' }}\n{%- if enable_thinking is defined and enable_thinking -%}\n    {{ 'enabled\\n' }}\n{%- else -%}\n    {{ 'disabled\\n' }}\n{%- endif -%}\n{%- if tools is defined and tools -%}\n    {{ 'Tool Capabilities:\\n' + render_tools(tools) }}\n{%- else -%}\n    {{ 'Tool Capabilities: disabled' }}\n{%- endif -%}\n{{ end_developer_token }}\n\n{%- for message in loop_messages -%}\n    {%- if message.role == 'user' -%}\n        {%- set ns.in_inner = false -%}\n        {%- if ns.in_tool -%}\n            {{ ']' }}\n            {%- set ns.in_tool = false -%}\n        {%- endif -%}\n        {%- if ns.in_assistant -%}\n            {{ end_assistant_token }}\n            {%- set ns.in_assistant = false -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {{ user_token }}\n            {%- if message.content is string -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"parts\" in message.content -%}\n                {%- set parts = message.content.parts -%}\n                {%- for part in parts -%}\n                    {%- if part.type == \"text\" -%}\n                        {{ part.text }}\n                    {%- elif part.type == \"image\" -%}\n                        {{ image_token }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid user part: \" + part.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid user message: \" + message.role) -}}\n            {%- endif -%}\n            {{ end_user_token }}\n        {%- endif -%}\n    {%- elif message.role == 'assistant' -%}\n        {%- if not ns.in_assistant -%}\n            {{ assistant_token }}\n            {%- set ns.in_assistant = true -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {%- if message.content is string and (ns.assistant_format is none or ns.assistant_format == \"string\") -%}\n                {%- if ns.in_tool -%}\n                    {{ ']' }}\n                    {%- set ns.in_tool = false -%}\n                {%- endif -%}\n                {%- set ns.assistant_format = \"string\" -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"blocks\" in message.content and (ns.assistant_format is none or ns.assistant_format == \"mapping\") -%}\n                {%- set ns.assistant_format = \"mapping\" -%}\n                {%- set blocks = message.content.blocks -%}\n                {%- for block in blocks -%}\n                    {%- if block.type == 'thoughts' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if not ns.in_inner -%}\n                            {%- set ns.in_inner = true -%}\n                            {{ inner_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- elif block.type == 'tool_calls' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if ns.in_inner and not loop.first and block.calls|length == 1 and block.calls[0].name == 'display_answers' -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ tool_calls_token + '[' }}\n                        {%- for tool_call in block.calls -%}\n                            {{- '{\"' + tool_call.name + '\": ' + tool_call.arguments + '}' }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{ ']' + end_tool_calls_token }}\n                        {%- set ns.waiting_for_tool_outputs = true -%}\n                    {%- elif block.type == 'tool_outputs' -%}\n                        {%- if ns.in_tool -%}\n                            {{- raise_exception(\"Cannot have both tool outputs as separate messages and tool outputs as blocks\") -}}\n                        {%- endif -%}\n                        {{ '[' }}\n                        {%- for tool_output in block.outputs -%}\n                            {{- tool_output.output }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{- ']' }}\n                        {%- set ns.waiting_for_tool_outputs = false -%}\n                    {%- elif block.type == 'response' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if (not loop.first and ns.in_inner) or (ns.in_assistant and ns.in_inner) -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid assistant block type: \" + block.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid assistant content\") -}}\n            {%- endif -%}\n        {%- else -%}\n            {{- raise_exception(\"Invalid assistant message\") -}}\n        {%- endif -%}\n        {%- if \"tool_calls\" in message and message.tool_calls -%}\n            {{ tool_calls_token + '[' }}\n            {%- for tool_call in message.tool_calls -%}\n                {%- if tool_call.type == 'function' -%}\n                    {%- set function = tool_call.function -%}\n                    {{- '{\"' + function.name + '\": ' + function.arguments + '}' }}\n                    {%- if not loop.last -%}\n                        {{- \", \" }}\n                    {%- endif -%}\n                {%- else -%}\n                    {{- raise_exception(\"Invalid tool call type: \" + tool_call.type) -}}\n                {%- endif -%}\n            {%- endfor -%}\n            {{ ']' + end_tool_calls_token }}\n            {%- set ns.waiting_for_tool_outputs = true -%}\n        {%- endif -%}\n    {%- elif message.role == 'tool' -%}\n        {%- if not ns.in_assistant -%}\n            {{- raise_exception(\"Tool message outside of assistant\") -}}\n        {%- endif -%}\n        {%- if not ns.in_tool -%}\n            {{ '[' }}\n            {%- set ns.in_tool = true -%}\n        {%- else -%}\n            {{ \", \"}}\n        {%- endif -%}\n        {{ message.content }}\n        {%- set ns.waiting_for_tool_outputs = false -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid message role\") -}}\n    {%- endif -%}\n{%- endfor -%}\n{%- if ns.in_tool -%}\n    {{ ']' }}\n{%- endif -%}\n{%- if ns.in_assistant and not (continue_assistant_message is defined and continue_assistant_message) and not ns.waiting_for_tool_outputs -%}\n    {{ end_assistant_token }}\n{%- endif -%}\n{%- if add_generation_prompt -%}\n    {{ assistant_token }}\n{%- endif -%}\n",
+    "shards": [
+      {
+        "name": "model-00001-of-00030.safetensors",
+        "bytes": 4865428944,
+        "header_sha256": "744e006fbe75910c52ebc5957bc07ccb0ea74bbd7a3254e825eb8c4a118975a3"
+      },
+      {
+        "name": "model-00002-of-00030.safetensors",
+        "bytes": 4429289408,
+        "header_sha256": "b1bb32d10d850f1b34e03b054a4bda9b4d07cfeaf0186104d3f940b48fcfcebf"
+      },
+      {
+        "name": "model-00003-of-00030.safetensors",
+        "bytes": 4999714024,
+        "header_sha256": "a89303985e152fae7e75177fe417b82fb6db880462ca775d1cad1868f0bd6f69"
+      },
+      {
+        "name": "model-00004-of-00030.safetensors",
+        "bytes": 4966160096,
+        "header_sha256": "93583d9fb20297f0026b00737e25ee605e50c93b230615dcbaad137d215315d7"
+      },
+      {
+        "name": "model-00005-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "510da52d960fecc00f4f85659b0d98e2fdee08d36d5d2e3461e7ebdd1d425fba"
+      },
+      {
+        "name": "model-00006-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "0b88eb3a5c1ac4a252e9105b58de50fbaca4aa7fb8f27edde902e77f54828abf"
+      },
+      {
+        "name": "model-00007-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "a683f8ff45d8079b00b30f5eaa6df84bcfb4ce1595008ea0b61e1f7c1d9e56de"
+      },
+      {
+        "name": "model-00008-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "db79ab6d86195a02f726e6c5930824a75a63bff06d91388e68388bc0fcabb614"
+      },
+      {
+        "name": "model-00009-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "ad2a9ed339034eadaaa8f984980a334be2e614b0151f1c718de55d29f2a5c41b"
+      },
+      {
+        "name": "model-00010-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "5287551749784d8daa7ed0ecff5e934ceae31744b2ee5d5328e57af91c1a4deb"
+      },
+      {
+        "name": "model-00011-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "013be7d52fc2ab52db54bf35a100000090983581b6f14d7d4b4d879c40cecf80"
+      },
+      {
+        "name": "model-00012-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "d2a4b3f47dcec0594781c887673ed0870974cbaaab44151ad32e3e3d1d7d4a8b"
+      },
+      {
+        "name": "model-00013-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "127d5d2975e7a4e2a56cc043dfd426567e92ce6bd8d8ec2e9bef18c6c923ea4a"
+      },
+      {
+        "name": "model-00014-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "5a74492bfff2a6e514425e2152266ee3e5628cd3a67c1f8d7dfb1c012ebdb6aa"
+      },
+      {
+        "name": "model-00015-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "6e4642680a73cb992da10726ed70b6b034c229cef6de93ae9db15de5745b25a2"
+      },
+      {
+        "name": "model-00016-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "1f2c7481c9495963539044501b6e8351f0e5c30e0e138625e42890c6b69450d4"
+      },
+      {
+        "name": "model-00017-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "08d57ce5d0fb8926c348181994263b05fa70ac76aadbfeb1be25d4e2a8673e40"
+      },
+      {
+        "name": "model-00018-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "0af491986141259519149c3a71fece897c335e0b032f451a5a1c385a113541eb"
+      },
+      {
+        "name": "model-00019-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "147300f77b4fa32b9a5704eaf988ab155dd20d30ee948df0f29b46d75a312766"
+      },
+      {
+        "name": "model-00020-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "88a6cded14b64218a1fde97373b2206fea4ede3dc90a6804cfea82ff1d21e2d3"
+      },
+      {
+        "name": "model-00021-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "0812d0036fab71c299f4256a8cf239b5be772022494fdd975cbf83851bdfc8f3"
+      },
+      {
+        "name": "model-00022-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "d8e132f42e85793511c52ac37f69e22df4ccaf4244cd5a1b7c3232edb84a7ef9"
+      },
+      {
+        "name": "model-00023-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "8ba7a1bf6349e32475e94f5b58367cdebf95b5a33df06b4ef153dcd95e18831b"
+      },
+      {
+        "name": "model-00024-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "41fb85b11405ac1da2d34574c11f2e29580e36bec718fa825a733e040064b04a"
+      },
+      {
+        "name": "model-00025-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "e338e05268ece6bcd4d270eb3a8b2cf2c2d3a26881e91fec8afada39aaa8ba69"
+      },
+      {
+        "name": "model-00026-of-00030.safetensors",
+        "bytes": 4429289448,
+        "header_sha256": "2ffdd2717325e2d71dff73a33af6ab88aae987e69fff6316ef4333f7732d1cd9"
+      },
+      {
+        "name": "model-00027-of-00030.safetensors",
+        "bytes": 4999714064,
+        "header_sha256": "36f6d41879880972b15567b928fd46abaa5ff339603083ee43fb79270d1377d0"
+      },
+      {
+        "name": "model-00028-of-00030.safetensors",
+        "bytes": 4966160128,
+        "header_sha256": "78cb6bae67f1eab7415b92f1df63ecfd5b17b12b82f7c73e6b46f6b579ce8df6"
+      },
+      {
+        "name": "model-00029-of-00030.safetensors",
+        "bytes": 4429256040,
+        "header_sha256": "9a0dfe329ba3dc0bad4a8c430c0709f62099a65435306dfbfd8343bb05bbfe3f"
+      },
+      {
+        "name": "model-00030-of-00030.safetensors",
+        "bytes": 4563487752,
+        "header_sha256": "1ebead9699cbc1a1bf8b86fa2396e1e971f6708a3af3779ccf881de011007594"
+      }
+    ],
+    "weight_bytes": 141199854344,
+    "parameter_count": 70599864640,
+    "ready": true,
+    "status": "instruct"
+  },
+  "hostname": "ib14gpu-004",
+  "job_id": "11817704",
+  "packages": {
+    "vllm": "0.17.0",
+    "torch": "2.10.0",
+    "transformers": "4.57.6"
+  },
+  "source_sha256": {
+    "__init__.py": "c35c89e8b6553fe3d1018d80023ebb5b3dcbb2f01a477515d5a589559aca6738",
+    "dataset.py": "470a53754ba14f447c01ad475dfeef695c5617fe3b8891f073abf74bbe3dfac9",
+    "checkpointing.py": "cec55d23787ac54a62fa357342b2de74fb029ecf4b07495a4d43a58cf12be78b",
+    "discovery.py": "0797242bb0f5f6a375762c1892fc8d4bbd8d9d92d7672e02f75d4620e872a01f",
+    "inference.py": "fde1392494d5c82b6a97cf6539455fa4f4a34a14e79108f6e3f5e7f355062a06",
+    "generation.py": "c5c8a25138003bcbfbc1450a0687f62d4154439b38038a5dd6795f0e738c0d22",
+    "export.py": "f186fd1f2ca8f7d3ad0b7f0704806bdbb41bda20bc25f4a83ae78b4dbb91ded2",
+    "__main__.py": "285b01c6fb9dec1be560382ddb7adb443125a8f6d62ddbd4f4cee6bd913fb66f",
+    "batching.py": "42cca73508de6707247bd8dc8042983ab8607d0dc569221760e0fd3b3b792782"
+  },
+  "effective_chat_template": "{{ bos_token }}<|user_start|>{{ messages[0][\"content\"] }}<|user_end|><|assistant_start|>",
+  "native_chat_template": "{%- macro render_typescript_type(param_spec, required_params, is_nullable=false) -%}\n    {%- if param_spec.type == \"array\" -%}\n        {%- if param_spec['items'] -%}\n            {%- if param_spec['items']['type'] == \"string\" -%}\n                {{- \"string[]\" }}\n            {%- elif param_spec['items']['type'] == \"number\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"integer\" -%}\n                {{- \"number[]\" }}\n            {%- elif param_spec['items']['type'] == \"boolean\" -%}\n                {{- \"boolean[]\" }}\n            {%- else -%}\n                {%- set inner_type = render_typescript_type(param_spec['items'], required_params) -%}\n                {%- if inner_type == \"object | object\" or inner_type|length > 50 -%}\n                    {{- \"any[]\" }}\n                {%- else -%}\n                    {{- inner_type + \"[]\" }}\n                {%- endif -%}\n            {%- endif -%}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- else -%}\n            {{- \"any[]\" }}\n            {%- if param_spec.nullable -%}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type is defined and param_spec.type is iterable and param_spec.type is not string and param_spec.type is not mapping and param_spec.type[0] is defined -%}\n        {#- Handle array of types like [\"object\", \"object\"] from Union[dict, list] #}\n        {%- if param_spec.type | length > 1 -%}\n            {{- param_spec.type | join(\" | \") }}\n        {%- else -%}\n            {{- param_spec.type[0] }}\n        {%- endif -%}\n    {%- elif param_spec.oneOf -%}\n        {#- Handle oneOf schemas - check for complex unions and fallback to any #}\n        {%- set has_object_variants = false -%}\n        {%- for variant in param_spec.oneOf -%}\n            {%- if variant.type == \"object\" -%}\n                {%- set has_object_variants = true -%}\n            {%- endif -%}\n        {%- endfor -%}\n        {%- if has_object_variants and param_spec.oneOf|length > 1 -%}\n            {{- \"any\" }}\n        {%- else -%}\n            {%- for variant in param_spec.oneOf -%}\n                {{- render_typescript_type(variant, required_params) -}}\n                {%- if variant.description %}\n                    {{- \"// \" + variant.description }}\n                {%- endif -%}\n                {%- if variant.default is defined %}\n                    {{ \"// default: \" + variant.default|tojson }}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \" | \" }}\n                {% endif -%}\n            {%- endfor -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"string\" -%}\n        {%- if param_spec.enum -%}\n            {{- '\"' + param_spec.enum|join('\" | \"') + '\"' -}}\n        {%- else -%}\n            {{- \"string\" }}\n            {%- if param_spec.nullable %}\n                {{- \" | null\" }}\n            {%- endif -%}\n        {%- endif -%}\n    {%- elif param_spec.type == \"number\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"integer\" -%}\n        {{- \"number\" }}\n    {%- elif param_spec.type == \"boolean\" -%}\n        {{- \"boolean\" }}\n    {%- elif param_spec.type == \"object\" -%}\n        {%- if param_spec.properties -%}\n            {{- \"{\\n\" }}\n            {%- for prop_name, prop_spec in param_spec.properties.items() -%}\n                {{- prop_name -}}\n                {%- if prop_name not in (param_spec.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{ render_typescript_type(prop_spec, param_spec.required or []) }}\n                {%- if not loop.last -%}\n                    {{-\", \" }}\n                {%- endif -%}\n            {%- endfor -%}\n            {{- \"}\" }}\n        {%- else -%}\n            {{- \"object\" }}\n        {%- endif -%}\n    {%- else -%}\n        {{- \"any\" }}\n    {%- endif -%}\n{%- endmacro -%}\n\n{%- macro render_tools(tools) -%}\n    {%- for tool in tools %}\n        {{- \"// \" + tool.description + \"\\n\" }}\n        {{- \"type \"+ tool.name + \" = \" }}\n        {%- if tool.parameters and tool.parameters.properties %}\n            {{- \"(_: {\\n\" }}\n            {%- for param_name, param_spec in tool.parameters.properties.items() %}\n                {%- if param_spec.description %}\n                    {{- \"// \" + param_spec.description + \"\\n\" }}\n                {%- endif %}\n                {{- param_name }}\n                {%- if param_name not in (tool.parameters.required or []) -%}\n                    {{- \"?\" }}\n                {%- endif -%}\n                {{- \": \" }}\n                {{- render_typescript_type(param_spec, tool.parameters.required or []) }}\n                {%- if param_spec.default is defined -%}\n                    {%- if param_spec.enum %}\n                        {{- \", // default: \" + param_spec.default }}\n                    {%- elif param_spec.oneOf %}\n                        {{- \"// default: \" + param_spec.default }}\n                    {%- else %}\n                        {{- \", // default: \" + param_spec.default|tojson }}\n                    {%- endif -%}\n                {%- endif -%}\n                {%- if not loop.last %}\n                    {{- \",\\n\" }}\n                {%- else %}\n                    {{- \"\\n\" }}\n                {%- endif -%}\n            {%- endfor %}\n            {{- \"}) => any;\" }}\n        {%- else -%}\n            {{- \"() => any;\" }}\n        {%- endif -%}\n        {%- if not loop.last -%}\n            {{- \"\\n\" }}\n        {%- endif -%}\n    {%- endfor %}\n{%- endmacro -%}\n\n{{ bos_token }}\n\n{%- set system_token = '<|system_start|>' -%}\n{%- set end_system_token = '<|system_end|>' -%}\n{%- set developer_token = '<|developer_start|>' -%}\n{%- set end_developer_token = '<|developer_end|>' -%}\n{%- set user_token = '<|user_start|>' -%}\n{%- set end_user_token = '<|user_end|>' -%}\n{%- set assistant_token = '<|assistant_start|>' -%}\n{%- set end_assistant_token = '<|assistant_end|>' -%}\n{%- set inner_token = '<|inner_prefix|>' -%}\n{%- set outer_token = '<|inner_suffix|>' -%}\n{%- set tool_calls_token = '<|tools_prefix|>' -%}\n{%- set end_tool_calls_token = '<|tools_suffix|>' -%}\n{%- set image_token = '<|image|>' -%}\n\n{%- set ns = namespace(in_assistant=false, in_tool=false, in_inner=false, waiting_for_tool_outputs=false, assistant_format=none) -%}\n\n{%- if messages and messages[0].role == 'system' -%}\n    {%- if \"content\" in messages[0] -%}\n        {%- if messages[0].content is string -%}\n            {{ system_token + messages[0].content + end_system_token }}\n        {%- elif messages[0].content is mapping and \"text\" in messages[0].content -%}\n            {{ system_token + messages[0].content.text + end_system_token }}\n        {%- else -%}\n            {{- raise_exception(\"Invalid system message\") -}}\n        {%- endif -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid system message\") -}}\n    {%- endif -%}\n    {%- set loop_messages = messages[1:] -%}\n{%- else -%}\n    {{ system_token + 'You are Apertus, a helpful assistant created by the SwissAI initiative.\\nKnowledge cutoff: 2024-04\\nCurrent date: ' + strftime_now('%Y-%m-%d') + end_system_token }}\n    {%- set loop_messages = messages -%}\n{%- endif -%}\n\n{{ developer_token + 'Deliberation: ' }}\n{%- if enable_thinking is defined and enable_thinking -%}\n    {{ 'enabled\\n' }}\n{%- else -%}\n    {{ 'disabled\\n' }}\n{%- endif -%}\n{%- if tools is defined and tools -%}\n    {{ 'Tool Capabilities:\\n' + render_tools(tools) }}\n{%- else -%}\n    {{ 'Tool Capabilities: disabled' }}\n{%- endif -%}\n{{ end_developer_token }}\n\n{%- for message in loop_messages -%}\n    {%- if message.role == 'user' -%}\n        {%- set ns.in_inner = false -%}\n        {%- if ns.in_tool -%}\n            {{ ']' }}\n            {%- set ns.in_tool = false -%}\n        {%- endif -%}\n        {%- if ns.in_assistant -%}\n            {{ end_assistant_token }}\n            {%- set ns.in_assistant = false -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {{ user_token }}\n            {%- if message.content is string -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"parts\" in message.content -%}\n                {%- set parts = message.content.parts -%}\n                {%- for part in parts -%}\n                    {%- if part.type == \"text\" -%}\n                        {{ part.text }}\n                    {%- elif part.type == \"image\" -%}\n                        {{ image_token }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid user part: \" + part.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid user message: \" + message.role) -}}\n            {%- endif -%}\n            {{ end_user_token }}\n        {%- endif -%}\n    {%- elif message.role == 'assistant' -%}\n        {%- if not ns.in_assistant -%}\n            {{ assistant_token }}\n            {%- set ns.in_assistant = true -%}\n        {%- endif -%}\n        {%- if \"content\" in message -%}\n            {%- if message.content is string and (ns.assistant_format is none or ns.assistant_format == \"string\") -%}\n                {%- if ns.in_tool -%}\n                    {{ ']' }}\n                    {%- set ns.in_tool = false -%}\n                {%- endif -%}\n                {%- set ns.assistant_format = \"string\" -%}\n                {{ message.content }}\n            {%- elif message.content is mapping and \"blocks\" in message.content and (ns.assistant_format is none or ns.assistant_format == \"mapping\") -%}\n                {%- set ns.assistant_format = \"mapping\" -%}\n                {%- set blocks = message.content.blocks -%}\n                {%- for block in blocks -%}\n                    {%- if block.type == 'thoughts' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if not ns.in_inner -%}\n                            {%- set ns.in_inner = true -%}\n                            {{ inner_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- elif block.type == 'tool_calls' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if ns.in_inner and not loop.first and block.calls|length == 1 and block.calls[0].name == 'display_answers' -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ tool_calls_token + '[' }}\n                        {%- for tool_call in block.calls -%}\n                            {{- '{\"' + tool_call.name + '\": ' + tool_call.arguments + '}' }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{ ']' + end_tool_calls_token }}\n                        {%- set ns.waiting_for_tool_outputs = true -%}\n                    {%- elif block.type == 'tool_outputs' -%}\n                        {%- if ns.in_tool -%}\n                            {{- raise_exception(\"Cannot have both tool outputs as separate messages and tool outputs as blocks\") -}}\n                        {%- endif -%}\n                        {{ '[' }}\n                        {%- for tool_output in block.outputs -%}\n                            {{- tool_output.output }}\n                            {%- if not loop.last -%}\n                                {{- \", \" }}\n                            {%- endif -%}\n                        {%- endfor -%}\n                        {{- ']' }}\n                        {%- set ns.waiting_for_tool_outputs = false -%}\n                    {%- elif block.type == 'response' -%}\n                        {%- if ns.in_tool -%}\n                            {{ ']' }}\n                            {%- set ns.in_tool = false -%}\n                        {%- endif -%}\n                        {%- if (not loop.first and ns.in_inner) or (ns.in_assistant and ns.in_inner) -%}\n                            {%- set ns.in_inner = false -%}\n                            {{ outer_token }}\n                        {%- endif -%}\n                        {{ block.text }}\n                    {%- else -%}\n                        {{- raise_exception(\"Invalid assistant block type: \" + block.type) -}}\n                    {%- endif -%}\n                {%- endfor -%}\n            {%- else -%}\n                {{- raise_exception(\"Invalid assistant content\") -}}\n            {%- endif -%}\n        {%- else -%}\n            {{- raise_exception(\"Invalid assistant message\") -}}\n        {%- endif -%}\n        {%- if \"tool_calls\" in message and message.tool_calls -%}\n            {{ tool_calls_token + '[' }}\n            {%- for tool_call in message.tool_calls -%}\n                {%- if tool_call.type == 'function' -%}\n                    {%- set function = tool_call.function -%}\n                    {{- '{\"' + function.name + '\": ' + function.arguments + '}' }}\n                    {%- if not loop.last -%}\n                        {{- \", \" }}\n                    {%- endif -%}\n                {%- else -%}\n                    {{- raise_exception(\"Invalid tool call type: \" + tool_call.type) -}}\n                {%- endif -%}\n            {%- endfor -%}\n            {{ ']' + end_tool_calls_token }}\n            {%- set ns.waiting_for_tool_outputs = true -%}\n        {%- endif -%}\n    {%- elif message.role == 'tool' -%}\n        {%- if not ns.in_assistant -%}\n            {{- raise_exception(\"Tool message outside of assistant\") -}}\n        {%- endif -%}\n        {%- if not ns.in_tool -%}\n            {{ '[' }}\n            {%- set ns.in_tool = true -%}\n        {%- else -%}\n            {{ \", \"}}\n        {%- endif -%}\n        {{ message.content }}\n        {%- set ns.waiting_for_tool_outputs = false -%}\n    {%- else -%}\n        {{- raise_exception(\"Invalid message role\") -}}\n    {%- endif -%}\n{%- endfor -%}\n{%- if ns.in_tool -%}\n    {{ ']' }}\n{%- endif -%}\n{%- if ns.in_assistant and not (continue_assistant_message is defined and continue_assistant_message) and not ns.waiting_for_tool_outputs -%}\n    {{ end_assistant_token }}\n{%- endif -%}\n{%- if add_generation_prompt -%}\n    {{ assistant_token }}\n{%- endif -%}\n",
+  "live_cap_override": {
+    "job": "11817704",
+    "role": "main",
+    "time": "2026-11-06T13:25:37.957085+00:00",
+    "cap": 8192,
+    "model_reloaded": false
+  },
+  "error": "EngineDeadError: EngineCore encountered an issue. See stack trace (above) for the root cause.",
+  "ended": "2026-11-06T13:26:00.303141+00:00"
+}

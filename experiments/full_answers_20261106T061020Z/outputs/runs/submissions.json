@@ -1,0 +1,14 @@
+{
+  "llama": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11817705;gpsc7"
+  },
+  "gc_llm": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11820995;gpsc7"
+  },
+  "apertus": {
+    "state": "accepted",
+    "scheduler_acknowledgement": "11820996;gpsc7"
+  }
+}

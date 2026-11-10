@@ -1,0 +1,410 @@
+INFO 11-06 06:21:06 [utils.py:238] non-default args: {'tokenizer': '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', 'dtype': 'bfloat16', 'max_model_len': 65536, 'tensor_parallel_size': 4, 'cpu_offload_gb': 8, 'gpu_memory_utilization': 0.94, 'max_num_batched_tokens': 8192, 'max_num_seqs': 64, 'disable_log_stats': True, 'enforce_eager': True, 'model': '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585'}
+INFO 11-06 06:22:17 [model.py:531] Resolved architecture: ApertusForCausalLM
+INFO 11-06 06:22:17 [model.py:1554] Using max model len 65536
+INFO 11-06 06:22:25 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 11-06 06:22:25 [vllm.py:747] Asynchronous scheduling is enabled.
+WARNING 11-06 06:22:25 [vllm.py:781] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 11-06 06:22:25 [vllm.py:792] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 11-06 06:22:25 [vllm.py:957] Cudagraph is disabled under eager mode
+(EngineCore_DP0 pid=935) INFO 11-06 06:22:34 [core.py:101] Initializing a V1 LLM engine (v0.17.0) with config: model='/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', speculative_config=None, tokenizer='/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=65536, download_dir=None, load_format=auto, tensor_parallel_size=4, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_split_points': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore_DP0 pid=935) INFO 11-06 06:22:34 [multiproc_executor.py:134] DP group leader: node_rank=0, node_rank_within_dp=0, master_addr=127.0.0.1, mq_connect_ip=10.142.0.57 (local), world_size=4, local_world_size=4
+(Worker pid=1050) INFO 11-06 06:22:51 [parallel_state.py:1393] world_size=4 rank=0 local_rank=0 distributed_init_method=tcp://127.0.0.1:60145 backend=nccl
+(Worker pid=1053) INFO 11-06 06:22:51 [parallel_state.py:1393] world_size=4 rank=3 local_rank=3 distributed_init_method=tcp://127.0.0.1:60145 backend=nccl
+(Worker pid=1051) INFO 11-06 06:22:51 [parallel_state.py:1393] world_size=4 rank=1 local_rank=1 distributed_init_method=tcp://127.0.0.1:60145 backend=nccl
+(Worker pid=1052) INFO 11-06 06:22:51 [parallel_state.py:1393] world_size=4 rank=2 local_rank=2 distributed_init_method=tcp://127.0.0.1:60145 backend=nccl
+(Worker pid=1050) INFO 11-06 06:23:40 [pynccl.py:111] vLLM is using nccl==2.27.5
+(Worker pid=1050) WARNING 11-06 06:23:41 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1052) WARNING 11-06 06:23:41 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1051) WARNING 11-06 06:23:41 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1053) WARNING 11-06 06:23:41 [symm_mem.py:67] SymmMemCommunicator: Device capability 8.0 not supported, communicator is not available.
+(Worker pid=1050) INFO 11-06 06:23:41 [parallel_state.py:1715] rank 0 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(Worker pid=1052) INFO 11-06 06:23:41 [parallel_state.py:1715] rank 2 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 2, EP rank N/A, EPLB rank N/A
+(Worker pid=1051) INFO 11-06 06:23:41 [parallel_state.py:1715] rank 1 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 1, EP rank N/A, EPLB rank N/A
+(Worker pid=1053) INFO 11-06 06:23:41 [parallel_state.py:1715] rank 3 in world size 4 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 3, EP rank N/A, EPLB rank N/A
+(Worker pid=1052) INFO 11-06 06:23:43 [base.py:106] Offloader set to UVAOffloader
+(Worker pid=1053) INFO 11-06 06:23:43 [base.py:106] Offloader set to UVAOffloader
+(Worker pid=1050) INFO 11-06 06:23:43 [base.py:106] Offloader set to UVAOffloader
+(Worker pid=1051) INFO 11-06 06:23:43 [base.py:106] Offloader set to UVAOffloader
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 06:23:43 [gpu_model_runner.py:4255] Starting to load model /gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585...
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 06:23:45 [cuda.py:405] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 06:23:45 [flash_attn.py:587] Using FlashAttention version 2
+(Worker pid=1052) (Worker_TP2 pid=1052) WARNING 11-06 06:23:45 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1052) (Worker_TP2 pid=1052) WARNING 11-06 06:23:45 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1050) (Worker_TP0 pid=1050) WARNING 11-06 06:23:45 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1050) (Worker_TP0 pid=1050) WARNING 11-06 06:23:45 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1051) (Worker_TP1 pid=1051) WARNING 11-06 06:23:45 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1051) (Worker_TP1 pid=1051) WARNING 11-06 06:23:45 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1053) (Worker_TP3 pid=1053) WARNING 11-06 06:23:45 [activation.py:536] CUDA-fused xIELU not available (No module named 'xielu') – falling back to a Python version.
+(Worker pid=1053) (Worker_TP3 pid=1053) WARNING 11-06 06:23:45 [activation.py:536] For CUDA xIELU (experimental), `pip install git+https://github.com/nickjbrowning/XIELU`
+(Worker pid=1052) (Worker_TP2 pid=1052) INFO 11-06 06:24:03 [uva.py:61] Total CPU offloaded parameters: 8.01
+(Worker pid=1053) (Worker_TP3 pid=1053) INFO 11-06 06:24:04 [uva.py:61] Total CPU offloaded parameters: 8.01
+(Worker pid=1051) (Worker_TP1 pid=1051) INFO 11-06 06:24:04 [uva.py:61] Total CPU offloaded parameters: 8.01
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 06:24:04 [uva.py:61] Total CPU offloaded parameters: 8.01
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 06:41:47 [default_loader.py:293] Loading weights took 1063.56 seconds
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 06:41:48 [gpu_model_runner.py:4338] Model loading took 24.89 GiB memory and 1083.970866 seconds
+(EngineCore_DP0 pid=935) INFO 11-06 06:42:50 [shm_broadcast.py:548] No available shared memory broadcast block found in 60 seconds. This typically happens when some processes are hanging or doing some time-consuming work (e.g. compilation, weight/kv cache quantization).
+(EngineCore_DP0 pid=935) INFO 11-06 06:43:50 [shm_broadcast.py:548] No available shared memory broadcast block found in 60 seconds. This typically happens when some processes are hanging or doing some time-consuming work (e.g. compilation, weight/kv cache quantization).
+(EngineCore_DP0 pid=935) INFO 11-06 06:44:50 [shm_broadcast.py:548] No available shared memory broadcast block found in 60 seconds. This typically happens when some processes are hanging or doing some time-consuming work (e.g. compilation, weight/kv cache quantization).
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 06:45:40 [gpu_worker.py:424] Available KV cache memory: 10.44 GiB
+(EngineCore_DP0 pid=935) INFO 11-06 06:45:40 [kv_cache_utils.py:1314] GPU KV cache size: 136,832 tokens
+(EngineCore_DP0 pid=935) INFO 11-06 06:45:40 [kv_cache_utils.py:1319] Maximum concurrency for 65,536 tokens per request: 2.09x
+(EngineCore_DP0 pid=935) INFO 11-06 06:45:42 [core.py:282] init engine (profile, create kv cache, warmup model) took 232.20 seconds
+(EngineCore_DP0 pid=935) INFO 11-06 06:45:55 [vllm.py:747] Asynchronous scheduling is enabled.
+(EngineCore_DP0 pid=935) WARNING 11-06 06:45:55 [vllm.py:781] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(EngineCore_DP0 pid=935) WARNING 11-06 06:45:55 [vllm.py:792] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore_DP0 pid=935) INFO 11-06 06:45:55 [vllm.py:957] Cudagraph is disabled under eager mode
+INFO 11-06 06:45:55 [llm.py:388] Supported tasks: ['generate']
+BATCH_RUNTIME {"max_num_seqs": 64, "kv_cache_tokens": 136832, "reserved_token_budget": 129984, "block_size": 16, "admission_mode": "scheduler_managed", "model_context_window": 65536, "requested_max_new_tokens": null}
+WARNING 11-06 06:45:56 [input_processor.py:254] Passing raw prompts to InputProcessor is deprecated and will be removed in v0.18. You should instead pass the outputs of Renderer.render_cmpl() or Renderer.render_chat().
+BATCH_ADMISSION active=1 reserved_tokens=2096/129984 peak=1
+BATCH_ADMISSION active=2 reserved_tokens=4176/129984 peak=2
+BATCH_ADMISSION active=3 reserved_tokens=6256/129984 peak=3
+BATCH_ADMISSION active=4 reserved_tokens=8336/129984 peak=4
+BATCH_ADMISSION active=5 reserved_tokens=10416/129984 peak=5
+BATCH_ADMISSION active=6 reserved_tokens=12480/129984 peak=6
+BATCH_ADMISSION active=7 reserved_tokens=14560/129984 peak=7
+BATCH_ADMISSION active=8 reserved_tokens=16640/129984 peak=8
+BATCH_ADMISSION active=9 reserved_tokens=18720/129984 peak=9
+BATCH_ADMISSION active=10 reserved_tokens=20800/129984 peak=10
+BATCH_ADMISSION active=11 reserved_tokens=22880/129984 peak=11
+BATCH_ADMISSION active=12 reserved_tokens=24960/129984 peak=12
+BATCH_ADMISSION active=13 reserved_tokens=27024/129984 peak=13
+BATCH_ADMISSION active=14 reserved_tokens=29104/129984 peak=14
+BATCH_ADMISSION active=15 reserved_tokens=31184/129984 peak=15
+BATCH_ADMISSION active=16 reserved_tokens=33264/129984 peak=16
+BATCH_ADMISSION active=17 reserved_tokens=35328/129984 peak=17
+BATCH_ADMISSION active=18 reserved_tokens=37408/129984 peak=18
+BATCH_ADMISSION active=19 reserved_tokens=39472/129984 peak=19
+BATCH_ADMISSION active=20 reserved_tokens=41552/129984 peak=20
+BATCH_ADMISSION active=21 reserved_tokens=43648/129984 peak=21
+BATCH_ADMISSION active=22 reserved_tokens=45728/129984 peak=22
+BATCH_ADMISSION active=23 reserved_tokens=47808/129984 peak=23
+BATCH_ADMISSION active=24 reserved_tokens=49904/129984 peak=24
+BATCH_ADMISSION active=25 reserved_tokens=51984/129984 peak=25
+BATCH_ADMISSION active=26 reserved_tokens=54080/129984 peak=26
+BATCH_ADMISSION active=27 reserved_tokens=56160/129984 peak=27
+BATCH_ADMISSION active=28 reserved_tokens=58256/129984 peak=28
+BATCH_ADMISSION active=29 reserved_tokens=60336/129984 peak=29
+BATCH_ADMISSION active=30 reserved_tokens=62416/129984 peak=30
+BATCH_ADMISSION active=31 reserved_tokens=64512/129984 peak=31
+BATCH_ADMISSION active=32 reserved_tokens=66592/129984 peak=32
+BATCH_ADMISSION active=33 reserved_tokens=68688/129984 peak=33
+BATCH_ADMISSION active=34 reserved_tokens=70784/129984 peak=34
+BATCH_ADMISSION active=35 reserved_tokens=72864/129984 peak=35
+BATCH_ADMISSION active=36 reserved_tokens=74944/129984 peak=36
+BATCH_ADMISSION active=37 reserved_tokens=77024/129984 peak=37
+BATCH_ADMISSION active=38 reserved_tokens=79104/129984 peak=38
+BATCH_ADMISSION active=39 reserved_tokens=81200/129984 peak=39
+BATCH_ADMISSION active=40 reserved_tokens=83280/129984 peak=40
+BATCH_ADMISSION active=41 reserved_tokens=85360/129984 peak=41
+BATCH_ADMISSION active=42 reserved_tokens=87456/129984 peak=42
+BATCH_ADMISSION active=43 reserved_tokens=89568/129984 peak=43
+BATCH_ADMISSION active=44 reserved_tokens=91664/129984 peak=44
+BATCH_ADMISSION active=45 reserved_tokens=93760/129984 peak=45
+BATCH_ADMISSION active=46 reserved_tokens=95856/129984 peak=46
+BATCH_ADMISSION active=47 reserved_tokens=97952/129984 peak=47
+BATCH_ADMISSION active=48 reserved_tokens=100064/129984 peak=48
+BATCH_ADMISSION active=49 reserved_tokens=102160/129984 peak=49
+BATCH_ADMISSION active=50 reserved_tokens=104256/129984 peak=50
+BATCH_ADMISSION active=51 reserved_tokens=106352/129984 peak=51
+BATCH_ADMISSION active=52 reserved_tokens=108432/129984 peak=52
+BATCH_ADMISSION active=53 reserved_tokens=110512/129984 peak=53
+BATCH_ADMISSION active=54 reserved_tokens=112608/129984 peak=54
+BATCH_ADMISSION active=55 reserved_tokens=114688/129984 peak=55
+BATCH_ADMISSION active=56 reserved_tokens=116768/129984 peak=56
+BATCH_ADMISSION active=57 reserved_tokens=118864/129984 peak=57
+BATCH_ADMISSION active=58 reserved_tokens=120960/129984 peak=58
+BATCH_ADMISSION active=59 reserved_tokens=123056/129984 peak=59
+BATCH_ADMISSION active=60 reserved_tokens=125168/129984 peak=60
+BATCH_ADMISSION active=61 reserved_tokens=127264/129984 peak=61
+BATCH_ADMISSION active=62 reserved_tokens=129344/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-022", "status": "success", "output_tokens": 17, "concurrency": 58}
+BATCH_ADMISSION active=62 reserved_tokens=129344/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0039", "status": "success", "output_tokens": 34, "concurrency": 24}
+BATCH_ADMISSION active=62 reserved_tokens=129344/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0091", "status": "success", "output_tokens": 41, "concurrency": 5}
+BATCH_ADMISSION active=62 reserved_tokens=129360/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0101", "status": "success", "output_tokens": 43, "concurrency": 41}
+BATCH_ADMISSION active=62 reserved_tokens=129360/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0191", "status": "success", "output_tokens": 44, "concurrency": 13}
+BATCH_ADMISSION active=62 reserved_tokens=129392/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-031", "status": "success", "output_tokens": 52, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129408/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0037", "status": "success", "output_tokens": 53, "concurrency": 23}
+BATCH_ADMISSION active=62 reserved_tokens=129408/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0104", "status": "success", "output_tokens": 61, "concurrency": 6}
+BATCH_ADMISSION active=62 reserved_tokens=129424/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-017", "status": "success", "output_tokens": 63, "concurrency": 55}
+BATCH_ADMISSION active=62 reserved_tokens=129424/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0111", "status": "success", "output_tokens": 65, "concurrency": 7}
+BATCH_ADMISSION active=62 reserved_tokens=129424/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-012", "status": "success", "output_tokens": 66, "concurrency": 51}
+BATCH_ADMISSION active=62 reserved_tokens=129408/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0007", "status": "success", "output_tokens": 84, "concurrency": 17}
+BATCH_ADMISSION active=62 reserved_tokens=129472/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-018", "status": "success", "output_tokens": 85, "concurrency": 56}
+BATCH_ADMISSION active=62 reserved_tokens=129488/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0184", "status": "success", "output_tokens": 89, "concurrency": 12}
+BATCH_ADMISSION active=62 reserved_tokens=129504/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-008", "status": "success", "output_tokens": 95, "concurrency": 49}
+BATCH_ADMISSION active=62 reserved_tokens=129504/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-014", "status": "success", "output_tokens": 100, "concurrency": 53}
+BATCH_ADMISSION active=62 reserved_tokens=129520/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0065", "status": "success", "output_tokens": 103, "concurrency": 32}
+BATCH_ADMISSION active=62 reserved_tokens=129536/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-015", "status": "success", "output_tokens": 108, "concurrency": 54}
+BATCH_ADMISSION active=62 reserved_tokens=129536/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-041", "status": "success", "output_tokens": 48, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129584/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-032", "status": "success", "output_tokens": 95, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129568/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0012", "status": "success", "output_tokens": 116, "concurrency": 18}
+BATCH_ADMISSION active=62 reserved_tokens=129584/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-045", "status": "success", "output_tokens": 35, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129584/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-036", "status": "success", "output_tokens": 77, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129600/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-019", "status": "success", "output_tokens": 125, "concurrency": 57}
+BATCH_ADMISSION active=62 reserved_tokens=129616/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0084", "status": "success", "output_tokens": 135, "concurrency": 35}
+BATCH_ADMISSION active=62 reserved_tokens=129632/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0176", "status": "success", "output_tokens": 145, "concurrency": 11}
+BATCH_ADMISSION active=62 reserved_tokens=129664/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-028", "status": "success", "output_tokens": 149, "concurrency": 60}
+BATCH_ADMISSION active=62 reserved_tokens=129648/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-037", "status": "success", "output_tokens": 110, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129632/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-042", "status": "success", "output_tokens": 93, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129648/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-005", "status": "success", "output_tokens": 161, "concurrency": 46}
+BATCH_ADMISSION active=62 reserved_tokens=129648/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-030", "status": "success", "output_tokens": 166, "concurrency": 61}
+BATCH_ADMISSION active=62 reserved_tokens=129648/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-009", "status": "success", "output_tokens": 170, "concurrency": 50}
+BATCH_ADMISSION active=62 reserved_tokens=129632/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-002", "status": "success", "output_tokens": 183, "concurrency": 43}
+{"model": "gc_llm", "question_id": "CA-IND-024", "status": "success", "output_tokens": 183, "concurrency": 59}
+BATCH_ADMISSION active=61 reserved_tokens=127520/129984 peak=62
+BATCH_ADMISSION active=62 reserved_tokens=129616/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0031", "status": "success", "output_tokens": 191, "concurrency": 21}
+BATCH_ADMISSION active=62 reserved_tokens=129616/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-050", "status": "success", "output_tokens": 91, "concurrency": 62}
+{"model": "gc_llm", "question_id": "CA-IND-060", "status": "success", "output_tokens": 75, "concurrency": 62}
+BATCH_ADMISSION active=61 reserved_tokens=127520/129984 peak=62
+BATCH_ADMISSION active=62 reserved_tokens=129616/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-007", "status": "success", "output_tokens": 195, "concurrency": 48}
+BATCH_ADMISSION active=62 reserved_tokens=129600/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0016", "status": "success", "output_tokens": 200, "concurrency": 19}
+BATCH_ADMISSION active=62 reserved_tokens=129632/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-044", "status": "success", "output_tokens": 136, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129648/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0098", "status": "success", "output_tokens": 207, "concurrency": 40}
+BATCH_ADMISSION active=62 reserved_tokens=129680/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-046", "status": "success", "output_tokens": 121, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129680/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-001", "status": "success", "output_tokens": 209, "concurrency": 42}
+BATCH_ADMISSION active=62 reserved_tokens=129680/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-038", "status": "success", "output_tokens": 156, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129680/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0064", "status": "success", "output_tokens": 216, "concurrency": 2}
+BATCH_ADMISSION active=62 reserved_tokens=129696/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-049", "status": "success", "output_tokens": 122, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129712/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0074", "status": "success", "output_tokens": 221, "concurrency": 3}
+BATCH_ADMISSION active=62 reserved_tokens=129728/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-057", "status": "success", "output_tokens": 106, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0092", "status": "success", "output_tokens": 223, "concurrency": 38}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0051", "status": "success", "output_tokens": 224, "concurrency": 29}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-051", "status": "success", "output_tokens": 126, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0041", "status": "success", "output_tokens": 234, "concurrency": 26}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0078", "status": "success", "output_tokens": 236, "concurrency": 33}
+BATCH_ADMISSION active=62 reserved_tokens=129728/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-006", "status": "success", "output_tokens": 95, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129728/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-010", "status": "success", "output_tokens": 96, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129728/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-027", "status": "success", "output_tokens": 57, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-019", "status": "success", "output_tokens": 72, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-043", "status": "success", "output_tokens": 48, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-029", "status": "success", "output_tokens": 73, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-018", "status": "success", "output_tokens": 97, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0064", "status": "success", "output_tokens": 301, "concurrency": 31}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-043", "status": "success", "output_tokens": 235, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129776/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-003", "status": "success", "output_tokens": 324, "concurrency": 44}
+BATCH_ADMISSION active=62 reserved_tokens=129776/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-060", "status": "success", "output_tokens": 34, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129776/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0049", "status": "success", "output_tokens": 344, "concurrency": 28}
+BATCH_ADMISSION active=62 reserved_tokens=129776/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-059", "status": "success", "output_tokens": 62, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129776/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-HQ-0166", "status": "success", "output_tokens": 359, "concurrency": 10}
+{"model": "gc_llm", "question_id": "CA-EXP-036", "status": "success", "output_tokens": 136, "concurrency": 62}
+BATCH_ADMISSION active=61 reserved_tokens=127680/129984 peak=62
+BATCH_ADMISSION active=62 reserved_tokens=129776/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-IND-052", "status": "success", "output_tokens": 256, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129776/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-003", "status": "success", "output_tokens": 283, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-025", "status": "success", "output_tokens": 211, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129728/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-037", "status": "success", "output_tokens": 201, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129728/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-040", "status": "success", "output_tokens": 202, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-088", "status": "success", "output_tokens": 19, "concurrency": 62}
+{"model": "gc_llm", "question_id": "CA-EXP-090", "status": "success", "output_tokens": 16, "concurrency": 62}
+BATCH_ADMISSION active=61 reserved_tokens=127664/129984 peak=62
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0083", "status": "success", "output_tokens": 486, "concurrency": 34}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-079", "status": "success", "output_tokens": 120, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-055", "status": "success", "output_tokens": 203, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-065", "status": "success", "output_tokens": 154, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-050", "status": "success", "output_tokens": 227, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-099", "status": "success", "output_tokens": 23, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-087", "status": "success", "output_tokens": 92, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129744/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-082", "status": "success", "output_tokens": 106, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-014", "status": "success", "output_tokens": 335, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-046", "status": "success", "output_tokens": 296, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-094", "status": "success", "output_tokens": 99, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-048", "status": "success", "output_tokens": 296, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-101", "status": "success", "output_tokens": 70, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129760/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0003", "status": "success", "output_tokens": 570, "concurrency": 16}
+BATCH_ADMISSION active=62 reserved_tokens=129792/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-102", "status": "success", "output_tokens": 76, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129792/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-042", "status": "success", "output_tokens": 348, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129792/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-049", "status": "success", "output_tokens": 319, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129792/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-002", "status": "success", "output_tokens": 68, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129808/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-118", "status": "success", "output_tokens": 78, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129824/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-106", "status": "success", "output_tokens": 85, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129824/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-003", "status": "success", "output_tokens": 100, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129840/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-100", "status": "success", "output_tokens": 153, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129840/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-017", "status": "success", "output_tokens": 460, "concurrency": 61}
+BATCH_ADMISSION active=62 reserved_tokens=129840/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-012", "status": "success", "output_tokens": 94, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129840/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-007", "status": "success", "output_tokens": 122, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129824/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP-078", "status": "success", "output_tokens": 336, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129840/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-020", "status": "success", "output_tokens": 71, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129872/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-023", "status": "success", "output_tokens": 65, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129856/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-001", "status": "success", "output_tokens": 274, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129856/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-025", "status": "success", "output_tokens": 77, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129856/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-028", "status": "success", "output_tokens": 56, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129856/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-021", "status": "success", "output_tokens": 285, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129872/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-030", "status": "success", "output_tokens": 66, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129888/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-026", "status": "success", "output_tokens": 278, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129888/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-031", "status": "success", "output_tokens": 173, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129888/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-033", "status": "success", "output_tokens": 236, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129888/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-034", "status": "success", "output_tokens": 294, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129888/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-036", "status": "success", "output_tokens": 191, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129872/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-037", "status": "success", "output_tokens": 27, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129872/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-038", "status": "success", "output_tokens": 227, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129872/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-039", "status": "success", "output_tokens": 140, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129872/129984 peak=62
+{"model": "gc_llm", "question_id": "CA-EXP2-040", "status": "success", "output_tokens": 330, "concurrency": 62}
+BATCH_ADMISSION active=62 reserved_tokens=129872/129984 peak=62
+{"model": "gc_llm", "question_id": "GC-ADD-0033", "status": "success", "output_tokens": 3514, "concurrency": 22}
+BATCH_ADMISSION active=62 reserved_tokens=129888/129984 peak=62
+LIVE_CAP_APPLIED {"job": "11817703", "role": "main", "time": "2026-11-06T13:25:57.707531+00:00", "cap": 8192, "model_reloaded": false}
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [dump_input.py:72] Dumping input data for V1 LLM engine (v0.17.0) with config: model='/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', speculative_config=None, tokenizer='/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=65536, download_dir=None, load_format=auto, tensor_parallel_size=4, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_split_points': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}, 
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [dump_input.py:79] Dumping scheduler output for model execution: SchedulerOutput(scheduled_new_reqs=[], scheduled_cached_reqs=CachedRequestData(req_ids=['GC-HQ-0027-ad5d7c39', 'GC-HQ-0080-97f350e1', 'GC-HQ-0136-b5675603', 'GC-HQ-0157-8a774c4c', 'GC-HQ-0195-b4f08f4c'],resumed_req_ids=set(),new_token_ids_lens=[],all_token_ids_lens={},new_block_ids=[None, None, None, None, ([1696],)],num_computed_tokens=[24610, 24588, 24590, 24594, 24592],num_output_tokens=[24568, 24566, 24566, 24566, 24566]), num_scheduled_tokens={GC-HQ-0080-97f350e1: 1, GC-HQ-0136-b5675603: 1, GC-HQ-0027-ad5d7c39: 1, GC-HQ-0195-b4f08f4c: 1, GC-HQ-0157-8a774c4c: 1}, total_num_scheduled_tokens=5, scheduled_spec_decode_tokens={}, scheduled_encoder_inputs={}, num_common_prefix_blocks=[0], finished_req_ids=[], free_encoder_mm_hashes=[], preempted_req_ids=[], has_structured_output_requests=false, pending_structured_output_tokens=false, num_invalid_spec_tokens=null, kv_connector_metadata=null, ec_connector_metadata=null)
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102] EngineCore encountered a fatal error.
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102] Traceback (most recent call last):
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 1093, in run_engine_core
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     engine_core.run_busy_loop()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 1128, in run_busy_loop
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     self._process_engine_step()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 1165, in _process_engine_step
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     outputs, model_executed = self.step_fn()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]                               ^^^^^^^^^^^^^^
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 501, in step_with_batch_queue
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     exec_model_fut.result()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 83, in result
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     return super().result()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]            ^^^^^^^^^^^^^^^^
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     return self.__get_result()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]            ^^^^^^^^^^^^^^^^^^^
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     raise self._exception
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 87, in wait_for_response
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     response = self.aggregate(get_response())
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]                               ^^^^^^^^^^^^^^
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 366, in get_response
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     status, result = mq.dequeue(
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]                      ^^^^^^^^^^^
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/distributed/device_communicators/shm_broadcast.py", line 622, in dequeue
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     with self.acquire_read(timeout, cancel, indefinite) as buf:
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/contextlib.py", line 137, in __enter__
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     return next(self.gen)
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]            ^^^^^^^^^^^^^^
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/distributed/device_communicators/shm_broadcast.py", line 534, in acquire_read
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     self._read_spin_timer.spin()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/distributed/device_communicators/shm_broadcast.py", line 96, in spin
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     sched_yield()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]   File "/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/site-packages/vllm/distributed/utils.py", line 47, in sched_yield
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102]     os.sched_yield()
+(EngineCore_DP0 pid=935) ERROR 11-06 13:26:01 [core.py:1102] SystemError: error return without exception set
+(Worker pid=1050) (Worker_TP0 pid=1050) INFO 11-06 13:26:01 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1052) (Worker_TP2 pid=1052) INFO 11-06 13:26:01 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1053) (Worker_TP3 pid=1053) INFO 11-06 13:26:01 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1051) (Worker_TP1 pid=1051) INFO 11-06 13:26:01 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=1050) (Worker_TP0 pid=1050) WARNING 11-06 13:26:01 [multiproc_executor.py:814] WorkerProc was terminated
+(Worker pid=1052) (Worker_TP2 pid=1052) WARNING 11-06 13:26:01 [multiproc_executor.py:814] WorkerProc was terminated
+(Worker pid=1053) (Worker_TP3 pid=1053) WARNING 11-06 13:26:01 [multiproc_executor.py:814] WorkerProc was terminated
+(Worker pid=1051) (Worker_TP1 pid=1051) WARNING 11-06 13:26:01 [multiproc_executor.py:814] WorkerProc was terminated
+{
+  "results": {},
+  "errors": {
+    "gc_llm": "EngineCore encountered an issue. See stack trace (above) for the root cause."
+  }
+}

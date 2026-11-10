@@ -1,0 +1,17 @@
+{
+  "rows": 756,
+  "headers": [
+    "question_id",
+    "language",
+    "primary_metric",
+    "applicable_metrics",
+    "context_text",
+    "question",
+    "reference_answer"
+  ],
+  "sha256": "ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2",
+  "languages": {
+    "en": 404,
+    "fr": 352
+  }
+}
