@@ -1,0 +1,43 @@
+{
+  "benchmark_sha256": "ef8a729f58c0dbcc63c3d3b31d572d15291aaac18daea1795afb51050fe38cb2",
+  "sampling": {
+    "max_new_tokens": 1024,
+    "retry_max_new_tokens": 1024,
+    "max_attempts": 3,
+    "seed": 0,
+    "temperature": 0.7,
+    "max_model_len": 16384,
+    "batch_size": "dynamic",
+    "prompt": "question_only",
+    "top_p": 0.95
+  },
+  "models": {
+    "gc_llm": {
+      "captured": 755,
+      "expected": 756,
+      "coverage_complete": false,
+      "naturally_finished": 532,
+      "capped": 223,
+      "workbook": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/sampling_t07_p095_1024_20261107T013517Z/outputs/exports/gc_llm_756_evaluation_t07_p095_1024_PARTIAL.xlsx",
+      "jsonl": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/sampling_t07_p095_1024_20261107T013517Z/outputs/exports/gc_llm_756_evaluation_t07_p095_1024_PARTIAL.jsonl"
+    },
+    "apertus": {
+      "captured": 756,
+      "expected": 756,
+      "coverage_complete": true,
+      "naturally_finished": 389,
+      "capped": 367,
+      "workbook": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/sampling_t07_p095_1024_20261107T013517Z/outputs/exports/apertus_756_evaluation_t07_p095_1024.xlsx",
+      "jsonl": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/sampling_t07_p095_1024_20261107T013517Z/outputs/exports/apertus_756_evaluation_t07_p095_1024.jsonl"
+    },
+    "llama": {
+      "captured": 756,
+      "expected": 756,
+      "coverage_complete": true,
+      "naturally_finished": 755,
+      "capped": 1,
+      "workbook": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/sampling_t07_p095_1024_20261107T013517Z/outputs/exports/llama_756_evaluation_t07_p095_1024.xlsx",
+      "jsonl": "/fs/vnas_Hssc/dsai/vib000/canai_projects/llm_evals/reruns/sampling_t07_p095_1024_20261107T013517Z/outputs/exports/llama_756_evaluation_t07_p095_1024.jsonl"
+    }
+  }
+}
