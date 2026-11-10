@@ -1,0 +1,7 @@
+run_smoke_tests: false
+retain_generated_outputs: true
+batching:
+  enabled: true
+  max_num_seqs: 64
+  max_num_batched_tokens: 8192
+  kv_cache_reserve_fraction: 0.95
