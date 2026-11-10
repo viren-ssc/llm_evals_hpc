@@ -1,0 +1,5 @@
+timestamp, index, name, memory.total [MiB], memory.used [MiB], utilization.gpu [%]
+2026/11/07 02:21:19.714, 0, NVIDIA A100-SXM4-40GB, 40960 MiB, 0 MiB, 0 %
+2026/11/07 02:21:19.715, 1, NVIDIA A100-SXM4-40GB, 40960 MiB, 0 MiB, 0 %
+2026/11/07 02:21:19.715, 2, NVIDIA A100-SXM4-40GB, 40960 MiB, 0 MiB, 0 %
+2026/11/07 02:21:19.716, 3, NVIDIA A100-SXM4-40GB, 40960 MiB, 0 MiB, 0 %

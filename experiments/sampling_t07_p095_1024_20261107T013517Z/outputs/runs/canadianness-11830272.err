@@ -1,0 +1,46 @@
+The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+(Worker pid=1050) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1051) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1052) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=1051) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1050) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1052) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1053) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:   0% Completed | 0/30 [00:00<?, ?it/s]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:   3% Completed | 1/30 [00:21<10:15, 21.24s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:   7% Completed | 2/30 [00:46<11:06, 23.79s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  10% Completed | 3/30 [01:14<11:30, 25.57s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  13% Completed | 4/30 [01:41<11:19, 26.14s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  17% Completed | 5/30 [02:06<10:44, 25.77s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  20% Completed | 6/30 [02:31<10:09, 25.38s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  23% Completed | 7/30 [02:57<09:53, 25.81s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  27% Completed | 8/30 [03:26<09:49, 26.78s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  30% Completed | 9/30 [03:47<08:45, 25.01s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  33% Completed | 10/30 [04:08<07:51, 23.55s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  37% Completed | 11/30 [04:30<07:20, 23.18s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  40% Completed | 12/30 [04:59<07:27, 24.88s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  43% Completed | 13/30 [05:27<07:22, 26.02s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  47% Completed | 14/30 [05:52<06:48, 25.51s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  50% Completed | 15/30 [06:22<06:42, 26.84s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  53% Completed | 16/30 [06:49<06:16, 26.92s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  57% Completed | 17/30 [07:10<05:27, 25.18s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  60% Completed | 18/30 [07:33<04:53, 24.44s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  63% Completed | 19/30 [07:56<04:26, 24.18s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  67% Completed | 20/30 [08:18<03:55, 23.56s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  70% Completed | 21/30 [08:39<03:25, 22.82s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  73% Completed | 22/30 [09:08<03:17, 24.68s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  77% Completed | 23/30 [09:31<02:47, 24.00s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  80% Completed | 24/30 [09:57<02:27, 24.54s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  83% Completed | 25/30 [10:16<01:54, 22.82s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  87% Completed | 26/30 [10:39<01:32, 23.04s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  90% Completed | 27/30 [11:02<01:08, 22.98s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  93% Completed | 28/30 [11:24<00:45, 22.59s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards:  97% Completed | 29/30 [11:44<00:21, 21.94s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:03<00:00, 21.21s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) Loading safetensors checkpoint shards: 100% Completed | 30/30 [12:03<00:00, 24.13s/it]
+(Worker pid=1050) (Worker_TP0 pid=1050) 
+(EngineCore_DP0 pid=935) The tokenizer you are loading from '/gpfs/fs7/ssc/ssc_dsai/abm002/.cache/huggingface/hub/models--ssc-dsai--gc-llm-apertus-70b-instruct-2509/snapshots/58277e94d16ccf486c1702c0aac8115c69448585' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+/gpfs/fs7/ssc/ssc_dsai/.cache/envs/vib000/canai-chandra-ocr2/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
