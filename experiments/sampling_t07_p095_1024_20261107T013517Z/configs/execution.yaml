@@ -1,0 +1,10 @@
+run_smoke_tests: false
+retain_generated_outputs: false
+batching:
+  enabled: true
+  max_num_seqs: 64
+  max_num_batched_tokens: 8192
+  kv_cache_reserve_fraction: 0.95
+  admission_mode: full_reservation
+  initial_output_reservation_tokens: 2048
+preserve_captured_on_resume: true

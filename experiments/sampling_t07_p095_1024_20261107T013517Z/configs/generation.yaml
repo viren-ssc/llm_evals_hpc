@@ -1,0 +1,9 @@
+max_new_tokens: 1024
+retry_max_new_tokens: 1024
+max_attempts: 3
+seed: 0
+temperature: 0.7
+max_model_len: 16384
+batch_size: dynamic
+prompt: question_only
+top_p: 0.95
